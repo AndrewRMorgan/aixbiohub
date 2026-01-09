@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Environment variables (never commit these!)
+.env
+.env.local
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
