@@ -2,10 +2,16 @@ const https = require('https');
 
 // Configuration from environment variables
 const ZOTERO_USER_ID = process.env.ZOTERO_USER_ID;
+const ZOTERO_GROUP_ID = process.env.ZOTERO_GROUP_ID;
 const ZOTERO_API_KEY = process.env.ZOTERO_API_KEY;
 const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
 const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID;
 const AIRTABLE_TABLE_NAME = process.env.AIRTABLE_TABLE_NAME || 'Research';
+
+// Determine library prefix (user or group)
+const libraryPrefix = ZOTERO_GROUP_ID 
+  ? `groups/${ZOTERO_GROUP_ID}` 
+  : `users/${ZOTERO_USER_ID}`;
 
 // Helper function to make HTTPS requests
 function makeRequest(options, postData = null) {
@@ -57,7 +63,7 @@ async function fetchAllZoteroItems() {
   while (totalResults === null || start < totalResults) {
     const options = {
       hostname: 'api.zotero.org',
-      path: `/users/${ZOTERO_USER_ID}/items?limit=${limit}&start=${start}`,
+      path: `/${libraryPrefix}/items?limit=${limit}&start=${start}`,
       method: 'GET',
       headers: {
         'Zotero-API-Version': '3',
@@ -67,16 +73,22 @@ async function fetchAllZoteroItems() {
     
     try {
       const response = await makeRequest(options);
-      const items = response.data;
+      let items = response.data;
+      
+      // Filter out attachments and notes
+      items = items.filter(item => {
+        const itemType = item.data.itemType;
+        return itemType !== 'attachment' && itemType !== 'note';
+      });
       
       if (totalResults === null) {
         totalResults = parseInt(response.headers['total-results'] || '0');
-        console.log(`Total items to fetch: ${totalResults}`);
+        console.log(`Total items in library: ${totalResults}`);
       }
       
       allItems.push(...items);
       start += limit;
-      console.log(`Fetched ${allItems.length} of ${totalResults} items`);
+      console.log(`Fetched ${allItems.length} items (excluding attachments/notes)`);
       
       // Small delay to respect rate limits
       await new Promise(resolve => setTimeout(resolve, 100));
@@ -253,9 +265,11 @@ async function main() {
     console.log(`Timestamp: ${new Date().toISOString()}`);
     
     // Validate environment variables
-    if (!ZOTERO_USER_ID || !ZOTERO_API_KEY || !AIRTABLE_API_KEY || !AIRTABLE_BASE_ID) {
-      throw new Error('Missing required environment variables');
+    if ((!ZOTERO_USER_ID && !ZOTERO_GROUP_ID) || !ZOTERO_API_KEY || !AIRTABLE_API_KEY || !AIRTABLE_BASE_ID) {
+      throw new Error('Missing required environment variables. Need either ZOTERO_USER_ID or ZOTERO_GROUP_ID, plus ZOTERO_API_KEY, AIRTABLE_API_KEY, and AIRTABLE_BASE_ID');
     }
+    
+    console.log(`Syncing from Zotero ${ZOTERO_GROUP_ID ? 'group' : 'user'} library...`);
     
     // Fetch data from both sources
     const zoteroItems = await fetchAllZoteroItems();

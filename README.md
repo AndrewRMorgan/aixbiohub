@@ -17,9 +17,14 @@ Automatically syncs research items from Zotero to Airtable every 12 hours using 
 
 #### Zotero
 1. Go to https://www.zotero.org/settings/keys
-2. Create a new API key with read permissions
-3. Note your **User ID** (shown on the same page)
-4. Save your **API Key**
+2. Create a new API key with read permissions for your group
+3. For a **User Library**: Note your **User ID** (shown on the same page)
+4. For a **Group Library**: 
+   - Go to your group page: https://www.zotero.org/groups/
+   - Click on your group (e.g., "aixbiohub")
+   - Look at the URL: `https://www.zotero.org/groups/12345/groupname`
+   - The number (12345) is your Group ID
+5. Save your **API Key**
 
 #### Airtable
 1. Go to https://airtable.com/create/tokens
