@@ -209,8 +209,12 @@ async function syncToAirtable(zoteroItems, existingRecords) {
     const existingRecord = existingMap.get(zoteroItem.key);
     
     if (existingRecord) {
-      // Check if update is needed (compare date modified)
-      if (existingRecord.fields['Date Modified'] !== fields['Date Modified']) {
+      // Check if update is needed (compare date modified or item type)
+      const needsUpdate =
+        existingRecord.fields['Date Modified'] !== fields['Date Modified'] ||
+        existingRecord.fields['Item Type'] !== fields['Item Type'];
+
+      if (needsUpdate) {
         recordsToUpdate.push({
           id: existingRecord.id,
           fields: fields
