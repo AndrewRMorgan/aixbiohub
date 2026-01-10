@@ -158,6 +158,45 @@ function formatItemType(itemType) {
   return itemTypeMap[itemType] || itemType;
 }
 
+// Convert various date formats to YYYY-MM-DD
+function formatDate(dateString) {
+  if (!dateString) return '';
+
+  // Try to parse the date
+  let date = new Date(dateString);
+
+  // If the date is invalid, try to extract year/month/day from common formats
+  if (isNaN(date.getTime())) {
+    // Try to match YYYY-MM-DD, YYYY/MM/DD, or YYYY
+    const yearMatch = dateString.match(/(\d{4})/);
+    if (yearMatch) {
+      const year = yearMatch[1];
+      const monthMatch = dateString.match(/\d{4}[-/](\d{1,2})/);
+      const dayMatch = dateString.match(/\d{4}[-/]\d{1,2}[-/](\d{1,2})/);
+
+      if (monthMatch && dayMatch) {
+        const month = monthMatch[1].padStart(2, '0');
+        const day = dayMatch[1].padStart(2, '0');
+        return `${year}-${month}-${day}`;
+      } else if (monthMatch) {
+        const month = monthMatch[1].padStart(2, '0');
+        return `${year}-${month}-01`;
+      } else {
+        return `${year}-01-01`;
+      }
+    }
+    // If we can't parse it, return the original string
+    return dateString;
+  }
+
+  // Format as YYYY-MM-DD
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+
+  return `${year}-${month}-${day}`;
+}
+
 // Transform Zotero item to Airtable fields
 function transformZoteroItem(zoteroItem) {
   const data = zoteroItem.data;
@@ -181,7 +220,7 @@ function transformZoteroItem(zoteroItem) {
     'Creators': creators.join('; '),
     'Abstract': data.abstractNote || '',
     'Publication': data.publicationTitle || data.publisher || '',
-    'Date': data.date || '',
+    'Date': formatDate(data.date),
     'URL': data.url || '',
     'DOI': data.DOI || '',
     'Tags': (data.tags || []).map(t => t.tag).join(', '),
@@ -209,10 +248,11 @@ async function syncToAirtable(zoteroItems, existingRecords) {
     const existingRecord = existingMap.get(zoteroItem.key);
     
     if (existingRecord) {
-      // Check if update is needed (compare date modified or item type)
+      // Check if update is needed (compare date modified, item type, or date format)
       const needsUpdate =
         existingRecord.fields['Date Modified'] !== fields['Date Modified'] ||
-        existingRecord.fields['Item Type'] !== fields['Item Type'];
+        existingRecord.fields['Item Type'] !== fields['Item Type'] ||
+        existingRecord.fields['Date'] !== fields['Date'];
 
       if (needsUpdate) {
         recordsToUpdate.push({
