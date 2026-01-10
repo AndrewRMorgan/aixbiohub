@@ -141,10 +141,27 @@ async function fetchAirtableRecords() {
   return allRecords;
 }
 
+// Convert Zotero item type to human-readable format
+function formatItemType(itemType) {
+  const itemTypeMap = {
+    'report': 'Report',
+    'blogPost': 'Blog post',
+    'journalArticle': 'Journal article',
+    'preprint': 'Preprint',
+    'webpage': 'Webpage',
+    'magazineArticle': 'Magazine article',
+    'newspaperArticle': 'Newspaper article',
+    'book': 'Book',
+    'bookSection': 'Book section'
+  };
+
+  return itemTypeMap[itemType] || itemType;
+}
+
 // Transform Zotero item to Airtable fields
 function transformZoteroItem(zoteroItem) {
   const data = zoteroItem.data;
-  
+
   // Build creator names (authors, editors, etc.)
   const creators = (data.creators || [])
     .map(c => {
@@ -155,12 +172,12 @@ function transformZoteroItem(zoteroItem) {
       return parts.join(' ');
     })
     .filter(name => name);
-  
+
   // Basic mapping - adjust these field names to match your Airtable schema
   return {
     'Zotero Key': zoteroItem.key,
     'Title': data.title || '',
-    'Item Type': data.itemType || '',
+    'Item Type': formatItemType(data.itemType) || '',
     'Creators': creators.join('; '),
     'Abstract': data.abstractNote || '',
     'Publication': data.publicationTitle || data.publisher || '',
