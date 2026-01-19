@@ -212,6 +212,16 @@ function transformZoteroItem(zoteroItem) {
     })
     .filter(name => name);
 
+  // Process institution field for Multiple select in Airtable
+  // Split by semicolon or comma if multiple institutions are present
+  let institutions = [];
+  if (data.institution) {
+    institutions = data.institution
+      .split(/[;,]/)
+      .map(inst => inst.trim())
+      .filter(inst => inst);
+  }
+
   // Basic mapping - adjust these field names to match your Airtable schema
   return {
     'Zotero Key': zoteroItem.key,
@@ -225,7 +235,8 @@ function transformZoteroItem(zoteroItem) {
     'DOI': data.DOI || '',
     'Tags': (data.tags || []).map(t => t.tag).join(', '),
     'Date Added': data.dateAdded || '',
-    'Date Modified': data.dateModified || ''
+    'Date Modified': data.dateModified || '',
+    'Institution': institutions
   };
 }
 
