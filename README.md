@@ -56,6 +56,7 @@ Make sure your Airtable table has these fields (or modify the script to match yo
 | Tags | Long text |
 | Date Added | Single line text |
 | Date Modified | Single line text |
+| Institution | Multiple select |
 
 **Important:** The "Zotero Key" field is required - it's used to match records between systems.
 
