@@ -213,17 +213,23 @@ function transformZoteroItem(zoteroItem) {
     .filter(name => name);
 
   // Process institution field for Multiple select in Airtable
-  // Split by semicolon or comma if multiple institutions are present
+  // Different item types use different field names:
+  // - Report uses 'institution'
+  // - Thesis uses 'university'
+  // - Court Document uses 'court'
+  let institutionValue = data.institution || data.university || data.court || '';
+
   let institutions = [];
-  if (data.institution) {
-    institutions = data.institution
+  if (institutionValue) {
+    // Split by semicolon or comma if multiple institutions are present
+    institutions = institutionValue
       .split(/[;,]/)
       .map(inst => inst.trim())
       .filter(inst => inst);
   }
 
   // Basic mapping - adjust these field names to match your Airtable schema
-  return {
+  const result = {
     'Zotero Key': zoteroItem.key,
     'Title': data.title || '',
     'Item Type': formatItemType(data.itemType) || '',
@@ -238,6 +244,13 @@ function transformZoteroItem(zoteroItem) {
     'Date Modified': data.dateModified || '',
     'Institution': institutions
   };
+
+  // Log institution data for debugging
+  if (institutions.length > 0) {
+    console.log(`Item "${data.title}" has institutions:`, institutions);
+  }
+
+  return result;
 }
 
 // Update or create records in Airtable
