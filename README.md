@@ -57,8 +57,12 @@ Make sure your Airtable table has these fields (or modify the script to match yo
 | Date Added | Single line text |
 | Date Modified | Single line text |
 | Institution | Multiple select |
+| Institutions to add | Long text |
 
-**Important:** The "Zotero Key" field is required - it's used to match records between systems.
+**Important:**
+- The "Zotero Key" field is required - it's used to match records between systems.
+- The "Institution" field uses Multiple select. Any institution values not already in your dropdown options will be placed in "Institutions to add" instead.
+- To use new institutions: (1) Check "Institutions to add" field, (2) Add those values to the Institution field dropdown options in Airtable, (3) Re-run the sync.
 
 ### 3. Create a GitHub Repository
 
@@ -128,6 +132,21 @@ path: `/users/${ZOTERO_USER_ID}/collections/COLLECTIONKEY/items?limit=${limit}&s
 // Sync only items with a specific tag
 path: `/users/${ZOTERO_USER_ID}/items?tag=website&limit=${limit}&start=${start}`,
 ```
+
+### Managing Institution Options
+
+The script automatically checks which institutions are already configured in your Airtable "Institution" field:
+
+1. **When a new institution is found** in Zotero that doesn't match existing Airtable options, it will be added to "Institutions to add"
+2. **To add new institutions**:
+   - Run the sync and check the "Institutions to add" field for any records
+   - In Airtable, click the "Institution" field header → "Customize field type" → Add the new institutions to the options list
+   - Re-run the sync - the institutions will now move from "Institutions to add" to "Institution"
+
+**Note:** The script pulls institution data from different Zotero fields depending on item type:
+- Reports use the "institution" field
+- Theses use the "university" field
+- Court documents use the "court" field
 
 ## Troubleshooting
 
