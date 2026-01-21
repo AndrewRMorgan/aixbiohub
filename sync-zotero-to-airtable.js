@@ -301,7 +301,14 @@ function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publ
   });
 
   // Process publication field for Multiple select in Airtable
-  const publicationValue = data.publicationTitle || data.publisher || '';
+  let publicationValue = data.publicationTitle || data.publisher || '';
+
+  // For preprints, also include repository
+  if (data.itemType === 'preprint' && data.repository) {
+    publicationValue = publicationValue
+      ? `${publicationValue}, ${data.repository}`
+      : data.repository;
+  }
 
   let allPublications = [];
   if (publicationValue) {
