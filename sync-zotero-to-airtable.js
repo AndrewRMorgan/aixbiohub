@@ -272,6 +272,16 @@ function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publ
   const itemType = formatItemType(data.itemType) || '';
   const itemTypeArray = itemType ? [itemType] : [];
 
+  // Extract year from date for Year field (Multiple select)
+  const formattedDate = formatDate(data.date);
+  let yearArray = [];
+  if (formattedDate) {
+    const yearMatch = formattedDate.match(/^(\d{4})/);
+    if (yearMatch) {
+      yearArray = [yearMatch[1]];
+    }
+  }
+
   // Process institution field for Multiple select in Airtable
   // Different item types use different field names:
   // - Report uses 'institution'
@@ -340,7 +350,8 @@ function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publ
     'Abstract': data.abstractNote || '',
     'Publication': validPublications,
     'Publications to add': newPublications.join(', '),
-    'Date': formatDate(data.date),
+    'Date': formattedDate,
+    'Year': yearArray,
     'URL': data.url || '',
     'DOI': data.DOI || '',
     'Tags': (data.tags || []).map(t => t.tag).join(', '),
