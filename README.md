@@ -46,10 +46,11 @@ Make sure your Airtable table has these fields (or modify the script to match yo
 |------------|------|
 | Zotero Key | Single line text |
 | Title | Single line text |
-| Item Type | Single line text |
+| Item Type | Multiple select |
 | Creators | Long text |
 | Abstract | Long text |
-| Publication | Single line text |
+| Publication | Multiple select |
+| Publications to add | Long text |
 | Date | Single line text |
 | URL | URL |
 | DOI | Single line text |
@@ -57,8 +58,13 @@ Make sure your Airtable table has these fields (or modify the script to match yo
 | Date Added | Single line text |
 | Date Modified | Single line text |
 | Institution | Multiple select |
+| Institutions to add | Long text |
 
-**Important:** The "Zotero Key" field is required - it's used to match records between systems.
+**Important:**
+- The "Zotero Key" field is required - it's used to match records between systems.
+- The "Item Type" field uses Multiple select. Item types are automatically handled by the script.
+- The "Institution" and "Publication" fields use Multiple select. Any values not already in your dropdown options will be placed in "Institutions to add" or "Publications to add" fields.
+- To use new institutions/publications: (1) Check "Institutions to add" / "Publications to add" fields, (2) Add those values to the corresponding field dropdown options in Airtable, (3) Re-run the sync.
 
 ### 3. Create a GitHub Repository
 
@@ -128,6 +134,33 @@ path: `/users/${ZOTERO_USER_ID}/collections/COLLECTIONKEY/items?limit=${limit}&s
 // Sync only items with a specific tag
 path: `/users/${ZOTERO_USER_ID}/items?tag=website&limit=${limit}&start=${start}`,
 ```
+
+### Managing Multiple Select Field Options
+
+The script automatically checks which institutions and publications are already configured in your Airtable Multiple select fields:
+
+#### For Institutions:
+
+1. **When a new institution is found** in Zotero that doesn't match existing Airtable options, it will be added to "Institutions to add"
+2. **To add new institutions**:
+   - Run the sync and check the "Institutions to add" field for any records
+   - In Airtable, click the "Institution" field header → "Customize field type" → Add the new institutions to the options list
+   - Re-run the sync - the institutions will now move from "Institutions to add" to "Institution"
+
+**Note:** The script pulls institution data from different Zotero fields depending on item type:
+- Reports use the "institution" field
+- Theses use the "university" field
+- Court documents use the "court" field
+
+#### For Publications:
+
+1. **When a new publication is found** in Zotero that doesn't match existing Airtable options, it will be added to "Publications to add"
+2. **To add new publications**:
+   - Run the sync and check the "Publications to add" field for any records
+   - In Airtable, click the "Publication" field header → "Customize field type" → Add the new publications to the options list
+   - Re-run the sync - the publications will now move from "Publications to add" to "Publication"
+
+**Note:** The script pulls publication data from "publicationTitle" or falls back to "publisher" if no publication title exists.
 
 ## Troubleshooting
 

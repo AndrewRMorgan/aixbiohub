@@ -106,15 +106,15 @@ async function fetchAllZoteroItems() {
 async function fetchAirtableRecords() {
   const allRecords = [];
   let offset = null;
-  
+
   console.log('Fetching existing records from Airtable...');
-  
+
   do {
     let path = `/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`;
     if (offset) {
       path += `?offset=${offset}`;
     }
-    
+
     const options = {
       hostname: 'api.airtable.com',
       path: path,
@@ -124,21 +124,77 @@ async function fetchAirtableRecords() {
         'Content-Type': 'application/json'
       }
     };
-    
+
     try {
       const response = await makeRequest(options);
       allRecords.push(...response.data.records);
       offset = response.data.offset;
-      
+
       console.log(`Fetched ${allRecords.length} records from Airtable...`);
-      
+
     } catch (error) {
       console.error('Error fetching Airtable records:', error.message);
       throw error;
     }
   } while (offset);
-  
+
   return allRecords;
+}
+
+// Fetch Airtable base schema to get valid field options
+async function fetchFieldOptions() {
+  console.log('Fetching field options from Airtable schema...');
+
+  const options = {
+    hostname: 'api.airtable.com',
+    path: `/v0/meta/bases/${AIRTABLE_BASE_ID}/tables`,
+    method: 'GET',
+    headers: {
+      'Authorization': `Bearer ${AIRTABLE_API_KEY}`
+    }
+  };
+
+  try {
+    const response = await makeRequest(options);
+    const tables = response.data.tables;
+
+    // Find our table
+    const table = tables.find(t => t.name === AIRTABLE_TABLE_NAME);
+    if (!table) {
+      console.log(`Table "${AIRTABLE_TABLE_NAME}" not found in schema`);
+      return { institutions: [], publications: [] };
+    }
+
+    // Find the Institution field
+    const institutionField = table.fields.find(f => f.name === 'Institution');
+    const institutionOptions = [];
+    if (institutionField && institutionField.options && institutionField.options.choices) {
+      institutionOptions.push(...institutionField.options.choices.map(choice => choice.name));
+      console.log(`Found ${institutionOptions.length} existing institution options:`, institutionOptions);
+    } else {
+      console.log('Institution field not found or has no options');
+    }
+
+    // Find the Publication field
+    const publicationField = table.fields.find(f => f.name === 'Publication');
+    const publicationOptions = [];
+    if (publicationField && publicationField.options && publicationField.options.choices) {
+      publicationOptions.push(...publicationField.options.choices.map(choice => choice.name));
+      console.log(`Found ${publicationOptions.length} existing publication options:`, publicationOptions);
+    } else {
+      console.log('Publication field not found or has no options');
+    }
+
+    return {
+      institutions: institutionOptions,
+      publications: publicationOptions
+    };
+
+  } catch (error) {
+    console.error('Error fetching Airtable schema:', error.message);
+    console.log('Continuing without field validation...');
+    return { institutions: [], publications: [] };
+  }
 }
 
 // Convert Zotero item type to human-readable format
@@ -198,7 +254,7 @@ function formatDate(dateString) {
 }
 
 // Transform Zotero item to Airtable fields
-function transformZoteroItem(zoteroItem) {
+function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publications: [] }) {
   const data = zoteroItem.data;
 
   // Build creator names (authors, editors, etc.)
@@ -212,6 +268,10 @@ function transformZoteroItem(zoteroItem) {
     })
     .filter(name => name);
 
+  // Process Item Type for Multiple select (single value array)
+  const itemType = formatItemType(data.itemType) || '';
+  const itemTypeArray = itemType ? [itemType] : [];
+
   // Process institution field for Multiple select in Airtable
   // Different item types use different field names:
   // - Report uses 'institution'
@@ -219,42 +279,83 @@ function transformZoteroItem(zoteroItem) {
   // - Court Document uses 'court'
   let institutionValue = data.institution || data.university || data.court || '';
 
-  let institutions = [];
+  let allInstitutions = [];
   if (institutionValue) {
     // Split by semicolon or comma if multiple institutions are present
-    institutions = institutionValue
+    allInstitutions = institutionValue
       .split(/[;,]/)
       .map(inst => inst.trim())
       .filter(inst => inst);
   }
 
+  // Split institutions into valid (existing options) and new (need to be added)
+  const validInstitutions = [];
+  const newInstitutions = [];
+
+  allInstitutions.forEach(inst => {
+    if (validOptions.institutions.includes(inst)) {
+      validInstitutions.push(inst);
+    } else {
+      newInstitutions.push(inst);
+    }
+  });
+
+  // Process publication field for Multiple select in Airtable
+  const publicationValue = data.publicationTitle || data.publisher || '';
+
+  let allPublications = [];
+  if (publicationValue) {
+    // Split by semicolon or comma if multiple publications are present
+    allPublications = publicationValue
+      .split(/[;,]/)
+      .map(pub => pub.trim())
+      .filter(pub => pub);
+  }
+
+  // Split publications into valid (existing options) and new (need to be added)
+  const validPublications = [];
+  const newPublications = [];
+
+  allPublications.forEach(pub => {
+    if (validOptions.publications.includes(pub)) {
+      validPublications.push(pub);
+    } else {
+      newPublications.push(pub);
+    }
+  });
+
   // Basic mapping - adjust these field names to match your Airtable schema
   const result = {
     'Zotero Key': zoteroItem.key,
     'Title': data.title || '',
-    'Item Type': formatItemType(data.itemType) || '',
+    'Item Type': itemTypeArray,
     'Creators': creators.join('; '),
     'Abstract': data.abstractNote || '',
-    'Publication': data.publicationTitle || data.publisher || '',
+    'Publication': validPublications,
+    'Publications to add': newPublications.join(', '),
     'Date': formatDate(data.date),
     'URL': data.url || '',
     'DOI': data.DOI || '',
     'Tags': (data.tags || []).map(t => t.tag).join(', '),
     'Date Added': data.dateAdded || '',
     'Date Modified': data.dateModified || '',
-    'Institution': institutions
+    'Institution': validInstitutions,
+    'Institutions to add': newInstitutions.join(', ')
   };
 
-  // Log institution data for debugging
-  if (institutions.length > 0) {
-    console.log(`Item "${data.title}" has institutions:`, institutions);
+  // Log institution and publication data for debugging
+  if (allInstitutions.length > 0) {
+    console.log(`Item "${data.title}" - Institutions - Valid: [${validInstitutions.join(', ')}], New: [${newInstitutions.join(', ')}]`);
+  }
+  if (allPublications.length > 0) {
+    console.log(`Item "${data.title}" - Publications - Valid: [${validPublications.join(', ')}], New: [${newPublications.join(', ')}]`);
   }
 
   return result;
 }
 
 // Update or create records in Airtable
-async function syncToAirtable(zoteroItems, existingRecords) {
+async function syncToAirtable(zoteroItems, existingRecords, validOptions = { institutions: [], publications: [] }) {
   // Create a map of existing records by Zotero Key
   const existingMap = new Map();
   existingRecords.forEach(record => {
@@ -262,13 +363,13 @@ async function syncToAirtable(zoteroItems, existingRecords) {
       existingMap.set(record.fields['Zotero Key'], record);
     }
   });
-  
+
   const recordsToCreate = [];
   const recordsToUpdate = [];
-  
+
   // Determine which records need to be created or updated
   zoteroItems.forEach(zoteroItem => {
-    const fields = transformZoteroItem(zoteroItem);
+    const fields = transformZoteroItem(zoteroItem, validOptions);
     const existingRecord = existingMap.get(zoteroItem.key);
     
     if (existingRecord) {
@@ -355,14 +456,15 @@ async function main() {
     }
     
     console.log(`Syncing from Zotero ${ZOTERO_GROUP_ID ? 'group' : 'user'} library...`);
-    
+
     // Fetch data from both sources
     const zoteroItems = await fetchAllZoteroItems();
     const airtableRecords = await fetchAirtableRecords();
-    
+    const validFieldOptions = await fetchFieldOptions();
+
     // Sync to Airtable
-    await syncToAirtable(zoteroItems, airtableRecords);
-    
+    await syncToAirtable(zoteroItems, airtableRecords, validFieldOptions);
+
     console.log('Sync completed successfully!');
     
   } catch (error) {
