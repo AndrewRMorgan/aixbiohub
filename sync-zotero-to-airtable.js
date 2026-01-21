@@ -368,7 +368,6 @@ function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publ
     'Year': yearArray,
     'URL': data.url || '',
     'DOI': data.DOI || '',
-    'Tags': (data.tags || []).map(t => t.tag).join(', '),
     'Date Added': data.dateAdded || '',
     'Date Modified': data.dateModified || '',
     'Institution': validInstitutions,
