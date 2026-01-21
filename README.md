@@ -55,7 +55,6 @@ Make sure your Airtable table has these fields (or modify the script to match yo
 | Year | Multiple select |
 | URL | URL |
 | DOI | Single line text |
-| Tags | Long text |
 | Date Added | Single line text |
 | Date Modified | Single line text |
 | Institution | Multiple select |
