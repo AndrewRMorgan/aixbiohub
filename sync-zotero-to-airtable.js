@@ -320,6 +320,20 @@ function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publ
       : data.repository;
   }
 
+  // For blog posts, also include blog title
+  if (data.itemType === 'blogPost' && data.blogTitle) {
+    publicationValue = publicationValue
+      ? `${publicationValue}, ${data.blogTitle}`
+      : data.blogTitle;
+  }
+
+  // For webpages, also include website title
+  if (data.itemType === 'webpage' && data.websiteTitle) {
+    publicationValue = publicationValue
+      ? `${publicationValue}, ${data.websiteTitle}`
+      : data.websiteTitle;
+  }
+
   let allPublications = [];
   if (publicationValue) {
     // Split by semicolon or comma if multiple publications are present
