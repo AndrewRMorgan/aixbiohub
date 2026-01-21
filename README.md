@@ -161,7 +161,10 @@ The script automatically checks which institutions and publications are already 
    - In Airtable, click the "Publication" field header → "Customize field type" → Add the new publications to the options list
    - Re-run the sync - the publications will now move from "Publications to add" to "Publication"
 
-**Note:** The script pulls publication data from "publicationTitle" or falls back to "publisher" if no publication title exists. For preprint items, the "repository" field is also included in the Publication data.
+**Note:** The script pulls publication data from "publicationTitle" or falls back to "publisher" if no publication title exists. Additional fields are included based on item type:
+- **Preprints**: "repository" field is included
+- **Blog posts**: "blogTitle" field is included
+- **Webpages**: "websiteTitle" field is included
 
 ## Troubleshooting
 
