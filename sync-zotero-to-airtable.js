@@ -365,6 +365,7 @@ function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publ
     'Publication': validPublications,
     'Publications to add': newPublications.join(', '),
     'Date': formattedDate,
+    'Publication Date': formattedDate,
     'Year': yearArray,
     'URL': data.url || '',
     'DOI': data.DOI || '',

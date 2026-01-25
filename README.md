@@ -52,6 +52,7 @@ Make sure your Airtable table has these fields (or modify the script to match yo
 | Publication | Multiple select |
 | Publications to add | Long text |
 | Date | Single line text |
+| Publication Date | Date |
 | Year | Multiple select |
 | URL | URL |
 | DOI | Single line text |
@@ -63,6 +64,7 @@ Make sure your Airtable table has these fields (or modify the script to match yo
 **Important:**
 - The "Zotero Key" field is required - it's used to match records between systems.
 - The "Item Type" and "Year" fields use Multiple select. These are automatically extracted from the record data.
+- The "Publication Date" field uses Airtable's Date type and will display in a friendly format (e.g., "7 January 2025") based on your Airtable field settings.
 - The "Institution" and "Publication" fields use Multiple select. Any values not already in your dropdown options will be placed in "Institutions to add" or "Publications to add" fields.
 - To use new institutions/publications: (1) Check "Institutions to add" / "Publications to add" fields, (2) Add those values to the corresponding field dropdown options in Airtable, (3) Re-run the sync.
 
