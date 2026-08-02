@@ -1,0 +1,14 @@
+# data/library.json is written with LF by scripts/fetch-airtable.js, on Linux in
+# CI and on whatever the maintainer runs locally. Pinning the working-copy line
+# endings keeps the "has the data actually changed?" comparison honest on
+# Windows, where autocrlf would otherwise rewrite the file on checkout and make
+# every local run look like a change.
+data/library.json text eol=lf linguist-generated=true
+
+# Same reasoning for everything the build reads or emits.
+*.js   text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css  text eol=lf
+*.yml  text eol=lf
+*.md   text eol=lf

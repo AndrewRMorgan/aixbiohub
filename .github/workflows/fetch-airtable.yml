@@ -1,0 +1,60 @@
+name: Fetch Airtable data
+
+# Job 1 of 2. Pulls Airtable into data/library.json and commits it ONLY if the
+# content actually changed. That commit is what triggers deploy-pages.yml, so
+# the site rebuilds when the data moves — not on a timer of its own.
+
+on:
+  schedule:
+    # Daily at 05:15 UTC. Off the hour on purpose: GitHub delays scheduled runs
+    # that pile up on the hour mark.
+    - cron: '15 5 * * *'
+
+  # Lets you pull fresh data on demand from the Actions tab.
+  workflow_dispatch:
+
+# Needed for the commit below.
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-airtable
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch Airtable into data/library.json
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: node scripts/fetch-airtable.js
+
+      - name: Commit only if the data changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/library.json
+
+          # --cached compares the index against HEAD, so this is also correct
+          # the very first time the file is added. Exit 0 means nothing staged.
+          if git diff --cached --quiet; then
+            echo "data/library.json unchanged — nothing to commit."
+            exit 0
+          fi
+
+          echo "Changed lines:"
+          git diff --cached --stat
+
+          git commit -m "Update Airtable data"
+          git push
