@@ -13,16 +13,28 @@ const libraryPrefix = ZOTERO_GROUP_ID
   ? `groups/${ZOTERO_GROUP_ID}` 
   : `users/${ZOTERO_USER_ID}`;
 
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 // Helper function to make HTTPS requests
 function makeRequest(options, postData = null) {
   return new Promise((resolve, reject) => {
+    if (postData) {
+      options = {
+        ...options,
+        headers: {
+          ...options.headers,
+          'Content-Length': Buffer.byteLength(postData)
+        }
+      };
+    }
+
     const req = https.request(options, (res) => {
       let data = '';
-      
+
       res.on('data', (chunk) => {
         data += chunk;
       });
-      
+
       res.on('end', () => {
         if (res.statusCode >= 200 && res.statusCode < 300) {
           try {
@@ -34,21 +46,48 @@ function makeRequest(options, postData = null) {
             resolve({ data: data, headers: res.headers });
           }
         } else {
-          reject(new Error(`Request failed with status ${res.statusCode}: ${data}`));
+          const error = new Error(`Request failed with status ${res.statusCode}: ${data}`);
+          error.statusCode = res.statusCode;
+          error.body = data;
+          reject(error);
         }
       });
     });
-    
+
     req.on('error', (error) => {
       reject(error);
     });
-    
+
     if (postData) {
       req.write(postData);
     }
-    
+
     req.end();
   });
+}
+
+// Retry on rate limits (429) and transient server errors. A 4xx other than 429
+// is a request we built wrong - retrying it just wastes time, so fail fast.
+async function makeRequestWithRetry(options, postData = null, maxAttempts = 4) {
+  let lastError;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      return await makeRequest(options, postData);
+    } catch (error) {
+      lastError = error;
+
+      const retryable = error.statusCode === 429 || error.statusCode >= 500 || !error.statusCode;
+      if (!retryable || attempt === maxAttempts) break;
+
+      // Airtable blocks the base for 30s after a 429, so back off hard.
+      const backoff = error.statusCode === 429 ? 30000 : 1000 * Math.pow(2, attempt - 1);
+      console.log(`  Request failed (${error.statusCode || 'network'}), retrying in ${backoff}ms (attempt ${attempt}/${maxAttempts})`);
+      await sleep(backoff);
+    }
+  }
+
+  throw lastError;
 }
 
 // Fetch all items from Zotero with pagination
@@ -62,43 +101,47 @@ async function fetchAllZoteroItems() {
   
   while (totalResults === null || start < totalResults) {
     const options = {
+      // /items/top returns only top-level items, matching the count Zotero's UI
+      // shows. Sorting by dateAdded ascending keeps paging stable - the default
+      // dateModified sort reshuffles items between pages mid-sync, which silently
+      // skips records.
       hostname: 'api.zotero.org',
-      path: `/${libraryPrefix}/items?limit=${limit}&start=${start}`,
+      path: `/${libraryPrefix}/items/top?limit=${limit}&start=${start}&sort=dateAdded&direction=asc`,
       method: 'GET',
       headers: {
         'Zotero-API-Version': '3',
         'Zotero-API-Key': ZOTERO_API_KEY
       }
     };
-    
+
     try {
-      const response = await makeRequest(options);
+      const response = await makeRequestWithRetry(options);
       let items = response.data;
-      
-      // Filter out attachments and notes
+
+      // Standalone notes and attachments can still appear at the top level
       items = items.filter(item => {
         const itemType = item.data.itemType;
         return itemType !== 'attachment' && itemType !== 'note';
       });
-      
+
       if (totalResults === null) {
         totalResults = parseInt(response.headers['total-results'] || '0');
-        console.log(`Total items in library: ${totalResults}`);
+        console.log(`Total top-level items in library: ${totalResults}`);
       }
-      
+
       allItems.push(...items);
       start += limit;
       console.log(`Fetched ${allItems.length} items (excluding attachments/notes)`);
-      
+
       // Small delay to respect rate limits
-      await new Promise(resolve => setTimeout(resolve, 100));
-      
+      await sleep(100);
+
     } catch (error) {
       console.error(`Error fetching Zotero items at start=${start}:`, error.message);
       throw error;
     }
   }
-  
+
   return allItems;
 }
 
@@ -112,7 +155,8 @@ async function fetchAirtableRecords() {
   do {
     let path = `/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`;
     if (offset) {
-      path += `?offset=${offset}`;
+      // Offsets look like "itrAbC123/recXyZ456" and must be encoded
+      path += `?offset=${encodeURIComponent(offset)}`;
     }
 
     const options = {
@@ -126,7 +170,7 @@ async function fetchAirtableRecords() {
     };
 
     try {
-      const response = await makeRequest(options);
+      const response = await makeRequestWithRetry(options);
       allRecords.push(...response.data.records);
       offset = response.data.offset;
 
@@ -140,6 +184,18 @@ async function fetchAirtableRecords() {
 
   return allRecords;
 }
+
+// Select fields whose values must already exist as options in Airtable.
+// Sending an unknown option returns INVALID_MULTIPLE_CHOICE_OPTIONS and rejects
+// the whole batch, so every one of these needs validating before we send it.
+const SELECT_FIELDS = {
+  institutions: 'Institution',
+  publications: 'Publication',
+  itemTypes: 'Item Type',
+  years: 'Year'
+};
+
+const EMPTY_OPTIONS = { institutions: [], publications: [], itemTypes: [], years: [] };
 
 // Fetch Airtable base schema to get valid field options
 async function fetchFieldOptions() {
@@ -155,45 +211,37 @@ async function fetchFieldOptions() {
   };
 
   try {
-    const response = await makeRequest(options);
+    const response = await makeRequestWithRetry(options);
     const tables = response.data.tables;
 
     // Find our table
     const table = tables.find(t => t.name === AIRTABLE_TABLE_NAME);
     if (!table) {
       console.log(`Table "${AIRTABLE_TABLE_NAME}" not found in schema`);
-      return { institutions: [], publications: [] };
+      return { ...EMPTY_OPTIONS };
     }
 
-    // Find the Institution field
-    const institutionField = table.fields.find(f => f.name === 'Institution');
-    const institutionOptions = [];
-    if (institutionField && institutionField.options && institutionField.options.choices) {
-      institutionOptions.push(...institutionField.options.choices.map(choice => choice.name));
-      console.log(`Found ${institutionOptions.length} existing institution options:`, institutionOptions);
-    } else {
-      console.log('Institution field not found or has no options');
+    const result = {};
+
+    for (const [key, fieldName] of Object.entries(SELECT_FIELDS)) {
+      const field = table.fields.find(f => f.name === fieldName);
+      const choices = field && field.options && field.options.choices;
+
+      if (choices) {
+        result[key] = choices.map(choice => choice.name);
+        console.log(`Found ${result[key].length} existing "${fieldName}" options`);
+      } else {
+        result[key] = [];
+        console.log(`Field "${fieldName}" not found or has no options`);
+      }
     }
 
-    // Find the Publication field
-    const publicationField = table.fields.find(f => f.name === 'Publication');
-    const publicationOptions = [];
-    if (publicationField && publicationField.options && publicationField.options.choices) {
-      publicationOptions.push(...publicationField.options.choices.map(choice => choice.name));
-      console.log(`Found ${publicationOptions.length} existing publication options:`, publicationOptions);
-    } else {
-      console.log('Publication field not found or has no options');
-    }
-
-    return {
-      institutions: institutionOptions,
-      publications: publicationOptions
-    };
+    return result;
 
   } catch (error) {
     console.error('Error fetching Airtable schema:', error.message);
     console.log('Continuing without field validation...');
-    return { institutions: [], publications: [] };
+    return { ...EMPTY_OPTIONS };
   }
 }
 
@@ -214,9 +262,12 @@ function formatItemType(itemType) {
   return itemTypeMap[itemType] || itemType;
 }
 
-// Convert various date formats to YYYY-MM-DD
+// Convert various date formats to YYYY-MM-DD, or null if there is no usable
+// date. Never return a partial or unparseable string: "Publication Date" is a
+// real Airtable Date column and anything it can't parse rejects the entire
+// 10-record batch.
 function formatDate(dateString) {
-  if (!dateString) return '';
+  if (!dateString) return null;
 
   // Try to parse the date
   let date = new Date(dateString);
@@ -241,20 +292,44 @@ function formatDate(dateString) {
         return `${year}-01-01`;
       }
     }
-    // If we can't parse it, return the original string
-    return dateString;
+    // Free text like "n.d." or "forthcoming" - no date at all
+    return null;
   }
 
-  // Format as YYYY-MM-DD
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
+  // Format as YYYY-MM-DD (UTC, so the runner's timezone can't shift the day)
+  const year = date.getUTCFullYear();
+  const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(date.getUTCDate()).padStart(2, '0');
 
   return `${year}-${month}-${day}`;
 }
 
+// Select values dropped because the option doesn't exist in Airtable yet.
+// Reported as a summary at the end of the run so they can be added.
+const skippedSelectValues = {};
+
+function recordSkippedOption(fieldName, value) {
+  if (!skippedSelectValues[fieldName]) {
+    skippedSelectValues[fieldName] = new Set();
+  }
+  skippedSelectValues[fieldName].add(value);
+}
+
+// Keep only values that already exist as options on the Airtable select field.
+// If the schema fetch failed we have no option list, so pass values through
+// rather than silently blanking every select in the table.
+function filterToValidOptions(values, allowed, fieldName) {
+  if (!allowed || allowed.length === 0) return values;
+
+  return values.filter(value => {
+    if (allowed.includes(value)) return true;
+    recordSkippedOption(fieldName, value);
+    return false;
+  });
+}
+
 // Transform Zotero item to Airtable fields
-function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publications: [] }) {
+function transformZoteroItem(zoteroItem, validOptions = EMPTY_OPTIONS) {
   const data = zoteroItem.data;
 
   // Build creator names (authors, editors, etc.)
@@ -268,9 +343,15 @@ function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publ
     })
     .filter(name => name);
 
-  // Process Item Type for Multiple select (single value array)
+  // Process Item Type for Multiple select (single value array). Zotero types
+  // with no entry in itemTypeMap fall through as-is (e.g. "document"), so this
+  // still has to be checked against the real options.
   const itemType = formatItemType(data.itemType) || '';
-  const itemTypeArray = itemType ? [itemType] : [];
+  const itemTypeArray = filterToValidOptions(
+    itemType ? [itemType] : [],
+    validOptions.itemTypes,
+    'Item Type'
+  );
 
   // Extract year from date for Year field (Multiple select)
   const formattedDate = formatDate(data.date);
@@ -281,6 +362,7 @@ function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publ
       yearArray = [yearMatch[1]];
     }
   }
+  yearArray = filterToValidOptions(yearArray, validOptions.years, 'Year');
 
   // Process institution field for Multiple select in Airtable
   // Different item types use different field names:
@@ -364,7 +446,7 @@ function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publ
     'Abstract': data.abstractNote || '',
     'Publication': validPublications,
     'Publications to add': newPublications.join(', '),
-    'Date': formattedDate,
+    'Date': formattedDate || '',
     'Publication Date': formattedDate,
     'Year': yearArray,
     'URL': data.url || '',
@@ -375,21 +457,84 @@ function transformZoteroItem(zoteroItem, validOptions = { institutions: [], publ
     'Institutions to add': newInstitutions.join(', ')
   };
 
-  // Log institution and publication data for debugging
-  if (allInstitutions.length > 0) {
-    console.log(`Item "${data.title}" - Institutions - Valid: [${validInstitutions.join(', ')}], New: [${newInstitutions.join(', ')}]`);
-  }
-  if (allPublications.length > 0) {
-    console.log(`Item "${data.title}" - Publications - Valid: [${validPublications.join(', ')}], New: [${newPublications.join(', ')}]`);
-  }
+  // Drop keys with no value. Airtable's Date columns reject "" outright, and
+  // omitting a field is always safe - it just leaves the cell untouched.
+  Object.keys(result).forEach(key => {
+    if (result[key] === null || result[key] === undefined) {
+      delete result[key];
+    }
+  });
 
   return result;
 }
 
+// Airtable omits empty fields from responses entirely, so an absent value and
+// an empty array/string mean the same thing. Arrays are compared by content -
+// comparing them with !== compares references, which is always true.
+function normalizeForCompare(value) {
+  if (value === null || value === undefined) return '';
+  if (Array.isArray(value)) return [...value].map(String).sort().join('|');
+  return String(value);
+}
+
+function findChangedField(existingFields, newFields) {
+  return Object.keys(newFields).find(
+    key => normalizeForCompare(existingFields[key]) !== normalizeForCompare(newFields[key])
+  );
+}
+
+// Write records to Airtable in batches of 10. Airtable batches are all-or-
+// nothing, so when a batch is rejected we retry its records one at a time -
+// that way a single bad record costs one record instead of ten.
+async function writeRecords(method, records, verb) {
+  const stats = { succeeded: 0, failed: 0, errors: [] };
+
+  const options = {
+    hostname: 'api.airtable.com',
+    path: `/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`,
+    method: method,
+    headers: {
+      'Authorization': `Bearer ${AIRTABLE_API_KEY}`,
+      'Content-Type': 'application/json'
+    }
+  };
+
+  for (let i = 0; i < records.length; i += 10) {
+    const batch = records.slice(i, i + 10);
+    const rangeLabel = `${i + 1} to ${Math.min(i + 10, records.length)}`;
+
+    try {
+      await makeRequestWithRetry(options, JSON.stringify({ records: batch }));
+      stats.succeeded += batch.length;
+      console.log(`${verb} records ${rangeLabel}`);
+    } catch (error) {
+      console.error(`Batch ${rangeLabel} rejected, retrying individually: ${error.message}`);
+
+      for (const record of batch) {
+        try {
+          await makeRequestWithRetry(options, JSON.stringify({ records: [record] }));
+          stats.succeeded += 1;
+        } catch (recordError) {
+          stats.failed += 1;
+          const title = record.fields['Title'] || record.fields['Zotero Key'] || '(untitled)';
+          console.error(`  FAILED: "${title}" - ${recordError.message}`);
+          stats.errors.push(`${title}: ${recordError.message}`);
+        }
+        await sleep(200); // Rate limiting
+      }
+    }
+
+    await sleep(200); // Rate limiting
+  }
+
+  return stats;
+}
+
 // Update or create records in Airtable
-async function syncToAirtable(zoteroItems, existingRecords, validOptions = { institutions: [], publications: [] }) {
+async function syncToAirtable(zoteroItems, existingRecords, validOptions = EMPTY_OPTIONS) {
   // Create a map of existing records by Zotero Key
   const existingMap = new Map();
+  const matchedKeys = new Set();
   existingRecords.forEach(record => {
     if (record.fields['Zotero Key']) {
       existingMap.set(record.fields['Zotero Key'], record);
@@ -398,20 +543,19 @@ async function syncToAirtable(zoteroItems, existingRecords, validOptions = { ins
 
   const recordsToCreate = [];
   const recordsToUpdate = [];
+  const changeReasons = {};
 
   // Determine which records need to be created or updated
   zoteroItems.forEach(zoteroItem => {
     const fields = transformZoteroItem(zoteroItem, validOptions);
     const existingRecord = existingMap.get(zoteroItem.key);
-    
-    if (existingRecord) {
-      // Check if update is needed (compare date modified, item type, or date format)
-      const needsUpdate =
-        existingRecord.fields['Date Modified'] !== fields['Date Modified'] ||
-        existingRecord.fields['Item Type'] !== fields['Item Type'] ||
-        existingRecord.fields['Date'] !== fields['Date'];
 
-      if (needsUpdate) {
+    if (existingRecord) {
+      matchedKeys.add(zoteroItem.key);
+
+      const changedField = findChangedField(existingRecord.fields, fields);
+      if (changedField) {
+        changeReasons[changedField] = (changeReasons[changedField] || 0) + 1;
         recordsToUpdate.push({
           id: existingRecord.id,
           fields: fields
@@ -421,59 +565,29 @@ async function syncToAirtable(zoteroItems, existingRecords, validOptions = { ins
       recordsToCreate.push({ fields: fields });
     }
   });
-  
+
   console.log(`Records to create: ${recordsToCreate.length}`);
   console.log(`Records to update: ${recordsToUpdate.length}`);
-  
-  // Create new records (Airtable allows up to 10 per request)
-  if (recordsToCreate.length > 0) {
-    for (let i = 0; i < recordsToCreate.length; i += 10) {
-      const batch = recordsToCreate.slice(i, i + 10);
-      
-      const options = {
-        hostname: 'api.airtable.com',
-        path: `/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`,
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${AIRTABLE_API_KEY}`,
-          'Content-Type': 'application/json'
-        }
-      };
-      
-      try {
-        await makeRequest(options, JSON.stringify({ records: batch }));
-        console.log(`Created records ${i + 1} to ${Math.min(i + 10, recordsToCreate.length)}`);
-        await new Promise(resolve => setTimeout(resolve, 200)); // Rate limiting
-      } catch (error) {
-        console.error(`Error creating records:`, error.message);
-      }
-    }
-  }
-  
-  // Update existing records (Airtable allows up to 10 per request)
+
+  // If one field is driving nearly every update, it's a formatting mismatch
+  // between what we send and what Airtable stores, not real churn.
   if (recordsToUpdate.length > 0) {
-    for (let i = 0; i < recordsToUpdate.length; i += 10) {
-      const batch = recordsToUpdate.slice(i, i + 10);
-      
-      const options = {
-        hostname: 'api.airtable.com',
-        path: `/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`,
-        method: 'PATCH',
-        headers: {
-          'Authorization': `Bearer ${AIRTABLE_API_KEY}`,
-          'Content-Type': 'application/json'
-        }
-      };
-      
-      try {
-        await makeRequest(options, JSON.stringify({ records: batch }));
-        console.log(`Updated records ${i + 1} to ${Math.min(i + 10, recordsToUpdate.length)}`);
-        await new Promise(resolve => setTimeout(resolve, 200)); // Rate limiting
-      } catch (error) {
-        console.error(`Error updating records:`, error.message);
-      }
-    }
+    const reasons = Object.entries(changeReasons)
+      .sort((a, b) => b[1] - a[1])
+      .map(([field, count]) => `${field} (${count})`);
+    console.log(`Updates triggered by: ${reasons.join(', ')}`);
   }
+
+  const created = await writeRecords('POST', recordsToCreate, 'Created');
+  const updated = await writeRecords('PATCH', recordsToUpdate, 'Updated');
+
+  // Airtable rows whose Zotero item no longer exists (or that have no key).
+  // Reported only - deleting them is your call, not the script's.
+  const orphans = existingRecords.filter(
+    record => !record.fields['Zotero Key'] || !matchedKeys.has(record.fields['Zotero Key'])
+  );
+
+  return { created, updated, orphans };
 }
 
 // Main sync function
@@ -495,12 +609,43 @@ async function main() {
     const validFieldOptions = await fetchFieldOptions();
 
     // Sync to Airtable
-    await syncToAirtable(zoteroItems, airtableRecords, validFieldOptions);
+    const { created, updated, orphans } = await syncToAirtable(
+      zoteroItems,
+      airtableRecords,
+      validFieldOptions
+    );
 
-    console.log('Sync completed successfully!');
-    
+    console.log('\n--- Summary ---');
+    console.log(`Zotero items:      ${zoteroItems.length}`);
+    console.log(`Airtable records:  ${airtableRecords.length}`);
+    console.log(`Created:           ${created.succeeded} (${created.failed} failed)`);
+    console.log(`Updated:           ${updated.succeeded} (${updated.failed} failed)`);
+
+    if (orphans.length > 0) {
+      console.log(`\n${orphans.length} Airtable record(s) with no matching Zotero item:`);
+      orphans.forEach(record => {
+        console.log(`  - ${record.fields['Title'] || record.id} (key: ${record.fields['Zotero Key'] || 'none'})`);
+      });
+    }
+
+    const skippedFields = Object.keys(skippedSelectValues);
+    if (skippedFields.length > 0) {
+      console.log('\nSelect values dropped - add these options in Airtable to sync them:');
+      skippedFields.forEach(field => {
+        const values = [...skippedSelectValues[field]].sort();
+        console.log(`  ${field}: ${values.join(', ')}`);
+      });
+    }
+
+    const totalFailed = created.failed + updated.failed;
+    if (totalFailed > 0) {
+      throw new Error(`${totalFailed} record(s) could not be written to Airtable`);
+    }
+
+    console.log('\nSync completed successfully!');
+
   } catch (error) {
-    console.error('Sync failed:', error);
+    console.error('Sync failed:', error.message || error);
     process.exit(1);
   }
 }
