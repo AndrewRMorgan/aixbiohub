@@ -1,0 +1,16 @@
+{
+  "siteName": "AIxBio Research Hub",
+  "domain": "aixbiohub.com",
+
+  "//customDomain": "Written to dist/CNAME. Set to null to publish at the default *.github.io URL instead.",
+  "customDomain": "aixbiohub.com",
+
+  "//litmapsUrl": "External citation map — opens in a new tab from the nav and the landing page.",
+  "litmapsUrl": "https://app.litmaps.com/shared/b268a3d3-32ff-4102-b1dd-694af79d979c",
+
+  "//suggestFormUrl": "TODO: paste the shared Airtable form URL for the 'User submitted' table here. Until it is set, the 'Suggest research' panel is omitted from the landing page.",
+  "suggestFormUrl": null,
+
+  "//prerenderResults": "Render every research card into research/index.html at build time, so the page has real content for search engines and works without JavaScript. Costs roughly 90KB gzipped at 250 records and grows with the library. Set to false to let JavaScript render the list instead.",
+  "prerenderResults": true
+}

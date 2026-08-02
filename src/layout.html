@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body{{BODY_CLASS}}>
+<header class="top">
+  <a class="logo" href="/"><span class="dot"></span><span class="name">AIxBio <span>Research Hub</span></span></a>
+  <nav class="top-nav">
+    <a{{NAV_RESEARCH}} href="/research/">Database</a>
+    <a{{NAV_RESOURCES}} href="/suggestedresources/">Resources</a>
+    <a{{NAV_NEWSLETTERS}} href="/newsletters/">Organisations</a>
+    <a href="{{LITMAPS_URL}}" target="_blank" rel="noopener">Litmaps</a>
+  </nav>
+</header>
+<div class="wrap{{WRAP_CLASS}}">
+{{BODY}}
+  <footer>&copy; {{YEAR}} {{SITE_NAME}} &middot; {{DOMAIN}}</footer>
+</div>
+{{SCRIPTS}}
+</body>
+</html>

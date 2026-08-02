@@ -1,0 +1,30 @@
+  <section class="hero">
+    <div class="eyebrow"><span class="dot"></span>RESEARCH DATABASE</div>
+    <h1>Browse the AI &times; biology research landscape</h1>
+    <p>A structured, searchable catalogue of papers, reports, and preprints on the risks and implications at the intersection of AI and biology.</p>
+  </section>
+  <div class="layout">
+    <aside class="panel" id="facets" aria-label="Filters"></aside>
+    <main>
+      <div class="toolbar">
+        <div class="search-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <label class="visually-hidden" for="search">Search the database</label>
+          <input id="search" type="search" autocomplete="off" placeholder="Search titles, authors, abstracts&hellip;">
+        </div>
+        <label class="visually-hidden" for="sort">Sort order</label>
+        <select id="sort">
+          <option value="best">Best match</option>
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="title">Title A&ndash;Z</option>
+        </select>
+      </div>
+      <div id="chips" class="chips"></div>
+      <div class="result-meta"><span id="count" role="status">{{RESEARCH_COUNT}} entries</span></div>
+      <noscript>
+        <div class="empty noscript-note">Search and filtering need JavaScript. The full catalogue of {{RESEARCH_COUNT}} entries is listed below.</div>
+      </noscript>
+      <div id="results" class="results">{{RESEARCH_FALLBACK}}</div>
+    </main>
+  </div>
