@@ -1,198 +1,206 @@
-# Zotero to Airtable Sync
+# AIxBio Research Hub
 
-Automatically syncs research items from Zotero to Airtable every 12 hours using GitHub Actions.
+The static site behind **aixbiohub.com**, published on GitHub Pages.
 
-## Features
+Four pages, no runtime backend:
 
-- ✅ Handles pagination to fetch all Zotero items (no 100-item limit)
-- ✅ Creates new records in Airtable for new Zotero items
-- ✅ Updates existing Airtable records when Zotero items are modified
-- ✅ Runs automatically every 12 hours
-- ✅ Can be triggered manually
-- ✅ Uses no external dependencies (pure Node.js)
+| URL | Page | Content source |
+|---|---|---|
+| `/` | Landing | Hand-authored (`src/pages/index.html`) |
+| `/research/` | Research Database | Airtable → `data/library.json` |
+| `/newsletters/` | Organisations & Newsletters | Airtable → `data/library.json` |
+| `/suggestedresources/` | Recommended Resources | Hand-authored (`src/pages/suggestedresources.html`) |
 
-## Setup Instructions
+These paths deliberately match the old Softr URLs so existing links keep working.
 
-### 1. Get Your API Credentials
+**The published site makes zero Airtable requests.** Airtable is contacted only by
+`scripts/fetch-airtable.js`, which runs in GitHub Actions. Visitors get static HTML
+plus a baked-in `research-data.js`; all searching and filtering happens in their browser.
 
-#### Zotero
-1. Go to https://www.zotero.org/settings/keys
-2. Create a new API key with read permissions for your group
-3. For a **User Library**: Note your **User ID** (shown on the same page)
-4. For a **Group Library**: 
-   - Go to your group page: https://www.zotero.org/groups/
-   - Click on your group (e.g., "aixbiohub")
-   - Look at the URL: `https://www.zotero.org/groups/12345/groupname`
-   - The number (12345) is your Group ID
-5. Save your **API Key**
+---
 
-#### Airtable
-1. Go to https://airtable.com/create/tokens
-2. Create a personal access token with these scopes:
-   - `data.records:read`
-   - `data.records:write`
-   - `schema.bases:read`
-3. Add access to your base
-4. Save your **API Key**
-5. Get your **Base ID** from your Airtable URL: `https://airtable.com/appXXXXXXXXXXXXXX/...`
-   (The part starting with `app` is your Base ID)
-6. Note your **Table Name** (e.g., "Research")
+## How it works
 
-### 2. Set Up Your Airtable Table
-
-Make sure your Airtable table has these fields (or modify the script to match your schema):
-
-| Field Name | Type |
-|------------|------|
-| Zotero Key | Single line text |
-| Title | Single line text |
-| Item Type | Multiple select |
-| Creators | Long text |
-| Abstract | Long text |
-| Publication | Multiple select |
-| Publications to add | Long text |
-| Date | Single line text |
-| Publication Date | Date |
-| Year | Multiple select |
-| URL | URL |
-| DOI | Single line text |
-| Date Added | Single line text |
-| Date Modified | Single line text |
-| Institution | Multiple select |
-| Institutions to add | Long text |
-
-**Important:**
-- The "Zotero Key" field is required - it's used to match records between systems.
-- The "Item Type" and "Year" fields use Multiple select. These are automatically extracted from the record data.
-- The "Publication Date" field uses Airtable's Date type and will display in a friendly format (e.g., "7 January 2025") based on your Airtable field settings.
-- The "Institution" and "Publication" fields use Multiple select. Any values not already in your dropdown options will be placed in "Institutions to add" or "Publications to add" fields.
-- To use new institutions/publications: (1) Check "Institutions to add" / "Publications to add" fields, (2) Add those values to the corresponding field dropdown options in Airtable, (3) Re-run the sync.
-
-### 3. Create a GitHub Repository
-
-1. Create a new repository on GitHub (can be private)
-2. Clone it to your computer
-3. Copy these files into your repository:
-   - `sync-zotero-to-airtable.js`
-   - `.github/workflows/sync.yml`
-
-### 4. Add Secrets to GitHub
-
-1. Go to your repository on GitHub
-2. Click **Settings** → **Secrets and variables** → **Actions**
-3. Click **New repository secret** and add these secrets:
-
-| Secret Name | Value |
-|-------------|-------|
-| ZOTERO_USER_ID | Your Zotero User ID |
-| ZOTERO_API_KEY | Your Zotero API Key |
-| AIRTABLE_API_KEY | Your Airtable API Key |
-| AIRTABLE_BASE_ID | Your Airtable Base ID (starts with "app") |
-| AIRTABLE_TABLE_NAME | Your table name (e.g., "Research") |
-
-### 5. Push to GitHub
-
-```bash
-git add .
-git commit -m "Initial commit: Zotero to Airtable sync"
-git push origin main
+```
+Airtable  ──(daily cron)──►  fetch-airtable.yml
+                                    │  scripts/fetch-airtable.js
+                                    ▼
+                             data/library.json
+                                    │  committed ONLY if the content changed
+                                    ▼
+                              push to main
+                                    │
+                                    ▼
+                             deploy-pages.yml
+                                    │  scripts/build.js
+                                    ▼
+                                  dist/  ──►  GitHub Pages
 ```
 
-### 6. Verify It's Working
+Two separate workflows, on purpose:
 
-1. Go to the **Actions** tab in your GitHub repository
-2. Click on **Sync Zotero to Airtable** workflow
-3. Click **Run workflow** to test it manually
-4. Watch the logs to see if it completes successfully
+- **[`fetch-airtable.yml`](.github/workflows/fetch-airtable.yml)** — daily cron. Fetches every
+  record (following Airtable's `offset` cursor, so nothing is truncated at 100), writes
+  `data/library.json`, and commits it **only if `git diff` shows a real change**. No empty commits.
+- **[`deploy-pages.yml`](.github/workflows/deploy-pages.yml)** — runs on push to `main`. Builds
+  `dist/` and deploys. Because the fetch job's commit *is* a push, a data change is what
+  triggers the redeploy — there is no independent build timer.
 
-The sync will now run automatically every 12 hours!
+`data/library.json` is written deterministically (sorted keys, stable record order, no
+timestamps) so a diff on that file only ever reflects genuine content changes.
 
-## Customization
+---
 
-### Change Sync Schedule
+## One-time setup
 
-Edit `.github/workflows/sync.yml` and modify the cron schedule:
+### 1. Add the secret
+
+**Settings → Secrets and variables → Actions → New repository secret**
+
+| Secret | Value |
+|---|---|
+| `AIRTABLE_TOKEN` | An Airtable personal access token with the `data.records:read` scope and access to base `appAHRsnSatd4AJpf` |
+
+That's the only secret the website pipeline needs. (The separate Zotero sync uses its own
+secrets — see [docs/zotero-airtable-sync.md](docs/zotero-airtable-sync.md).)
+
+The base ID is hardcoded as a default in the script; override it with an optional
+`AIRTABLE_BASE_ID` secret if it ever changes.
+
+### 2. Turn on GitHub Pages
+
+**Settings → Pages → Build and deployment → Source: `GitHub Actions`**
+
+That is the *entire* dashboard configuration. Do **not** pick "Deploy from a branch" —
+there is no build command or output directory to fill in, because the workflow builds the
+site itself and uploads `dist/` as a Pages artifact.
+
+### 3. Point the domain (optional)
+
+`src/site.config.json` sets `customDomain`, which the build writes to `dist/CNAME`. To go live
+on `aixbiohub.com`, set these DNS records at your registrar:
+
+| Type | Name | Value |
+|---|---|---|
+| `A` | `@` | `185.199.108.153` |
+| `A` | `@` | `185.199.109.153` |
+| `A` | `@` | `185.199.110.153` |
+| `A` | `@` | `185.199.111.153` |
+| `CNAME` | `www` | `andrewrmorgan.github.io` |
+
+Then **Settings → Pages → Custom domain**, enter `aixbiohub.com`, and tick **Enforce HTTPS**
+once the certificate is issued (usually within an hour).
+
+Until you're ready to move the domain off Softr, set `"customDomain": null` in
+`src/site.config.json`. The site will publish at `https://andrewrmorgan.github.io/aixbiohub/`
+instead — note that internal links are root-absolute (`/research/`), so they will point at the
+wrong place on that URL. The default Pages URL is fine for confirming the build succeeded;
+use the custom domain for real testing.
+
+### 4. Wire up the "Suggest research" panel
+
+`suggestFormUrl` in `src/site.config.json` is `null`, so the panel is currently **omitted from
+the landing page** — a dead button is worse than no button. To enable it:
+
+1. In Airtable, create a form view on the **User submitted** table and copy its share URL.
+2. Paste it into `src/site.config.json` as `"suggestFormUrl"`.
+3. Commit. The panel appears on the next deploy.
+
+---
+
+## Running it locally
+
+Requires [Node.js](https://nodejs.org) 18 or newer. No `npm install` — the pipeline has zero
+dependencies, and Fuse.js is vendored at `src/assets/vendor/fuse.min.js`.
+
+**Build the site from the data already in the repo:**
+
+```bash
+node scripts/build.js
+```
+
+**Preview it** on <http://localhost:4173> (the pages use root-absolute links, so `dist/` has to
+be served at a domain root — opening the files directly gives broken navigation):
+
+```bash
+node scripts/serve.js
+```
+
+**Refresh the data from Airtable first** (optional — only needed if you want the very latest):
+
+```bash
+AIRTABLE_TOKEN=pat... node scripts/fetch-airtable.js
+```
+
+On PowerShell:
+
+```bash
+$env:AIRTABLE_TOKEN="pat..."; node scripts/fetch-airtable.js
+```
+
+The fetch script leaves `data/library.json` untouched when the content is identical, so you can
+run it freely without creating spurious diffs.
+
+---
+
+## Changing the schedule
+
+Edit the `cron` line in [`.github/workflows/fetch-airtable.yml`](.github/workflows/fetch-airtable.yml):
 
 ```yaml
 schedule:
-  # Examples:
-  - cron: '0 */6 * * *'   # Every 6 hours
-  - cron: '0 0 * * *'     # Once daily at midnight UTC
-  - cron: '0 9,21 * * *'  # Twice daily at 9 AM and 9 PM UTC
+  - cron: '15 5 * * *'      # daily at 05:15 UTC  (current)
+  - cron: '15 5 * * 1'      # weekly, Mondays
+  - cron: '15 5,17 * * *'   # twice daily
+  - cron: '15 */6 * * *'    # every 6 hours
 ```
 
-### Modify Field Mappings
+Times are UTC and GitHub does not adjust for BST. Keep the minute off `:00` — scheduled runs
+that land on the hour are the most likely to be delayed. You can also trigger a fetch any time
+from **Actions → Fetch Airtable data → Run workflow**.
 
-Edit `sync-zotero-to-airtable.js` and modify the `transformZoteroItem()` function to match your Airtable schema.
+---
 
-### Filter Zotero Items
+## Repository layout
 
-To sync only specific collections or tags, modify the API path in `fetchAllZoteroItems()`:
-
-```javascript
-// Sync only a specific collection
-path: `/users/${ZOTERO_USER_ID}/collections/COLLECTIONKEY/items?limit=${limit}&start=${start}`,
-
-// Sync only items with a specific tag
-path: `/users/${ZOTERO_USER_ID}/items?tag=website&limit=${limit}&start=${start}`,
+```
+data/library.json          Committed Airtable snapshot. Generated — don't hand-edit.
+scripts/fetch-airtable.js  Airtable → data/library.json (pagination, deterministic output)
+scripts/build.js           data/library.json + src/ → dist/
+scripts/serve.js           Local preview server for dist/
+src/site.config.json       Domain, Litmaps URL, suggest-form URL
+src/layout.html            Shared shell: head, header, nav, footer
+src/pages/*.html           Per-page body content
+src/assets/site.css        All styling for all four pages
+src/assets/research.js     Search, faceting and sorting for the database page
+src/assets/vendor/         Fuse.js 7.0.0 (vendored, not fetched from a CDN)
+dist/                      Build output. Gitignored.
 ```
 
-### Managing Multiple Select Field Options
+### Restyling
 
-The script automatically checks which institutions and publications are already configured in your Airtable Multiple select fields:
+Everything visual is in `src/assets/site.css`. The design tokens at the top of that file
+(`--ink`, `--paper`, `--acc`, …) drive the whole palette; the rest of the file is grouped by
+page with comments. The generated markup uses stable, readable class names — the card template
+in `scripts/build.js` (`researchCard`) and the one in `src/assets/research.js` (`card`)
+produce identical HTML, so if you change one, change the other to match.
 
-#### For Institutions:
+### Why the research page renders twice
 
-1. **When a new institution is found** in Zotero that doesn't match existing Airtable options, it will be added to "Institutions to add"
-2. **To add new institutions**:
-   - Run the sync and check the "Institutions to add" field for any records
-   - In Airtable, click the "Institution" field header → "Customize field type" → Add the new institutions to the options list
-   - Re-run the sync - the institutions will now move from "Institutions to add" to "Institution"
+The database page ships server-rendered cards *and* the full dataset. The pre-rendered cards
+mean content is visible immediately and the page still works with JavaScript disabled or for a
+crawler; `research-data.js` is what makes client-side search and faceting possible. Sorting is
+"Best match" while there's a search query and newest-first otherwise.
 
-**Note:** The script pulls institution data from different Zotero fields depending on item type:
-- Reports use the "institution" field
-- Theses use the "university" field
-- Court documents use the "court" field
+At 247 records that costs about 193 KB gzipped for the page, roughly half of it the
+pre-rendered half. If the library grows to the point where that hurts, set
+`"prerenderResults": false` in `src/site.config.json` — the page then renders entirely in the
+browser and drops to about 100 KB, at the cost of the no-JS fallback and crawlable abstracts.
 
-#### For Publications:
+---
 
-1. **When a new publication is found** in Zotero that doesn't match existing Airtable options, it will be added to "Publications to add"
-2. **To add new publications**:
-   - Run the sync and check the "Publications to add" field for any records
-   - In Airtable, click the "Publication" field header → "Customize field type" → Add the new publications to the options list
-   - Re-run the sync - the publications will now move from "Publications to add" to "Publication"
+## Other pipelines in this repo
 
-**Note:** The script pulls publication data from "publicationTitle" or falls back to "publisher" if no publication title exists. Additional fields are included based on item type:
-- **Preprints**: "repository" field is included
-- **Blog posts**: "blogTitle" field is included
-- **Webpages**: "websiteTitle" field is included
-
-## Troubleshooting
-
-### Sync fails with "Missing required environment variables"
-- Check that all secrets are added in GitHub Settings → Secrets
-
-### No records are created in Airtable
-- Verify your Airtable Base ID and Table Name are correct
-- Check that the Airtable token has write permissions
-- Ensure field names in the script match your Airtable table
-
-### Rate limiting errors
-- The script includes delays to respect API limits
-- If you have many items, the sync might take several minutes
-
-### View sync logs
-1. Go to **Actions** tab in GitHub
-2. Click on a workflow run
-3. Click on the "sync" job to see detailed logs
-
-## Manual Trigger
-
-You can manually trigger a sync anytime:
-1. Go to **Actions** tab
-2. Click **Sync Zotero to Airtable**
-3. Click **Run workflow**
-
-## License
-
-MIT
+[**Zotero → Airtable sync**](docs/zotero-airtable-sync.md) — `sync-zotero-to-airtable.js` and
+`.github/workflows/sync.yml` keep the Airtable **Research** table populated from Zotero. That
+runs upstream of everything above and is documented separately.
