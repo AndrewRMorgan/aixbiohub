@@ -16,6 +16,18 @@ const path = require('path');
 const DIST = path.join(__dirname, '..', 'dist');
 const PORT = Number(process.env.PORT) || 4173;
 
+// Mirror the deployed sub-path locally. Serving at the root while production
+// serves under /aixbiohub is exactly how a broken base path reaches the site
+// unnoticed — every link works on localhost and 404s once deployed.
+const config = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '..', 'src', 'site.config.json'), 'utf8')
+);
+const BASE = config.customDomain
+  ? ''
+  : String(process.env.BASE_PATH || config.basePath || '')
+      .trim()
+      .replace(/\/+$/, '');
+
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
@@ -33,7 +45,21 @@ if (!fs.existsSync(DIST)) {
 
 http
   .createServer((req, res) => {
-    const urlPath = decodeURIComponent(req.url.split('?')[0]);
+    let urlPath = decodeURIComponent(req.url.split('?')[0]);
+
+    // Anything outside the base path does not exist in production either.
+    if (BASE) {
+      if (urlPath === BASE) {
+        res.writeHead(302, { Location: BASE + '/' }).end();
+        return;
+      }
+      if (!urlPath.startsWith(BASE + '/')) {
+        res.writeHead(404, { 'Content-Type': 'text/plain' });
+        res.end(`Not found. This site is served under ${BASE}/`);
+        return;
+      }
+      urlPath = urlPath.slice(BASE.length);
+    }
 
     // Resolve inside DIST and reject anything that escapes it.
     let file = path.join(DIST, urlPath);
@@ -63,5 +89,5 @@ http
     res.end(fs.readFileSync(file));
   })
   .listen(PORT, () => {
-    console.log(`Serving dist/ at http://localhost:${PORT}`);
+    console.log(`Serving dist/ at http://localhost:${PORT}${BASE}/`);
   });
