@@ -77,8 +77,12 @@ site itself and uploads `dist/` as a Pages artifact.
 
 ### 3. Point the domain (optional)
 
-`src/site.config.json` sets `customDomain`, which the build writes to `dist/CNAME`. To go live
-on `aixbiohub.com`, set these DNS records at your registrar:
+The site currently publishes at **<https://andrewrmorgan.github.io/aixbiohub/>**, a project
+Pages URL served from the `/aixbiohub` sub-path. `basePath` in `src/site.config.json` carries
+that prefix into every link and asset URL. Get it wrong and the pages render as unstyled HTML,
+because `/assets/site.css` resolves against the wrong origin.
+
+To go live on `aixbiohub.com`, set these DNS records at your registrar:
 
 | Type | Name | Value |
 |---|---|---|
@@ -88,14 +92,16 @@ on `aixbiohub.com`, set these DNS records at your registrar:
 | `A` | `@` | `185.199.111.153` |
 | `CNAME` | `www` | `andrewrmorgan.github.io` |
 
-Then **Settings → Pages → Custom domain**, enter `aixbiohub.com`, and tick **Enforce HTTPS**
-once the certificate is issued (usually within an hour).
+Wait for DNS to propagate, then **Settings → Pages → Custom domain**, enter `aixbiohub.com`,
+and tick **Enforce HTTPS** once the certificate is issued (usually within an hour).
 
-Until you're ready to move the domain off Softr, set `"customDomain": null` in
-`src/site.config.json`. The site will publish at `https://andrewrmorgan.github.io/aixbiohub/`
-instead — note that internal links are root-absolute (`/research/`), so they will point at the
-wrong place on that URL. The default Pages URL is fine for confirming the build succeeded;
-use the custom domain for real testing.
+Only then set `"customDomain": "aixbiohub.com"` in `src/site.config.json`. That is the whole
+cutover — a custom domain serves from the root, so the build ignores `basePath` and emits
+root-relative URLs automatically. Don't set both by hand.
+
+Setting `customDomain` before the DNS records resolve does nothing useful: GitHub silently
+ignores a `CNAME` file it can't verify, and the site keeps serving from the sub-path with
+root-relative links that 404.
 
 ### 4. Wire up the "Suggest research" panel
 
@@ -119,12 +125,15 @@ dependencies, and Fuse.js is vendored at `src/assets/vendor/fuse.min.js`.
 node scripts/build.js
 ```
 
-**Preview it** on <http://localhost:4173> (the pages use root-absolute links, so `dist/` has to
-be served at a domain root — opening the files directly gives broken navigation):
+**Preview it** (opening the files directly gives broken navigation — the pages use absolute
+URLs). The server mounts `dist/` under the same `basePath` production uses, so a wrong base
+path shows up locally instead of after deploying:
 
 ```bash
 node scripts/serve.js
 ```
+
+It prints the URL to open, currently <http://localhost:4173/aixbiohub/>.
 
 **Refresh the data from Airtable first** (optional — only needed if you want the very latest):
 

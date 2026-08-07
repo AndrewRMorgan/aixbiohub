@@ -2,8 +2,11 @@
   "siteName": "AIxBio Research Hub",
   "domain": "aixbiohub.com",
 
-  "//customDomain": "Written to dist/CNAME. Set to null to publish at the default *.github.io URL instead.",
-  "customDomain": "aixbiohub.com",
+  "//customDomain": "Written to dist/CNAME. Set to null to publish at the default *.github.io URL instead. Only set this once the DNS records are actually in place — GitHub ignores a CNAME file it cannot verify.",
+  "customDomain": null,
+
+  "//basePath": "Sub-path the site is served from, no trailing slash. The default GitHub Pages URL serves a project site under /<repo>, so this must be '/aixbiohub' there. Ignored when customDomain is set, because a custom domain serves from the root. Set this wrong and every link and stylesheet 404s.",
+  "basePath": "/aixbiohub",
 
   "//litmapsUrl": "External citation map — opens in a new tab from the nav and the landing page.",
   "litmapsUrl": "https://app.litmaps.com/shared/b268a3d3-32ff-4102-b1dd-694af79d979c",

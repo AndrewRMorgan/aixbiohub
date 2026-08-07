@@ -42,7 +42,15 @@ function readJSON(file) {
     );
     process.exit(1);
   }
-  return JSON.parse(fs.readFileSync(file, 'utf8'));
+  // Strip a UTF-8 BOM. Several Windows editors add one on save, and JSON.parse
+  // rejects it with an error that points nowhere near the real cause.
+  const raw = fs.readFileSync(file, 'utf8').replace(/^﻿/, '');
+  try {
+    return JSON.parse(raw);
+  } catch (err) {
+    console.error(`${path.relative(ROOT, file)} is not valid JSON: ${err.message}`);
+    process.exit(1);
+  }
 }
 
 const ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
@@ -95,11 +103,31 @@ function copyDir(from, to) {
 
 const layout = fs.readFileSync(path.join(SRC, 'layout.html'), 'utf8');
 
+/**
+ * Sub-path the site is served from, normalised to either '' or '/foo'.
+ *
+ * A GitHub Pages project site lives at https://<user>.github.io/<repo>/, so
+ * every root-absolute URL needs that prefix or it resolves against the wrong
+ * origin and 404s. A custom domain serves from the root, so the prefix must be
+ * empty there — which is why customDomain wins outright rather than being
+ * combined with basePath.
+ */
+function normaliseBase(value) {
+  const raw = String(value || '').trim().replace(/\/+$/, '');
+  if (!raw) return '';
+  return raw.startsWith('/') ? raw : '/' + raw;
+}
+
+const BASE = config.customDomain
+  ? ''
+  : normaliseBase(process.env.BASE_PATH || config.basePath);
+
 const GLOBALS = {
   SITE_NAME: esc(config.siteName),
   DOMAIN: esc(config.domain),
   LITMAPS_URL: esc(config.litmapsUrl),
   YEAR: String(new Date().getFullYear()),
+  BASE: BASE,
 };
 
 function renderPage({ out, body, title, description, active, bodyClass, wrapClass, scripts, vars }) {
@@ -245,9 +273,9 @@ renderPage({
     'and implications at the intersection of AI and biology.',
   active: 'research',
   scripts:
-    '<script src="/assets/vendor/fuse.min.js"></script>\n' +
-    '<script src="/assets/research-data.js"></script>\n' +
-    '<script src="/assets/research.js"></script>',
+    `<script src="${BASE}/assets/vendor/fuse.min.js"></script>\n` +
+    `<script src="${BASE}/assets/research-data.js"></script>\n` +
+    `<script src="${BASE}/assets/research.js"></script>`,
   vars: {
     RESEARCH_COUNT: String(research.length),
     // Rendered newest-first to match the page's default ordering, so the
@@ -306,12 +334,20 @@ if (config.customDomain) {
   write('CNAME', config.customDomain + '\n');
 }
 
+// On a custom domain the origin is that domain. Otherwise fall back to the
+// default Pages origin, which CI can tell us from GITHUB_REPOSITORY, so the
+// sitemap still points somewhere real before the domain is cut over.
+const owner = (process.env.GITHUB_REPOSITORY || '').split('/')[0].toLowerCase();
 const origin = config.customDomain
   ? `https://${config.customDomain}`
-  : '';
+  : owner
+    ? `https://${owner}.github.io`
+    : '';
 
 if (origin) {
-  const paths = ['/', '/research/', '/newsletters/', '/suggestedresources/'];
+  const paths = ['/', '/research/', '/newsletters/', '/suggestedresources/'].map(
+    (p) => BASE + p
+  );
   write(
     'sitemap.xml',
     '<?xml version="1.0" encoding="UTF-8"?>\n' +
@@ -319,7 +355,9 @@ if (origin) {
       paths.map((p) => `  <url><loc>${origin}${p}</loc></url>`).join('\n') +
       '\n</urlset>\n'
   );
-  write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
+  write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${origin}${BASE}/sitemap.xml\n`);
 }
 
-console.log('\nBuild complete → dist/');
+console.log(
+  `\nBuild complete → dist/  (serving from ${origin || '(unknown origin)'}${BASE || '/'})`
+);
