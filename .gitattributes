@@ -12,3 +12,12 @@ data/library.json text eol=lf linguist-generated=true
 *.css  text eol=lf
 *.yml  text eol=lf
 *.md   text eol=lf
+
+# Never line-ending-convert binaries. Git usually detects these, but this file
+# declares text types explicitly, so be explicit here too — a PNG silently
+# corrupted by CRLF conversion is a miserable thing to debug.
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff  binary
+*.woff2 binary
