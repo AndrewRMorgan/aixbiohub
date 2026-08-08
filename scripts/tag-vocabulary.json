@@ -20,8 +20,8 @@
   "facets": [
     {
       "name": "Topic",
-      "maxPerRecord": 3,
-      "guidance": "What the item is substantively about. Pick the smallest set that a researcher filtering the library would expect this item to appear under. Two precise tags beat four loose ones.",
+      "maxPerRecord": 5,
+      "guidance": "What the item is substantively about. Include every topic a researcher filtering the library would genuinely expect this item to appear under, and nothing beyond that. The limit is a ceiling, not a target: most items warrant two or three, and a broad survey or framework paper may warrant five.",
       "tags": [
         { "name": "Evaluations", "description": "Benchmarks, capability tests, or evaluation methodology for measuring what AI models can do in biology. Use for the benchmark or eval itself, and for critiques of eval practice. Not for risk assessment frameworks — use 'Risk assessments'." },
         { "name": "Risk assessments", "description": "Structured methods for assessing risk from a model or tool, including uplift studies and risk-scoring tools. Distinguished from 'Evaluations': evaluations measure capability, risk assessments reason about consequence and likelihood." },
