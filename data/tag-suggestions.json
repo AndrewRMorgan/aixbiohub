@@ -1,0 +1,4439 @@
+{
+  "generatedAt": "2026-08-08T20:16:33.894Z",
+  "model": "claude-haiku-4-5",
+  "vocabularyTags": 44,
+  "usage": {
+    "input": 610781,
+    "output": 18141,
+    "estimatedCostUSD": 0.7015
+  },
+  "failures": [],
+  "suggestions": [
+    {
+      "id": "rec0HaNYPoZJXr6cV",
+      "title": "Assessing the Impacts of Technology Maturity and Diffusion on Malicious Biological Agent Development Capabilities: Demonstrating a Transparent, Repeatable Assessment Method",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA3662-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Non-state actors",
+        "Taxonomy",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The report proposes and demonstrates a structured method to assess how technology maturity and diffusion change threat landscapes for nonstate actors developing biological agents, combining threat characterization, risk methodology, and a reusable assessment framework.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2799,
+        "output": 88
+      }
+    },
+    {
+      "id": "rec0ZEafHmVaxt36A",
+      "title": "Simulating 500 million years of evolution with a language model",
+      "type": "Journal article",
+      "url": "https://www.science.org/doi/10.1126/science.ads0018",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Protein design"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper presents ESM3, a frontier language model for de novo protein design and generation with demonstrated capability to create functional proteins far from natural homologs, making it primarily a protein design and capabilities paper that exemplifies advances in AI-for-biology tools.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3013,
+        "output": 85
+      }
+    },
+    {
+      "id": "rec18FG38gbXVC1ow",
+      "title": "Developing a standard definition for sequences of concern",
+      "type": "Journal article",
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1830842/full",
+      "hasAbstract": true,
+      "tags": [
+        "Framework",
+        "Metadata",
+        "Nucleic acid synthesis screening",
+        "Taxonomy"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper develops a standardized rubric and test sets for defining 'sequences of concern' in gene synthesis screening, which directly addresses nucleic acid synthesis oversight, establishes a taxonomy/framework for classification, and provides metadata standards for biosecurity screening systems.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3207,
+        "output": 88
+      }
+    },
+    {
+      "id": "rec1dJhOhzSSfdjs9",
+      "title": "Automated Grading for Efficiently Evaluating the Dual-Use Biological Capabilities of Large Language Models",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/working_papers/WRA3124-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Dual-use research",
+        "Evaluations",
+        "LLMs",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper presents an automated evaluation methodology for assessing LLM capabilities in dual-use biological domains, combining evaluation methodology with risk assessment of dual-use knowledge and protocol generation.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2803,
+        "output": 75
+      }
+    },
+    {
+      "id": "rec1wncffHsZc8Azx",
+      "title": "Anticipating Biological Risk: A Toolkit for Strategic Biosecurity Policy",
+      "type": "Report",
+      "url": "https://cset.georgetown.edu/publication/anticipating-biological-risk-a-toolkit-for-strategic-biosecurity-policy/",
+      "hasAbstract": true,
+      "tags": [
+        "Mitigations",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The report systematically characterizes biological harm pathways and evaluates governance and mitigation measures to address AI-related biosecurity risks, covering threat landscape, risk assessment frameworks, and policy recommendations for strategic biosecurity.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2787,
+        "output": 85
+      }
+    },
+    {
+      "id": "rec2PVZaZw6SnWsF5",
+      "title": "Measuring AI’s capability to accelerate biological research in the wet lab",
+      "type": "Webpage",
+      "url": "https://openai.com/index/accelerating-biological-research-in-the-wet-lab/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Evaluations"
+      ],
+      "confidence": "high",
+      "reasoning": "The item directly measures frontier model capability to improve biological experimental protocols, combining both capability analysis and evaluation methodology for AI in wet-lab biology work.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2718,
+        "output": 51
+      }
+    },
+    {
+      "id": "rec2Q4yEAPaYEsvB0",
+      "title": "The Evolving Paradigm of AI-Biosecurity: Challenges and Solutions",
+      "type": "Blog post",
+      "url": "https://cnss.org.in/the-evolving-paradigm-of-ai-biosecurity-challenges-and-solutions/",
+      "hasAbstract": true,
+      "tags": [],
+      "confidence": "low",
+      "reasoning": "The title suggests AI-biosecurity content, but the abstract describes maritime security and piracy, which is unrelated to AI and biology; without access to the full blog post content, confidence is low and no relevant tags can be assigned.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2736,
+        "output": 63
+      }
+    },
+    {
+      "id": "rec2zMOa1NJEq5e7h",
+      "title": "The Reality of AI and Biorisk",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2412.01946",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations",
+        "LLMs",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "This paper directly analyzes threat models for AI-driven biorisk, evaluates existing empirical research on LLM and biological-tool capabilities in a biosecurity context, and provides methodological critique and recommendations for rigorous risk assessment — making it substantively about risk assessment, evaluation methodology, capabilities measurement, and governance of both LLMs and biological design tools.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2987,
+        "output": 118
+      }
+    },
+    {
+      "id": "rec319jBtuONZrCPg",
+      "title": "The science and practice of proportionality in AI risk evaluations",
+      "type": "Journal article",
+      "url": "https://www.science.org/doi/10.1126/science.aea3835",
+      "hasAbstract": false,
+      "tags": [
+        "Framework",
+        "Risk assessments"
+      ],
+      "confidence": "low",
+      "reasoning": "The title references 'proportionality in AI risk evaluations' suggesting a structured methodology or framework for assessing and calibrating AI risks, though without an abstract this remains an inference from the title alone.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2853,
+        "output": 67
+      }
+    },
+    {
+      "id": "rec3LmG03cPAo0c6O",
+      "title": "Toward Comprehensive Benchmarking of the Biological Knowledge of Frontier Large Language Models",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA3797-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "LLMs",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The report explicitly evaluates frontier LLMs against benchmarks to assess their biological and chemical knowledge, directly measuring capability and informing risk assessment in a structured evaluation methodology.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2900,
+        "output": 70
+      }
+    },
+    {
+      "id": "rec3Mb2ac8loTnrxj",
+      "title": "Institute for National Security Strategy",
+      "type": "Webpage",
+      "url": "https://www.inss.re.kr/en/publications/bbs/ib_en_view.do?nttId=41037757&bbsId=ib_en&page=1&searchCnd=1&searchWrd=",
+      "hasAbstract": false,
+      "tags": [],
+      "confidence": "low",
+      "reasoning": "The title alone does not indicate what substantive topic this webpage addresses; it appears to be an institutional homepage rather than a specific analysis or research contribution on AIxBio topics.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2684,
+        "output": 54
+      }
+    },
+    {
+      "id": "rec3XqhQssB89Esms",
+      "title": "Risk Mitigation for Biological Design Tools",
+      "type": "Report",
+      "url": "https://ebrc.org/wp-content/uploads/2025/09/Risk-Mitigation-for-Biological-Design-Tools-FINAL_2.pdf",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Dual-use research",
+        "Mitigations",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly addresses risk mitigation strategies for AI-enabled biological design tools in the context of dual-use concerns, spanning both beneficial and harmful applications.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2775,
+        "output": 67
+      }
+    },
+    {
+      "id": "rec3Ydjf3P5ZbATEp",
+      "title": "Exploring AI–Biosecurity Governance in the Global South",
+      "type": "Blog post",
+      "url": "https://medium.com/tina.wuenn/exploring-ai-biosecurity-governance-in-the-global-south-81f80c130582",
+      "hasAbstract": true,
+      "tags": [
+        "Dual-use research",
+        "Global South",
+        "International governance",
+        "Pandemic preparedness",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The item directly addresses AI-biosecurity governance challenges specific to lower- and middle-income countries, examines policy gaps, and argues for international cooperation on dual-use risks—making it substantive on threat characterization, policy analysis, cross-border coordination, and equity considerations in the Global South.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2806,
+        "output": 110
+      }
+    },
+    {
+      "id": "rec3eXIHETumze7Dn",
+      "title": "Towards Risk Analysis of the Impact of AI on the Deliberate Biological Threat Landscape",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2401.12755",
+      "hasAbstract": true,
+      "tags": [
+        "Framework",
+        "Risk assessments",
+        "Threat Assessment",
+        "United States"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly presents a risk analysis framework for AI's impact on deliberate biological threats, references the US Executive Order on AI safety, and calls for characterization of AI-enabled biological engineering tools—directly addressing risk assessment methodology and US policy context.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2850,
+        "output": 84
+      }
+    },
+    {
+      "id": "rec4meIebVrqbDunl",
+      "title": "The Weapons of Mass Destruction AI Security Gap",
+      "type": "Webpage",
+      "url": "https://time.com/7373405/weapons-of-mass-destruction-ai-security-gap/",
+      "hasAbstract": true,
+      "tags": [
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The article argues that current AI security focuses too narrowly on pandemic prevention at the expense of other WMD threats, which is both a threat characterization and a policy critique about misaligned incentives in biosecurity governance.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2718,
+        "output": 80
+      }
+    },
+    {
+      "id": "rec4t5vxr7YKmtjUV",
+      "title": "Responsible AI in biotechnology: balancing discovery, innovation and biosecurity risks",
+      "type": "Journal article",
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2025.1537471/full",
+      "hasAbstract": true,
+      "tags": [
+        "Dual-use research",
+        "Mitigations",
+        "Policy",
+        "Protein design"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly addresses AI in protein design, dual-use concerns, biosecurity risks, safeguards, and policy frameworks—all core topics that structure the review's argument.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2824,
+        "output": 74
+      }
+    },
+    {
+      "id": "rec5B0aQa5r3sNlMo",
+      "title": "Preparing for future AI capabilities in biology",
+      "type": "Webpage",
+      "url": "https://openai.com/index/preparing-for-future-ai-capabilities-in-biology/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Mitigations",
+        "Pandemic preparedness"
+      ],
+      "confidence": "medium",
+      "reasoning": "The item discusses growing AI capabilities in biology, safeguards being implemented, and biodefense expertise engagement, with an upcoming summit indicating a strategic focus on biosecurity preparedness.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2719,
+        "output": 69
+      }
+    },
+    {
+      "id": "rec6YJxGfDIDpMaAm",
+      "title": "LabOS: The AI-XR Co-Scientist That Sees and Works With Humans",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2510.14861",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Capabilities",
+        "Cloud labs"
+      ],
+      "confidence": "high",
+      "reasoning": "LabOS is an autonomous AI co-scientist system that plans and executes experiments in physical labs with multimodal perception and human-AI collaboration, making it a core example of both AI agents and cloud lab infrastructure; the paper demonstrates capabilities of this integrated system across multiple biological domains.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3051,
+        "output": 87
+      }
+    },
+    {
+      "id": "rec6frel2QxO47BPh",
+      "title": "The Operational Risks of AI in Large-Scale Biological Attacks: A Red-Team Approach",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA2977-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Jailbreaks and red-teaming",
+        "LLMs",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The report explicitly uses red-teaming methodology to assess operational risks from LLM misuse in biological attack contexts, directly fitting threat assessment and red-teaming tags, with LLMs as the specific AI technology under investigation.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2785,
+        "output": 92
+      }
+    },
+    {
+      "id": "rec78bfOqHnvvz7fb",
+      "title": "Can't quite develop that dangerous pathogen? AI may soon be able to help",
+      "type": "Blog post",
+      "url": "https://thebulletin.org/2023/11/cant-quite-develop-that-dangerous-pathogen-ai-may-soon-be-able-to-help/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Jailbreaks and red-teaming",
+        "LLMs",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The article directly addresses AI capability for assisting pathogen development, analyzes the threat landscape of deliberate misuse, and advocates for red-teaming approaches to probe vulnerabilities in safeguards as systems evolve.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2778,
+        "output": 93
+      }
+    },
+    {
+      "id": "rec7FjyXdjC58hXNe",
+      "title": "Dual-Use AI Capabilities and the Risk of Bioterrorism",
+      "type": "Report",
+      "url": "https://www.governance.ai/research-paper/dual-use-ai-capabilities-and-the-risk-of-bioterrorism-converting-capability-evaluations-to-risk-assessments",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Evaluations",
+        "Non-state actors",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper explicitly develops a framework for converting AI capability evaluations into risk assessments for bioterrorism, focuses on lone-wolf threat actors, and uses historical case studies and expert elicitation to quantify risk from dual-use AI capabilities.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3012,
+        "output": 95
+      }
+    },
+    {
+      "id": "rec7GuMvmKquuIY2m",
+      "title": "Frontier AI Trends Report",
+      "type": "Report",
+      "url": "https://www.aisi.gov.uk/frontier-ai-trends-report",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "United Kingdom"
+      ],
+      "confidence": "high",
+      "reasoning": "The report presents public analysis of frontier AI system evaluations conducted by AISI across critical domains, focusing on capability trends and findings from their assessment work since November 2023.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2768,
+        "output": 70
+      }
+    },
+    {
+      "id": "rec7a5s7kpLMWe08s",
+      "title": "Prioritizing Feasible and Impactful Actions to Enable Secure AI Development and Use in Biology",
+      "type": "Journal article",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/bit.70132",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Framework",
+        "Mitigations",
+        "Pretraining",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly presents a framework of prioritized mitigation strategies across the AI bioweapon creation pipeline, including unlearning, filtering, agents, bug bounties, material controls, biosurveillance, attribution, and DNA screening—covering multiple mitigation categories with both technical and policy dimensions.",
+      "warnings": [
+        "dropped \"Jailbreaks and red-teaming\" (over the Topic limit)",
+        "dropped \"Nucleic acid synthesis screening\" (over the Topic limit)",
+        "dropped \"Attribution and forensics\" (over the Topic limit)",
+        "dropped \"Pandemic preparedness\" (over the Topic limit)",
+        "dropped \"Policy\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 3029,
+        "output": 141
+      }
+    },
+    {
+      "id": "rec7rccGg7GtAdaCp",
+      "title": "Experimental Evaluation of AI-Driven Protein Design Risks Using Safe Biological Proxies",
+      "type": "Preprint",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.05.15.654077v1",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Nucleic acid synthesis screening",
+        "Protein design",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper presents an experimental evaluation framework (TEVV) for assessing AI protein design risks using safe proxies, directly measuring the capability of AI systems to generate sequences that evade biosecurity screening while retaining function—combining evaluation methodology, protein design, synthesis screening oversight, and structured risk assessment.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3064,
+        "output": 101
+      }
+    },
+    {
+      "id": "rec7vuhXn3hUCCf1b",
+      "title": "Multimodal AI agents for capturing and sharing laboratory practice",
+      "type": "Preprint",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.10.05.680425v1",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Biological Tools",
+        "Synthetic biology"
+      ],
+      "confidence": "medium",
+      "reasoning": "The paper describes multimodal AI agents that capture and automate laboratory practice through video and protocol analysis; while focused on proteomics rather than biological design per se, the agent framework for lab automation and protocol generation falls under AI agents and represents a tool relevant to biological research automation, though the biosecurity implications are indirect.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2925,
+        "output": 98
+      }
+    },
+    {
+      "id": "rec88O3Ue1scS1Mwk",
+      "title": "How to deter biothreats in the age of gene synthesis",
+      "type": "Blog post",
+      "url": "https://bigthink.com/science-tech/deterring-biothreats/",
+      "hasAbstract": true,
+      "tags": [
+        "International governance",
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "Prevention"
+      ],
+      "confidence": "high",
+      "reasoning": "The piece addresses DNA synthesis screening standards, safeguards for synthesis equipment, and AI-tool governance as deterrence mechanisms—combining technical mitigation, policy frameworks, and international coordination in biosecurity.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2727,
+        "output": 69
+      }
+    },
+    {
+      "id": "rec8QfATlUIjUOgh1",
+      "title": "Building Resilience Against Artificial Intelligence–Enabled Biological Threats: Conference Proceedings from a RAND and Helena Workshop",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/conf_proceedings/CFA4954-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Event report",
+        "Mitigations",
+        "Pandemic preparedness",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The proceedings document a workshop explicitly focused on AI-enabled biological threats and mitigation strategies, with threat scenarios and resilience-building as the core subjects; the event-report format is also explicitly indicated.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2838,
+        "output": 84
+      }
+    },
+    {
+      "id": "rec8ZQqPOvaiAFPZE",
+      "title": "Tracing engineered biothreats with AI forensics: Five steps to improve attribution",
+      "type": "Blog post",
+      "url": "https://thebulletin.org/2025/12/tracing-engineered-biothreats-with-ai-forensics-five-steps-to-improve-attribution/",
+      "hasAbstract": true,
+      "tags": [
+        "Attribution and forensics",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract plainly states the subject is attribution of engineered biological threats using AI forensics, including recommendations for detection and deterrence systems, which maps directly to 'Attribution and forensics' and 'Policy' as core topics.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2758,
+        "output": 81
+      }
+    },
+    {
+      "id": "rec8eESPdtWykRc2y",
+      "title": "Frontiers | Beyond sequence similarity: toward function-based screening of nucleic acid synthesis",
+      "type": "Webpage",
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1832724/full",
+      "hasAbstract": false,
+      "tags": [
+        "Nucleic acid synthesis screening"
+      ],
+      "confidence": "low",
+      "reasoning": "The title explicitly addresses screening of nucleic acid synthesis, which is a core topic in the controlled vocabulary; the word 'function-based' suggests assessing what sequences might do rather than simple similarity matching, but without an abstract this cannot be confirmed as a substantive focus.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2697,
+        "output": 81
+      }
+    },
+    {
+      "id": "rec8gm5mI8pclWecG",
+      "title": "Biodefense in the Intelligence Age",
+      "type": "Webpage",
+      "url": "https://openai.com/index/biodefense-in-the-intelligence-age/",
+      "hasAbstract": true,
+      "tags": [
+        "Health security",
+        "Pandemic preparedness",
+        "Policy",
+        "Prevention"
+      ],
+      "confidence": "medium",
+      "reasoning": "The title and framing suggest this is about leveraging AI for biological defense and resilience outcomes rather than focusing on misuse risk assessment; pandemic preparedness and prevention are the core topics, with policy implications for a coordinated approach.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2695,
+        "output": 80
+      }
+    },
+    {
+      "id": "rec8kCzFgGZZ9xiOs",
+      "title": "Biosecurity and AI: Risks and Opportunities",
+      "type": "Report",
+      "url": "https://www.safe.ai/blog/biosecurity-and-ai-risks-and-opportunities",
+      "hasAbstract": true,
+      "tags": [
+        "Health security",
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The abstract characterizes the threat landscape from AI and synthesis capabilities while discussing both risks and public-health benefits, and references access controls as a risk-management approach spanning both technology governance and policy.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2742,
+        "output": 81
+      }
+    },
+    {
+      "id": "rec91wccWh3HKyRlI",
+      "title": "A Framework for Managed Access to Biological AI Tools",
+      "type": "Report",
+      "url": "https://www.nti.org/analysis/articles/a-framework-for-managed-access-to-biological-ai-tools/",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Framework",
+        "Mitigations",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The report proposes a structured framework for managing access to biological AI tools based on risk assessment and tiered controls—directly addressing mitigation through access governance, with 'Framework' applying because the named framework itself is the core contribution.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2763,
+        "output": 78
+      }
+    },
+    {
+      "id": "rec9Tes7Kx6oFiSqu",
+      "title": "Foundation models may exhibit staged progression in novel CBRN threat disclosure",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2503.15182",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "Mitigations",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a controlled evaluation of frontier LLMs' ability to reason about a novel biological threat under different prompting conditions, studying capability thresholds and staged progression toward harmful disclosure, with implications for safeguard design.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3016,
+        "output": 95
+      }
+    },
+    {
+      "id": "rec9a8lVeK5EJv4Xn",
+      "title": "Establishing Best Practices for Building Rigorous Agentic Benchmarks",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2507.02825",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Evaluations"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly addresses evaluation methodology and rigor for agentic benchmarks, and AI agents are explicitly the subject of the benchmark framework being proposed.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3069,
+        "output": 56
+      }
+    },
+    {
+      "id": "rec9j8WfDsdrPJcqb",
+      "title": "Understanding AI-Facilitated Biological Weapon Development",
+      "type": "Report",
+      "url": "https://www.longtermresilience.org/post/report-launch-examining-risks-at-the-intersection-of-ai-and-bio",
+      "hasAbstract": false,
+      "tags": [
+        "Capabilities",
+        "Jailbreaks and red-teaming",
+        "Threat Assessment"
+      ],
+      "confidence": "low",
+      "reasoning": "From the title alone, this appears to characterise how AI might facilitate bioweapon development (threat landscape), what capabilities are relevant (capabilities/uplift), and possibly how safeguards might be circumvented; however, without an abstract, confidence must be low and tags conservative.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2717,
+        "output": 98
+      }
+    },
+    {
+      "id": "rec9uzm41ERWpONns",
+      "title": "Capabilities and risks from frontier AI",
+      "type": "Report",
+      "url": "https://assets.publishing.service.gov.uk/media/65395abae6c968000daa9b25/frontier-ai-capabilities-risks-report.pdf",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Mitigations",
+        "Risk assessments",
+        "Threat Assessment",
+        "United Kingdom"
+      ],
+      "confidence": "medium",
+      "reasoning": "The report from UK DSIT systematically assesses risks from frontier AI and analyzes current/future capabilities, particularly for biological contexts (given the AIxBio library context), while emphasizing the need for mitigation research; while it doesn't focus exclusively on biology, it's clearly about risk assessment methodology and capability characterization at the frontier.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2866,
+        "output": 116
+      }
+    },
+    {
+      "id": "recA1GsHxniYe1ZSj",
+      "title": "Catching bugs: The Federal Select Agent Program and lessons for AI regulation",
+      "type": "Report",
+      "url": "https://www.iaps.ai/research/federal-select-agent-program",
+      "hasAbstract": true,
+      "tags": [
+        "Framework",
+        "Mitigations",
+        "Policy",
+        "Risk assessments",
+        "United States"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly analyzes US federal biosecurity regulatory structure (FSAP) as a source of lessons for AI regulation, discussing development-phase licensing, risk-based regulatory approaches, and their relevance to managing AI-biosecurity risks.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2869,
+        "output": 86
+      }
+    },
+    {
+      "id": "recAPhTdkvUO6kNrM",
+      "title": "Documenting Cloud Labs and Examining How Remotely Operated Automated Laboratories Could Enable Bad Actors",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/perspectives/PEA3851-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Cloud labs",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly describes a threat assessment of cloud labs' misuse potential by bad actors for weapons development, with detailed documentation of facilities and their remote-access capabilities.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2810,
+        "output": 66
+      }
+    },
+    {
+      "id": "recAQBDKfufM2s8cO",
+      "title": "Cyberbiosecurity: A Matter of International Peace and Security?",
+      "type": "Report",
+      "url": "https://www.unidir.org/cyberbiosecurity",
+      "hasAbstract": true,
+      "tags": [
+        "Cyberbiosecurity",
+        "International governance",
+        "Policy"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly defines cyberbiosecurity as a core subject, examines it through multilateral and UN governance frameworks, and discusses national implementation under the BWC, making it substantively about cyberbiosecurity risks, international governance structures, and policy responses.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2831,
+        "output": 83
+      }
+    },
+    {
+      "id": "recASBflD9yWosrvb",
+      "title": "From pandemics to preparedness: harnessing AI, CRISPR, and synthetic biology to counter biosecurity threats",
+      "type": "Journal article",
+      "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1711344/full",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Cyberbiosecurity",
+        "Health security",
+        "Pandemic preparedness",
+        "Synthetic biology"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly discusses AI and emerging technologies (CRISPR, mRNA platforms, robotics, biosensors) for pandemic preparedness, early detection, and response capabilities, with emphasis on health security benefits and equitable access rather than misuse risks.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3191,
+        "output": 89
+      }
+    },
+    {
+      "id": "recB0dqAlTkdKTiXr",
+      "title": "How to deter biothreats in the age of gene synthesis",
+      "type": "Blog post",
+      "url": "https://bigthink.com/science-tech/deterring-biothreats/",
+      "hasAbstract": true,
+      "tags": [
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "Prevention"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract directly addresses DNA screening standards and safeguards for synthesis equipment as deterrence mechanisms against biological threats, covering both nucleic acid synthesis oversight and preventive biosecurity policy frameworks.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2727,
+        "output": 68
+      }
+    },
+    {
+      "id": "recB7JnfNpoBV6TZ5",
+      "title": "A Labour of Harm: Artificial Intelligence and Biological Weapons Acquisition",
+      "type": "Preprint",
+      "url": "https://papers.ssrn.com/abstract=6299518",
+      "hasAbstract": true,
+      "tags": [
+        "Bioweapons history",
+        "Capabilities",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The abstract fragment and title indicate a focus on threat characterization and acquisition pathways for biological weapons via AI, with attention to actors and historical context, though the abstract is incomplete.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2757,
+        "output": 82
+      }
+    },
+    {
+      "id": "recCG7CWEJLJ6tEYG",
+      "title": "OpenAI's latest AI models have a new safeguard to prevent biorisks",
+      "type": "Blog post",
+      "url": "https://techcrunch.com/2025/04/16/openais-latest-ai-models-have-a-new-safeguard-to-prevent-biorisks/",
+      "hasAbstract": true,
+      "tags": [
+        "LLMs",
+        "Mitigations"
+      ],
+      "confidence": "high",
+      "reasoning": "The item describes a safeguard mechanism (refusal system) implemented in OpenAI's frontier LLMs specifically to prevent biorisks, making it directly relevant to both LLM safeguards and mitigation approaches.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2739,
+        "output": 75
+      }
+    },
+    {
+      "id": "recCXoLomBFMryUn8",
+      "title": "Generative design of novel bacteriophages with genome language models",
+      "type": "Preprint",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.09.12.675911v1",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations",
+        "Protein design"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper demonstrates frontier genome language models generating novel, viable bacteriophage genomes and experimentally validating their functionality, making it substantively about AI capabilities in genome design, the use of biological design tools, and empirical evaluation of those capabilities at whole-genome scale.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3042,
+        "output": 94
+      }
+    },
+    {
+      "id": "recCqThIq1XxLVxpF",
+      "title": "From Protocol to Pipette: What Two New RCTs Tell Us About AI Biosecurity Risk",
+      "type": "Webpage",
+      "url": "https://blog.stephenturner.us/p/ai-biosecurity-uplift-rct?utm_medium=web&_src_ref=linkedin.com",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "Non-state actors"
+      ],
+      "confidence": "high",
+      "reasoning": "The item reports empirical results from randomized controlled trials measuring LLM effects on biology task performance in both computational and laboratory settings, directly evaluating capability uplift particularly for novices, which is central to non-state actor threat assessment.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2725,
+        "output": 81
+      }
+    },
+    {
+      "id": "recDBkerqD5oqYeTL",
+      "title": "Security challenges by AI-assisted protein design",
+      "type": "Journal article",
+      "url": "https://www.embopress.org/doi/full/10.1038/s44319-024-00124-7",
+      "hasAbstract": true,
+      "tags": [
+        "Protein design",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The article directly addresses biosecurity and biosafety threats from AI-assisted protein design, combining capability analysis with threat characterization and structured risk assessment of the technology.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2712,
+        "output": 70
+      }
+    },
+    {
+      "id": "recDDgL1s64SXTT5R",
+      "title": "FrontierScience: Evaluating AI's ability to perform expert-level scientific tasks",
+      "type": "Journal article",
+      "url": "",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Evaluations"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a benchmark paper evaluating frontier models' scientific reasoning abilities, including explicit capability measurements; it directly fits 'Evaluations' and demonstrates a capability assessment that warrants the 'Capabilities' tag as well.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3024,
+        "output": 72
+      }
+    },
+    {
+      "id": "recDRwJgfDiI9IRAe",
+      "title": "Artificial intelligence and biological misuse: Differentiating risks of language models and biological design tools",
+      "type": "Preprint",
+      "url": "https://arxiv.org/abs/2306.13952",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "LLMs",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly compares threat profiles of LLMs and biological design tools in a biosecurity context, analyzes their distinct capabilities for dual-use information and pathogen creation, and proposes differentiated risk mitigation strategies for each class of tool.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3051,
+        "output": 93
+      }
+    },
+    {
+      "id": "recDWE0ry8YOxtAHM",
+      "title": "Sentinel Bio's response to NIST RFI on Safety Considerations for Chemical and/or Biological AI Models",
+      "type": "Webpage",
+      "url": "https://www.regulations.gov/comment/NIST-2024-0004-0002",
+      "hasAbstract": false,
+      "tags": [
+        "Mitigations",
+        "NIST",
+        "Request for Information (RFI)"
+      ],
+      "confidence": "low",
+      "reasoning": "The title explicitly indicates this is a response to the NIST RFI on chemical and biological AI models; mitigations are inferred from Sentinel Bio's likely focus on safeguards, though without an abstract this cannot be confirmed.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2716,
+        "output": 89
+      }
+    },
+    {
+      "id": "recDgEFFBfnKgXDOk",
+      "title": "Aum Shinrikyo: Insights Into How Terrorists Develop Biological and Chemical Weapons",
+      "type": "Webpage",
+      "url": "https://www.cnas.org/publications/reports/aum-shinrikyo-insights-into-how-terrorists-develop-biological-and-chemical-weapons",
+      "hasAbstract": true,
+      "tags": [
+        "Attribution and forensics",
+        "Bioweapons history",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "This item analyzes a historical bioweapons program by a terrorist organization (Aum Shinrikyo) to draw lessons about terrorist acquisition pathways and capabilities, fitting bioweapons history, non-state actor threats, and threat assessment; confidence is medium as the abstract is generic and only the title clearly indicates the substantive content.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2753,
+        "output": 115
+      }
+    },
+    {
+      "id": "recE0xBrl8vG6NZvQ",
+      "title": "Safeguarding Mail-Order DNA Synthesis in the Age of Artificial Intelligence",
+      "type": "Journal article",
+      "url": "https://www.liebertpub.com/doi/10.1089/apb.2023.0020",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "LLMs",
+        "Mitigations",
+        "Nucleic acid synthesis screening",
+        "United States"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly analyzes AI's impact on mail-order DNA synthesis security, addressing both chatbot risks and biological design tools, proposes mitigation recommendations to the US Government, and focuses on synthesis-order screening safeguards.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2943,
+        "output": 91
+      }
+    },
+    {
+      "id": "recE1s8YR20lSeRnv",
+      "title": "NTI and CACDA Issue Joint Statement Calling for Stronger Biosecurity and Responsible AI-Biotechnology Innovation",
+      "type": "Blog post",
+      "url": "https://www.nti.org/news/nti-and-cacda-issue-joint-statement-calling-for-stronger-biosecurity-and-responsible-ai-biotechnology-innovation/",
+      "hasAbstract": true,
+      "tags": [
+        "Comment / Statement",
+        "International governance",
+        "Policy"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a joint statement from NTI and CACDA calling for action on biosecurity and AI-biotechnology oversight, which qualifies as a public statement on international governance and policy matters.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2773,
+        "output": 71
+      }
+    },
+    {
+      "id": "recEJTiW4rpNWEkEt",
+      "title": "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2403.03218",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "LLMs",
+        "Mitigations"
+      ],
+      "confidence": "high",
+      "reasoning": "This paper introduces WMDP, a benchmark for evaluating hazardous knowledge in LLMs across WMD domains (primary: Evaluations), proposes RMU, an unlearning method to remove such knowledge (Mitigations), focuses on general-purpose LLMs (LLMs), and explicitly positions unlearning as a safeguard technique (Jailbreaks and red-teaming captures safeguard-focused evaluation and adversarial testing methodology).",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3387,
+        "output": 153
+      }
+    },
+    {
+      "id": "recFOP5NwQcD1AiB5",
+      "title": "Dual-use artificial intelligence and biology: upstream risk-benefit reviews",
+      "type": "Journal article",
+      "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1832974/full",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Dual-use research",
+        "Framework",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "This paper proposes a structured risk-benefit review framework for biological AI models at the pre-development stage, addressing dual-use concerns and risk governance through a defined methodology with specific components for implementation across developer communities.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3158,
+        "output": 83
+      }
+    },
+    {
+      "id": "recFjEWjJeFyZsvkM",
+      "title": "The US and China Must Unite on AI To Stop the Next Bio Threat | Opinion",
+      "type": "Webpage",
+      "url": "https://www.newsweek.com/us-china-must-unite-ai-to-stop-next-bio-threat-opinion-11992525",
+      "hasAbstract": true,
+      "tags": [
+        "China",
+        "International governance",
+        "Non-state actors",
+        "United States"
+      ],
+      "confidence": "medium",
+      "reasoning": "Opinion piece arguing for US-China cooperation on AI biosecurity governance and threat mitigation, addressing international coordination and non-state actor risks as the core argument.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2727,
+        "output": 64
+      }
+    },
+    {
+      "id": "recGFfLkrkyrSHWSx",
+      "title": "BioML-bench: Evaluation of AI Agents for End-to-End Biomedical ML",
+      "type": "Preprint",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.09.01.673319v2",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Biological Tools",
+        "Evaluations"
+      ],
+      "confidence": "high",
+      "reasoning": "This paper presents BioML-bench, a benchmark suite for evaluating AI agents on end-to-end biomedical ML tasks spanning protein engineering, drug discovery, and related domains — directly addressing agent capability measurement, evaluation methodology, and biological tool performance in AI-driven research workflows.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3092,
+        "output": 91
+      }
+    },
+    {
+      "id": "recGGi7Vo9fOdVSxI",
+      "title": "Best Practices for Biorisk Evaluations on Open-Weight Bio-Foundation Models",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2510.27629",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Evaluations",
+        "Open-weight LLMs",
+        "Risk assessments",
+        "Virology"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper proposes a risk evaluation framework (BioRiskEval) for open-weight bio-foundation models, testing robustness of filtering procedures through virology-specific benchmarks and fine-tuning attacks, directly addressing pretraining mitigations and their circumvention.",
+      "warnings": [
+        "dropped \"Pretraining\" (over the Topic limit)",
+        "dropped \"Jailbreaks and red-teaming\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 3053,
+        "output": 125
+      }
+    },
+    {
+      "id": "recGJJ43wdpMaMKOf",
+      "title": "Bio x AI: Policy Recommendations for a New Frontier",
+      "type": "Blog post",
+      "url": "https://fas.org/publication/bio-x-ai-policy-recommendations/",
+      "hasAbstract": true,
+      "tags": [
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The blog post presents policy recommendations for biosecurity risks from AI, addressing governance and risk mitigation strategy, though the abstract alone does not specify which particular biosecurity pathways or mitigations are emphasized.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2766,
+        "output": 68
+      }
+    },
+    {
+      "id": "recGUB2RbRIRdQXYg",
+      "title": "Frontier AI Biosafety Thresholds",
+      "type": "Blog post",
+      "url": "https://www.frontiermodelforum.org/issue-briefs/frontier-ai-biosafety-thresholds/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Framework",
+        "Risk assessments"
+      ],
+      "confidence": "medium",
+      "reasoning": "The item is from the Frontier Model Forum's AI-Biosafety Workstream and addresses risk thresholds for frontier AI in biology, suggesting structured risk assessment methodology, capability characterization, dual-use implications, and likely a proposed framework for biosafety governance of frontier models.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2782,
+        "output": 96
+      }
+    },
+    {
+      "id": "recGrQ6qEoVw98GUn",
+      "title": "Why implementation gaps could undermine synthetic nucleic acid oversight",
+      "type": "Journal article",
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2025.1689753/full",
+      "hasAbstract": true,
+      "tags": [
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "United States"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly addresses sequence-level governance and oversight of synthetic nucleic acids in US biosecurity policy, examining implementation gaps and proposing policy reforms to strengthen screening and institutional capacity.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3160,
+        "output": 69
+      }
+    },
+    {
+      "id": "recGwJmUByNIiyQNE",
+      "title": "Can Chatbots Help You Build a Bioweapon?",
+      "type": "Magazine article",
+      "url": "https://foreignpolicy.com/2023/11/05/ai-artificial-intelligence-chatbot-bioweapon-virus-bacteria-genetic-engineering/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "LLMs",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The article examines what LLMs can actually do to assist in pathogen engineering, distinguishing between measured capability and the genuine threat landscape — a capability analysis that frames the dual-use tradeoff.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2714,
+        "output": 82
+      }
+    },
+    {
+      "id": "recHANjPssjzkekgd",
+      "title": "UN AI Resource Hub",
+      "type": "Webpage",
+      "url": "https://aitoolbox.act4sdgs.org/activities.php",
+      "hasAbstract": true,
+      "tags": [
+        "International governance"
+      ],
+      "confidence": "medium",
+      "reasoning": "The item describes a UN system-wide resource hub for AI initiatives, indicating it concerns multilateral coordination and cross-border governance mechanisms, though the abstract does not detail specific policy or substantive content.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2690,
+        "output": 61
+      }
+    },
+    {
+      "id": "recHdnuSoFmGxuZIE",
+      "title": "Forecasting biosecurity risks from large language models and the efficacy of safeguards",
+      "type": "Journal article",
+      "url": "https://forecastingresearch.org/ai-enabled-biorisk",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "LLMs",
+        "Mitigations",
+        "Risk assessments",
+        "Virology"
+      ],
+      "confidence": "high",
+      "reasoning": "This paper explicitly forecasts biosecurity risks using expert judgment, measures LLM capabilities against a virology benchmark, evaluates safeguards including nucleic acid screening, and characterizes the threat landscape around LLM-enabled biological misuse.",
+      "warnings": [
+        "dropped \"Nucleic acid synthesis screening\" (over the Topic limit)",
+        "dropped \"Threat Assessment\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 2976,
+        "output": 108
+      }
+    },
+    {
+      "id": "recIHC4WFPm3TxcPh",
+      "title": "Will releasing the weights of future large language models grant widespread access to pandemic agents?",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2310.18233",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Jailbreaks and red-teaming",
+        "Open-weight LLMs",
+        "Risk assessments",
+        "Virology"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract directly evaluates LLM capability to provide pandemic-relevant information, tests jailbreak effectiveness against safeguarded vs. uncensored models, assesses risks from open-weight model proliferation, and uses a red-team hackathon methodology on a viral biosecurity scenario.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2995,
+        "output": 111
+      }
+    },
+    {
+      "id": "recIqCrLb7P5JEjLd",
+      "title": "CSR's response to NIST RFI on Safety Considerations for Chemical and/or Biological AI Models",
+      "type": "Webpage",
+      "url": "https://www.regulations.gov/comment/NIST-2024-0004-0017",
+      "hasAbstract": false,
+      "tags": [
+        "NIST",
+        "Request for Information (RFI)"
+      ],
+      "confidence": "low",
+      "reasoning": "The title explicitly identifies this as a response to the NIST RFI on chemical and biological AI models, confirming the document form and named body involved.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2717,
+        "output": 69
+      }
+    },
+    {
+      "id": "recIriWlH6pBvlmJr",
+      "title": "FINAL INHR AIxBio Recommendations_White Paper for Endorsement.docx",
+      "type": "Webpage",
+      "url": "https://docs.google.com/document/d/1fnGaR1tP7EC6NinpdLWVF55umEjKAO3Z/edit?usp=drive_link&ouid=100670427311798292339&rtpof=true&sd=true&usp=embed_facebook",
+      "hasAbstract": true,
+      "tags": [
+        "International governance",
+        "Policy"
+      ],
+      "confidence": "medium",
+      "reasoning": "The document contains government-directed policy recommendations on AI and biosecurity risks, with explicit focus on trilateral (US-China-International) governance dialogue and coordination.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2757,
+        "output": 57
+      }
+    },
+    {
+      "id": "recJDJCJNc4HwCvfQ",
+      "title": "GeneBreaker: Jailbreak Attacks against DNA Language Models with Pathogenicity Guidance",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2505.23839",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "Risk assessments",
+        "Virology"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper systematically evaluates jailbreak vulnerabilities in DNA language models with pathogenic sequence generation, combining red-teaming methodology, biosecurity risk assessment, and capabilities of foundation models applied to biological design.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3105,
+        "output": 96
+      }
+    },
+    {
+      "id": "recJENkFTO2o2PnyU",
+      "title": "Autonomous chemical research with large language models",
+      "type": "Journal article",
+      "url": "https://www.nature.com/articles/s41586-023-06792-0",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Capabilities"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper describes Coscientist, an autonomous AI system that plans and performs experiments — a clear example of an AI agent — and evaluates its capabilities across diverse chemical tasks including reaction optimization.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2892,
+        "output": 65
+      }
+    },
+    {
+      "id": "recJb0txV4e8ll0Eh",
+      "title": "The Age of AI in the Life Sciences: Benefits and Biosecurity Considerations",
+      "type": "Book",
+      "url": "https://nap.nationalacademies.org/catalog/28868/the-age-of-ai-in-the-life-sciences-benefits-and",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Framework",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly discusses AI-enabled biological tool capabilities, threat landscape characterization, risk assessment methodology, and references a named framework (the 2018 National Academies framework), making these topics the substantive focus of the report.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2809,
+        "output": 95
+      }
+    },
+    {
+      "id": "recKBVFkCGxBtb2zY",
+      "title": "AI and the Evolution of Biological National Security Risks",
+      "type": "Report",
+      "url": "https://s3.us-east-1.amazonaws.com/files.cnas.org/documents/AIBiologicalRisk_2024_Final.pdf",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment",
+        "United States"
+      ],
+      "confidence": "high",
+      "reasoning": "This report explicitly analyzes AI's impact on biorisks, historical biosecurity threats, and emerging AI capabilities in biology, while providing policy recommendations to US policymakers addressing near-term biological catastrophe risks.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2871,
+        "output": 85
+      }
+    },
+    {
+      "id": "recKP9qpVzKALXelJ",
+      "title": "AI and Biorisk: An Explainer",
+      "type": "Blog post",
+      "url": "https://cset.georgetown.edu/publication/ai-and-biorisk-an-explainer/",
+      "hasAbstract": true,
+      "tags": [
+        "LLMs",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "This is a landscape explainer on how AI exacerbates biological threats and malicious actor capabilities, which fits 'Threat Assessment' as it characterizes the threat landscape; 'LLMs' is included because the abstract references AI tools broadly as enablers, though the document type and breadth suggest it covers general-purpose AI rather than specific model types.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2795,
+        "output": 108
+      }
+    },
+    {
+      "id": "recKXiMOSVLuzaAmd",
+      "title": "Defensive acceleration: the strategic pivot needed for UK biological resilience",
+      "type": "Report",
+      "url": "https://www.longtermresilience.org/reports/defensive-acceleration-the-strategic-pivot-needed-for-uk-biological-resilience/",
+      "hasAbstract": false,
+      "tags": [
+        "Health security",
+        "Pandemic preparedness",
+        "Policy",
+        "Prevention",
+        "Threat Assessment",
+        "United Kingdom"
+      ],
+      "confidence": "low",
+      "reasoning": "The title indicates a strategic policy position on UK biological resilience focused on defensive measures (suggesting prevention and pandemic preparedness), but without an abstract, the specific content, theoretical framing, and whether it addresses AI/biosecurity dynamics cannot be verified from the title alone.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2737,
+        "output": 100
+      }
+    },
+    {
+      "id": "recKnEUsGp50oTnI4",
+      "title": "Prioritizing High-Consequence Biological Capabilities in Evaluations of Artificial Intelligence Models",
+      "type": "Preprint",
+      "url": "https://papers.ssrn.com/abstract=4873106",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Evaluations",
+        "Policy",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly addresses evaluation methodology for high-consequence biological capabilities in AI models, applies dual-use research frameworks from biology to AI safety, and proposes policy-informed prioritization for pre-deployment risk assessment.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3116,
+        "output": 84
+      }
+    },
+    {
+      "id": "recKyVbTdwyec9zj4",
+      "title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2311.12022",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations"
+      ],
+      "confidence": "high",
+      "reasoning": "GPQA is a benchmark dataset designed to evaluate frontier AI models on graduate-level scientific questions in biology, physics, and chemistry, with explicit measurement of AI capability (GPT-4 at 39%) against human baselines—the core purpose of an evaluation methodology paper.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3008,
+        "output": 79
+      }
+    },
+    {
+      "id": "recL6yvZZV9RaECKN",
+      "title": "AIxBio: Opportunities to Strengthen Health Security",
+      "type": "Journal article",
+      "url": "",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Health security",
+        "Pandemic preparedness",
+        "Policy"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly frames AI's potential benefits for health security, pandemic preparedness, and biosecurity as its main subject, discusses AI capabilities in viral prediction and vaccine development, and provides policy recommendations for US policymakers on governance and deployment.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2975,
+        "output": 82
+      }
+    },
+    {
+      "id": "recLKPsPrEBF9qfxA",
+      "title": "The near-term impact of AI on biological misuse",
+      "type": "Report",
+      "url": "https://www.longtermresilience.org/reports/the-near-term-impact-of-ai-on-biological-misuse/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "Framework",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The report explicitly provides a framework for estimating AI uplift to biological misuse, generates threat-actor-focused hypotheses, and discusses evaluations and uplift studies—directly addressing risk assessment, threat characterization, and capability evaluation in the biological AI safety context.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2925,
+        "output": 95
+      }
+    },
+    {
+      "id": "recLwRAgRlHynaECY",
+      "title": "AIxBio White Papers",
+      "type": "Blog post",
+      "url": "https://www.biotech.senate.gov/press-releases/aixbio-white-paper-1-introduction-to-ai-and-biotech/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Policy",
+        "Risk assessments",
+        "United States"
+      ],
+      "confidence": "medium",
+      "reasoning": "The abstract indicates this is a policy-focused document addressing US oversight of AI in biotechnology with risk assessment and capability considerations, though the actual substance of the policy options is not detailed in the abstract itself.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2720,
+        "output": 70
+      }
+    },
+    {
+      "id": "recM4OoRVqU4lfF8i",
+      "title": "AI can accelerate scientific advance, but the real bottlenecks to progress are cultural and institutional",
+      "type": "Blog post",
+      "url": "https://thebulletin.org/2025/04/ai-can-accelerate-scientific-advance-but-the-real-bottlenecks-to-progress-are-cultural-and-institutional/",
+      "hasAbstract": true,
+      "tags": [
+        "Health security"
+      ],
+      "confidence": "low",
+      "reasoning": "The abstract emphasizes AI's positive role in accelerating scientific progress without dwelling on risks; however, with only a title and brief abstract available, confidence is low and tagging is conservative.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2735,
+        "output": 57
+      }
+    },
+    {
+      "id": "recM86k2LfxGV7XSt",
+      "title": "Barriers to Bioweapons: The Challenges of Expertise and Organization for Weapons Development",
+      "type": "Book",
+      "url": "https://doi.org/10.7591/cornell/9780801452888.001.0001",
+      "hasAbstract": true,
+      "tags": [
+        "Bioweapons history",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The book analyzes historical bioweapons programs and terrorist acquisition attempts through archival research and interviews, identifying barriers centered on expertise and organizational constraints; it provides a threat-landscape characterization relevant to understanding non-state actor capabilities.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3004,
+        "output": 88
+      }
+    },
+    {
+      "id": "recMMUj6b9ZY4Pv4u",
+      "title": "Regulating genome language models: navigating policy challenges at the intersection of AI and genetics",
+      "type": "Journal article",
+      "url": "https://doi.org/10.1007/s00439-025-02768-4",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Data governance",
+        "Framework",
+        "International governance",
+        "Policy"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly addresses regulatory frameworks for genome language models, bridging AI governance and genomic privacy through policy analysis, data governance concerns, and proposes a multilayered governance framework applicable across jurisdictions.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2929,
+        "output": 82
+      }
+    },
+    {
+      "id": "recMvGlelhqpGgpyN",
+      "title": "When AI Meets Biology: Promise, Risk, and Responsibility",
+      "type": "Blog post",
+      "url": "https://www.microsoft.com/en-us/research/blog/when-ai-meets-biology-promise-risk-and-responsibility/",
+      "hasAbstract": true,
+      "tags": [
+        "Jailbreaks and red-teaming",
+        "Mitigations",
+        "Open-weight LLMs",
+        "Transparency and reporting"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract describes red-teaming of open-source AI models against biosecurity safeguards, the mitigation fixes that resulted, and public disclosure of a previously confidential effort—all core themes of jailbreak/safeguard testing, mitigation development, open-weight model risks, and transparency practices.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2731,
+        "output": 112
+      }
+    },
+    {
+      "id": "recN69wEsySLLHIPI",
+      "title": "Biological data governance in an age of AI",
+      "type": "Journal article",
+      "url": "https://www.science.org/doi/10.1126/science.aeb2689",
+      "hasAbstract": false,
+      "tags": [
+        "Data governance",
+        "Dual-use research"
+      ],
+      "confidence": "low",
+      "reasoning": "The title directly indicates focus on data governance in biological contexts amid AI advancement, with dual-use implications inherent in the framing of governance challenges, but without an abstract only conservative tagging is appropriate.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2791,
+        "output": 69
+      }
+    },
+    {
+      "id": "recNURR9GWfNQ3rqj",
+      "title": "Without Safeguard, AI-Bio Integration Risks Accelerating Future Pandemics",
+      "type": "Journal article",
+      "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2025.1734561/full",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Mitigations",
+        "Protein design",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper maps AI protein-design capabilities in viral contexts, proposes a risk-assessment framework for AI-biology systems, and discusses safeguards for closed-loop biological design—touching on multiple substantive topics including protein design, dual-use concerns, pandemic risk, and mitigation strategies.",
+      "warnings": [
+        "dropped \"Dual-use research\" (over the Topic limit)",
+        "dropped \"Pandemic preparedness\" (over the Topic limit)",
+        "dropped \"Framework\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 2914,
+        "output": 119
+      }
+    },
+    {
+      "id": "recNXOdbNa1VzNnER",
+      "title": "Technical Exchange Meeting: “MITRE Generative AI in Biotechnology Roundtable”",
+      "type": "Journal article",
+      "url": "https://www.mitre.org/news-insights/publication/technical-exchange-meeting-mitre-generative-ai-biotechnology-roundtable",
+      "hasAbstract": true,
+      "tags": [
+        "Health security",
+        "LLMs",
+        "Pandemic preparedness",
+        "Synthetic biology",
+        "Threat Assessment"
+      ],
+      "confidence": "low",
+      "reasoning": "Only a title and abstract are available; the roundtable likely covered multiple AI-in-biotech topics, but without full proceedings details, specific claims about what substantively drove discussion remain unclear — tagging conservatively around the stated emphasis on innovation, safety, and strategic considerations.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2750,
+        "output": 103
+      }
+    },
+    {
+      "id": "recNeT2mUfd9XCf3o",
+      "title": "International AI Safety Report",
+      "type": "Report",
+      "url": "https://www.gov.uk/government/publications/international-ai-safety-report-2025",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "International governance",
+        "Risk assessments",
+        "Threat Assessment",
+        "Transparency and reporting"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a comprehensive expert report on AI capabilities and risks with international representation; it substantively addresses threat characterization, capability analysis, risk assessment methodologies, and international governance coordination, positioning it across multiple core AIxBio topics rather than any single narrow focus.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3363,
+        "output": 99
+      }
+    },
+    {
+      "id": "recO1CNFNW2NTn3Cs",
+      "title": "From Gene Editing to Pathway Design: How AI is Transforming Synthetic Biology",
+      "type": "Webpage",
+      "url": "https://www.biopharmatrend.com/post/642-from-gene-editing-to-pathway-design-how-ai-is-transforming-synthetic-biology/",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Health security",
+        "Synthetic biology"
+      ],
+      "confidence": "high",
+      "reasoning": "The article focuses on AI's role in synthetic biology and metabolic pathway design with emphasis on beneficial applications in healthcare and global challenges, making synthetic biology and health security the primary topics, supported by discussion of biological design tools.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2809,
+        "output": 78
+      }
+    },
+    {
+      "id": "recO3n4OgNiFRVHgk",
+      "title": "Response to the NSCEB’s Interim Report and AIxBio Policy Options",
+      "type": "Journal article",
+      "url": "https://centerforhealthsecurity.org/sites/default/files/2024-04/2024-04-09-joint-nsceb-response.pdf",
+      "hasAbstract": false,
+      "tags": [
+        "International governance",
+        "Policy",
+        "Request for Information (RFI)"
+      ],
+      "confidence": "low",
+      "reasoning": "The title indicates a formal response to a government body's report on AI and biosecurity policy options, likely a submitted statement; confidence is low because only the title is available and 'NSCEB' is not fully spelled out in the title.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2736,
+        "output": 95
+      }
+    },
+    {
+      "id": "recOIzscyMXxdSriV",
+      "title": "Third-Party Assessments",
+      "type": "Blog post",
+      "url": "https://www.frontiermodelforum.org/technical-reports/third-party-assessments/",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Mitigations",
+        "Transparency and reporting"
+      ],
+      "confidence": "high",
+      "reasoning": "The document directly addresses third-party assessment practices for evaluating model safety claims and mitigations, focusing on methodology and transparency in safety evaluation across frontier AI systems.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2779,
+        "output": 67
+      }
+    },
+    {
+      "id": "recOJz5rStYgOfgme",
+      "title": "AIxBio = Big Promise + New Risks",
+      "type": "Blog post",
+      "url": "https://www.nti.org/risky-business/aixbio-big-promise-new-risks/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The item characterizes the emerging AI-biology threat landscape and argues for multi-disciplinary action on safety, spanning threat characterization, capability implications, and policy response—though only the abstract is available, so confidence is limited.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2751,
+        "output": 79
+      }
+    },
+    {
+      "id": "recOMXCLPdiCXn9sr",
+      "title": "Open-weight models lag state-of-the-art by around 3 months on average",
+      "type": "Webpage",
+      "url": "https://epoch.ai/data-insights/open-weights-vs-closed-weights-models",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "LLMs",
+        "Open-weight LLMs"
+      ],
+      "confidence": "high",
+      "reasoning": "The item directly analyzes and compares the capabilities of open-weight models against closed-source frontier models using a specific evaluation index, making it substantively about both general LLM capabilities and the distinct category of open-weight model performance.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2847,
+        "output": 78
+      }
+    },
+    {
+      "id": "recOafKHrhncexn4o",
+      "title": "LLM Novice Uplift on Dual-Use, In Silico Biology Tasks",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2602.23329",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "Non-state actors"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly measures novice uplift on biosecurity-relevant tasks through a controlled human study—central to evaluating both capabilities and dual-use risk—and explicitly examines safeguard circumvention and the ease with which novices access dual-use information despite mitigations.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3093,
+        "output": 110
+      }
+    },
+    {
+      "id": "recOlM1SJHFDkgE6t",
+      "title": "The Convergence of Artificial Intelligence and the Life Sciences",
+      "type": "Report",
+      "url": "https://www.nti.org/analysis/articles/the-convergence-of-artificial-intelligence-and-the-life-sciences/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "International governance",
+        "Mitigations",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "This report directly addresses AI capabilities in biological engineering, biosecurity implications, and governance approaches — covering capabilities assessment, threat characterization, policy recommendations, and mitigation strategies through a governance lens.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2878,
+        "output": 81
+      }
+    },
+    {
+      "id": "recOqP4kp1qPwqjwF",
+      "title": "Aligning innovation and security in AI-enabled biotechnology: a framework for designing and funding mutually reinforcing approaches",
+      "type": "Journal article",
+      "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1820739/full",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Data governance",
+        "Evaluations",
+        "Framework",
+        "Metadata"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper proposes a framework for embedding safety into biological research systems while advancing innovation, with case studies on data sharing, metadata tracking, and capability benchmarking for AI-enabled biological tools, plus policy recommendations—matching Framework, Data governance, Metadata, Evaluations, Biological Tools, Policy, and Health security tags.",
+      "warnings": [
+        "dropped \"Policy\" (over the Topic limit)",
+        "dropped \"Health security\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 3010,
+        "output": 113
+      }
+    },
+    {
+      "id": "recOsig48KDwdVxyK",
+      "title": "Sequence modeling and design from molecular to genome scale with Evo | Science",
+      "type": "Webpage",
+      "url": "https://www.science.org/doi/10.1126/science.ado9336",
+      "hasAbstract": false,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Synthetic biology"
+      ],
+      "confidence": "low",
+      "reasoning": "Title describes a large-scale sequence model for molecular and genome design; from title alone, this appears to be a foundational biological AI tool paper addressing capabilities in synthetic biology applications.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2695,
+        "output": 71
+      }
+    },
+    {
+      "id": "recPmbXh8x7AsArVv",
+      "title": "Exclusive: AI Bests Virus Experts, Raising Biohazard Fears",
+      "type": "Webpage",
+      "url": "https://time.com/7279010/ai-virus-lab-biohazard-study/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The article discusses AI capability in virology that could be misused by non-experts, touching on capability demonstration, threat characterization, and novice-uplift concerns, but lacks detailed methodology or substantive policy/framework analysis.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2728,
+        "output": 81
+      }
+    },
+    {
+      "id": "recPrIgt9MCOokNYc",
+      "title": "Simulating 500 million years of evolution with a language model | Science",
+      "type": "Webpage",
+      "url": "https://www.science.org/doi/10.1126/science.ads0018",
+      "hasAbstract": false,
+      "tags": [
+        "Biological Tools",
+        "Capabilities"
+      ],
+      "confidence": "low",
+      "reasoning": "Title indicates a study of AI model capabilities in simulating evolutionary biology, which could involve protein language models or biological design tools; stated conservatively due to limited information.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2695,
+        "output": 61
+      }
+    },
+    {
+      "id": "recQMOOUFauFwheH8",
+      "title": "Advances in AI and Increased Biological Risks",
+      "type": "Report",
+      "url": "https://councilonstrategicrisks.org/2024/07/12/advances-in-ai-and-increased-biological-risks/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Mitigations",
+        "Policy",
+        "Threat Assessment",
+        "United States"
+      ],
+      "confidence": "medium",
+      "reasoning": "The report addresses US policy approaches to managing Bio-AI risks through export controls, touching on threat characterization, mitigation strategies, and national policy positioning, though the abstract alone limits specificity about the substantive technical or capability content.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2735,
+        "output": 100
+      }
+    },
+    {
+      "id": "recQj3H764udL71XV",
+      "title": "AI-Made Bioweapons Are Washington’s Latest Security Obsession",
+      "type": "Newspaper article",
+      "url": "https://www.bloomberg.com/news/features/2024-08-02/national-security-threat-from-ai-made-bioweapons-grips-us-government",
+      "hasAbstract": true,
+      "tags": [
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The article appears to discuss how Washington policymakers are responding to AI-enabled bioweapon threats, combining threat characterization with policy attention, though without access to the full text confidence cannot be higher.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2715,
+        "output": 74
+      }
+    },
+    {
+      "id": "recRDYNuCgEYrAJnx",
+      "title": "AI governance through global red lines can help prevent unacceptable risks",
+      "type": "Webpage",
+      "url": "https://oecd.ai/en/wonk/ai-governance-through-global-red-lines-can-help-prevent-unacceptable-risks",
+      "hasAbstract": true,
+      "tags": [
+        "International governance",
+        "Policy"
+      ],
+      "confidence": "high",
+      "reasoning": "The item discusses global red lines as a governance mechanism for AI, which is explicitly about international governance and policy-level risk prevention rather than technical mitigations or evaluations.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2710,
+        "output": 59
+      }
+    },
+    {
+      "id": "recRV5NLUr5Utaonj",
+      "title": "Understanding AI-Enabled Biological Threats: Hype, Hazard, and Governance",
+      "type": "Webpage",
+      "url": "https://www.engbio.cam.ac.uk/news/understanding-ai-enabled-biological-threats-hype-hazard-and-governance",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The item characterizes the threat landscape and AI's dual-use implications in engineering biology, discusses risk likelihood, and considers governance approaches — spanning threat assessment, capability implications, and policy framing — though the abstract does not detail specific methods or frameworks.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2794,
+        "output": 81
+      }
+    },
+    {
+      "id": "recS2eZqwAKixtVFs",
+      "title": "What do model reports say about their ChemBio benchmark evaluations? Comparing recent releases to the STREAM framework",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2510.20927",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Framework",
+        "Transparency and reporting"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly examines model safety reports on ChemBio evaluations against the STREAM framework standard, making it substantively about evaluation methodology, transparency/reporting practices, and how a specific framework is being applied in practice.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2991,
+        "output": 77
+      }
+    },
+    {
+      "id": "recS9260SWsEDtcon",
+      "title": "Open Technical Problems in Open-Weight AI Model Risk Management",
+      "type": "Preprint",
+      "url": "https://papers.ssrn.com/abstract=5705186",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Framework",
+        "Mitigations",
+        "Open-weight LLMs",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly addresses technical challenges in managing risks from open-weight models across training, evaluation, deployment, and monitoring—core concerns of risk assessment and mitigation—and proposes a structured framework for the field.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3031,
+        "output": 87
+      }
+    },
+    {
+      "id": "recSAwKcjNkUIOOb7",
+      "title": "Can large language models democratize access to dual-use biotechnology?",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2306.03809",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Jailbreaks and red-teaming",
+        "LLMs",
+        "Nucleic acid synthesis screening"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly evaluates LLM capabilities for dual-use biotechnology access through red-team testing, addresses the dual-use dilemma, and proposes mitigations including DNA synthesis screening and cloud lab oversight.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3001,
+        "output": 99
+      }
+    },
+    {
+      "id": "recSL9ShI3DyaZYrS",
+      "title": "Toward risk analysis of the impact of artificial intelligence on the deliberate biological threat landscape",
+      "type": "Journal article",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/risa.17691",
+      "hasAbstract": true,
+      "tags": [
+        "Framework",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment",
+        "United States"
+      ],
+      "confidence": "high",
+      "reasoning": "The article directly presents quantitative and qualitative frameworks for evaluating biorisk from AI convergence, discusses threat landscape characterization, references the US Executive Order requiring biorisk assessment, and proposes structured evaluation methodologies — fitting risk assessments, threat assessment, framework, US policy context, and policy substance tags.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2839,
+        "output": 110
+      }
+    },
+    {
+      "id": "recTL3bUcmRQ4vcpd",
+      "title": "Biosecurity in the Age of AI: What’s the Risk?",
+      "type": "Webpage",
+      "url": "https://www.belfercenter.org/publication/biosecurity-age-ai-whats-risk",
+      "hasAbstract": true,
+      "tags": [
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The abstract indicates this is an overview of AI biosecurity concerns and identifies gaps in analysis, which aligns with threat characterization and risk assessment of the evolving threat landscape, though the limited detail prevents higher confidence.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2735,
+        "output": 72
+      }
+    },
+    {
+      "id": "recTYCtWDhmSCfJ5I",
+      "title": "A.I. May Save Us or May Construct Viruses to Kill Us",
+      "type": "Newspaper article",
+      "url": "https://www.nytimes.com/2024/07/27/opinion/ai-advances-risks.html",
+      "hasAbstract": true,
+      "tags": [
+        "LLMs",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "low",
+      "reasoning": "A newspaper opinion piece that frames AI as a dual-use technology with biosecurity implications, likely discussing both risks and benefits of AI development, but without sufficient detail from the title and abstract alone to confirm specific topics.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2728,
+        "output": 75
+      }
+    },
+    {
+      "id": "recTnJBBV8EnDvKJ0",
+      "title": "Learning from prepandemic data to forecast viral escape",
+      "type": "Journal article",
+      "url": "https://www.nature.com/articles/s41586-023-06617-0",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Pandemic preparedness",
+        "Virology"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper develops a deep learning framework to predict viral escape mutations before pandemic emergence, directly addressing virology-specific capability prediction and pandemic preparedness through early warning of variants of concern.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3024,
+        "output": 68
+      }
+    },
+    {
+      "id": "recTvxcC8lWZM7PlZ",
+      "title": "Bridging the Digital to Physical Divide: Evaluating LLM Agents on Benchtop DNA Acquisition",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA4591-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Capabilities",
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "Nucleic acid synthesis screening"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly evaluates frontier LLM agents on DNA design and synthesis tasks with explicit dual-use framing; it measures capability at tasks involving benchtop DNA synthesis and viral-pathogen design, combining evaluation methodology, agent autonomy, and synthesis-screening concerns.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2864,
+        "output": 103
+      }
+    },
+    {
+      "id": "recUQOeIW6U4MpZ3A",
+      "title": "Towards Responsible Governance of Biological Design Tools",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2311.15936",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Dual-use research",
+        "Policy",
+        "Protein design",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly addresses governance of biological design tools including protein prediction models, proposes risk assessment and mitigation measures, analyzes dual-use challenges, and recommends policy approaches for responsible development and access management.",
+      "warnings": [
+        "dropped \"Mitigations\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 2944,
+        "output": 92
+      }
+    },
+    {
+      "id": "recURWnrGbAxcMYth",
+      "title": "Do the biorisk evaluations of AI labs actually measure the risk of developing bioweapons?",
+      "type": "Webpage",
+      "url": "https://epoch.ai/gradient-updates/do-the-biorisk-evaluations-of-ai-labs-actually-measure-the-risk-of-developing-bioweapons",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The item directly examines the validity of biorisk evaluations conducted by AI labs, assesses whether they measure actual bioweapon development risk, and implicitly critiques evaluation methodology—hitting risk assessment, evaluation practice critique, threat characterization, and safeguard testing angles.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2736,
+        "output": 106
+      }
+    },
+    {
+      "id": "recUX9VuEKFBFGMG1",
+      "title": "We Need to be Ready for Biotechnology’s \"ChatGPT\" Moment",
+      "type": "Webpage",
+      "url": "https://time.com/6967625/we-need-to-be-ready-for-biotechs-chatgpt-moment/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Health security",
+        "LLMs"
+      ],
+      "confidence": "low",
+      "reasoning": "The title suggests discussion of breakthrough AI capabilities in biotechnology and preparedness, but only the title and publication context are available; the abstract provides minimal substantive information about the specific claims or analysis, so tags are conservative.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2722,
+        "output": 74
+      }
+    },
+    {
+      "id": "recUyC5QsPmRvv90m",
+      "title": "Emerging biosecurity threats in the age of AI",
+      "type": "Webpage",
+      "url": "https://indiabioscience.org/columns/indian-scenario/emerging-biosecurity-threats-in-the-age-of-ai",
+      "hasAbstract": true,
+      "tags": [
+        "Global South",
+        "International governance",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The item characterizes the threat landscape from AI-enabled biology, discusses governance and preparedness needs, positions India's strategic response within international governance, and centers Global South perspectives on biosecurity governance.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2788,
+        "output": 76
+      }
+    },
+    {
+      "id": "recVGzXrEXH31al4f",
+      "title": "How to better research the possible threats posed by AI-driven misuse of biology",
+      "type": "Blog post",
+      "url": "https://thebulletin.org/2024/03/how-to-better-research-the-possible-threats-posed-by-ai-driven-misuse-of-biology/",
+      "hasAbstract": true,
+      "tags": [
+        "Jailbreaks and red-teaming",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The piece discusses adversarial testing approaches (red-teaming with 'bad guys') as a method to systematically identify threats from AI-driven biological misuse, combining threat characterization with safeguard evaluation methodology.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2731,
+        "output": 87
+      }
+    },
+    {
+      "id": "recVm0yNHzId62Tcl",
+      "title": "Unlearning Virus Knowledge Toward Safe and Responsible Mutation Effect Predictions",
+      "type": "Preprint",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.10.02.616274v1",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Jailbreaks and red-teaming",
+        "Mitigations",
+        "Protein design"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly proposes an unlearning-based mitigation technique (PROEDIT) to remove harmful capabilities from protein language models while preserving beneficial ones, addresses safety concerns in protein design AI, and demonstrates evaluation of safeguard robustness against misuse scenarios.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2934,
+        "output": 104
+      }
+    },
+    {
+      "id": "recVp5XlcSze0A9ty",
+      "title": "The New Bioweapons",
+      "type": "Magazine article",
+      "url": "https://www.foreignaffairs.com/world/new-bioweapons-covid-biology",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "International governance",
+        "Synthetic biology",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The article examines how synthetic biology capabilities could create bioweapon threats and destabilize international security, covering capability landscape, threat characterization, and governance implications.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2714,
+        "output": 71
+      }
+    },
+    {
+      "id": "recW2G5WgTfnT59Z9",
+      "title": "Strengthening Preparedness Against Novel Biological Threat Agents Enabled Through Artificial Intelligence and Other Emerging Technologies",
+      "type": "Webpage",
+      "url": "https://www.nationalacademies.org/projects/CHPP-LSB-25-04",
+      "hasAbstract": true,
+      "tags": [
+        "Health security",
+        "Pandemic preparedness",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly discusses preparedness and response to biological threats enabled by AI, medical countermeasure development, detection and response capabilities, and risk reduction strategies — spanning pandemic preparedness, threat characterization, health security benefits, and policy-level considerations for governance.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2826,
+        "output": 94
+      }
+    },
+    {
+      "id": "recW2v2q8rP4GD6mg",
+      "title": "“Emergent Abilities,” AI, and Biosecurity: Conceptual Ambiguity, Stability, and Policy",
+      "type": "Book section",
+      "url": "https://www.nti.org/analysis/articles/disincentivizing-bioweapons-theory-and-policy-approaches/",
+      "hasAbstract": true,
+      "tags": [
+        "Dual-use research",
+        "International governance",
+        "Policy"
+      ],
+      "confidence": "medium",
+      "reasoning": "The item addresses policy solutions to biological weapons, international coordination to reduce biological threats, and the dual-use challenge of balancing security concerns with beneficial uses, though the abstract does not explicitly mention AI beyond the title.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2769,
+        "output": 74
+      }
+    },
+    {
+      "id": "recWFwcrbsFB7QONy",
+      "title": "Biosecurity Risk Assessment for the Use of Artificial Intelligence in Synthetic Biology",
+      "type": "Journal article",
+      "url": "https://www.liebertpub.com/doi/full/10.1089/apb.2023.0031",
+      "hasAbstract": true,
+      "tags": [
+        "Framework",
+        "LLMs",
+        "Risk assessments",
+        "Synthetic biology"
+      ],
+      "confidence": "high",
+      "reasoning": "The article proposes a novel biosecurity risk assessment methodology and framework specifically for evaluating AI (particularly LLMs like ChatGPT) in synthetic biology, with structured tools and a worked example demonstrating their application.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2992,
+        "output": 80
+      }
+    },
+    {
+      "id": "recWddqbI4ywZ1XHT",
+      "title": "Developing a Risk-Scoring Tool for Artificial Intelligence–Enabled Biological Design: A Method to Assess the Risks of Using Artificial Intelligence to Modify Select Viral Capabilities",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA4490-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Risk assessments",
+        "Taxonomy",
+        "Threat Assessment",
+        "Virology"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly describes developing a risk-scoring tool for AI-enabled viral modification, combining risk factors with actor capability assessment—this is core risk-assessment methodology applied to viral capabilities with taxonomic elements; virology is the biological domain; threat assessment frames the actor capability dimension.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2840,
+        "output": 98
+      }
+    },
+    {
+      "id": "recWyA0h9PyRh0gNX",
+      "title": "Spiez Convergence: Report on the sixth conference",
+      "type": "Report",
+      "url": "https://backend.spiezlab.admin.ch/fileservice/sdweb-docs-prod-spiezlab-files/files/2024/11/28/788ad019-6d7f-4f3c-826f-ba04564ae167.pdf",
+      "hasAbstract": true,
+      "tags": [
+        "Dual-use research",
+        "Event report",
+        "International governance"
+      ],
+      "confidence": "high",
+      "reasoning": "The report documents a science diplomacy conference on chemical and biological weapons regimes, making it centrally about international governance and dual-use research policy, formatted as an event report rather than a typical article.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2843,
+        "output": 74
+      }
+    },
+    {
+      "id": "recXILlrcp3Pldum4",
+      "title": "Strengthening nucleic acid biosecurity screening against generative protein design tools",
+      "type": "Journal article",
+      "url": "https://www.science.org/doi/10.1126/science.adu8578",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Mitigations",
+        "Nucleic acid synthesis screening",
+        "Protein design"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly addresses biosecurity screening of synthesis orders against AI-designed protein variants, combining evaluation of current screening vulnerabilities with deployment of improved detection mitigations.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2929,
+        "output": 74
+      }
+    },
+    {
+      "id": "recXh6g9jzCqmS30W",
+      "title": "Chemical & Biological Weapons and Artificial Intelligence: Problem Analysis and US Policy Recommendations",
+      "type": "Report",
+      "url": "https://futureoflife.org/document/chemical-biological-weapons-and-artificial-intelligence-problem-analysis-and-us-policy-recommendations/",
+      "hasAbstract": true,
+      "tags": [
+        "NIST",
+        "Policy",
+        "Threat Assessment",
+        "United States"
+      ],
+      "confidence": "medium",
+      "reasoning": "The abstract indicates this is a policy analysis of AI risks in CBW contexts directed at US federal government, likely informed by or responding to the NIST RFI process given the timing and FLI's engagement, but lacks detail on specific topics (evaluations, mitigations, etc.) beyond the threat framing.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2761,
+        "output": 103
+      }
+    },
+    {
+      "id": "recXmTvDuQFb2BvR0",
+      "title": "Exploring AI Methods in Biology Research",
+      "type": "Blog post",
+      "url": "https://cset.georgetown.edu/article/exploring-ai-methods-in-biology-research/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Evaluations"
+      ],
+      "confidence": "medium",
+      "reasoning": "The work analyzes how AI is actually being used in published biology research through empirical study of research trends and patterns, which speaks to both capabilities assessment and evaluative methodology of AI's role in biotechnology practice.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2764,
+        "output": 69
+      }
+    },
+    {
+      "id": "recYdIxrZPACgmamB",
+      "title": "AI Could One Day Engineer a Pandemic, Experts Warn",
+      "type": "Webpage",
+      "url": "https://time.com/7014800/ai-pandemic-bioterrorism/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The piece characterizes pandemic engineering as a potential threat from AI models (threat assessment, capabilities), and it presents arguments for oversight (policy), though without access to the full article the specifics cannot be verified.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2716,
+        "output": 73
+      }
+    },
+    {
+      "id": "recYyvl8GJfLHcCVu",
+      "title": "The Promise and Peril of Artificial Intelligence -- Violet Teaming Offers a Balanced Path Forward",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2308.14253",
+      "hasAbstract": true,
+      "tags": [
+        "Dual-use research",
+        "Framework",
+        "Jailbreaks and red-teaming"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper proposes violet teaming as an integrative framework combining red and blue teaming to address AI safety and biosecurity risks, with explicit focus on adversarial testing and dual-use considerations in biotechnology.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2968,
+        "output": 83
+      }
+    },
+    {
+      "id": "recZLI6X42mnvckX4",
+      "title": "Delay, Detect, Defend: Preparing for a Future in which Thousands Can Release New Pandemics",
+      "type": "Webpage",
+      "url": "https://www.gcsp.ch/publications/delay-detect-defend-preparing-future-which-thousands-can-release-new-pandemics",
+      "hasAbstract": false,
+      "tags": [
+        "Non-state actors",
+        "Pandemic preparedness",
+        "Threat Assessment",
+        "Virology"
+      ],
+      "confidence": "low",
+      "reasoning": "The title characterises a future threat landscape in which non-state actors could trigger pandemics, and invokes detection and defence strategy for pandemic scenarios — but only the title is available, warranting conservative tagging and low confidence.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2728,
+        "output": 88
+      }
+    },
+    {
+      "id": "recZaVkOd8cU63pis",
+      "title": "Toward AI-Resilient Screening of Nucleic Acid Synthesis Orders: Process, Results, and Recommendations",
+      "type": "Preprint",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.12.02.626439v1",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Evaluations",
+        "Mitigations",
+        "Nucleic acid synthesis screening",
+        "Protein design"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly addresses AI-assisted protein engineering pathways to hazardous synthesis (nucleic acid screening focus), evaluates detection tools for AI-redesigned sequences, and proposes mitigations through improved screening protocols.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3104,
+        "output": 91
+      }
+    },
+    {
+      "id": "recaGeRzpbeZmSNKg",
+      "title": "Building an early warning system for LLM-aided biological threat creation",
+      "type": "Report",
+      "url": "https://openai.com/research/building-an-early-warning-system-for-llm-aided-biological-threat-creation",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "LLMs",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly describes an evaluation blueprint for measuring LLM-aided biological threat creation risk, involving expert-led testing of GPT-4 uplift in this domain—this is both an evaluation methodology and a risk assessment with threat-assessment framing.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2865,
+        "output": 98
+      }
+    },
+    {
+      "id": "recaYclbmIRj90MwP",
+      "title": "There's a 'ChatGPT' for biology. What could go wrong?",
+      "type": "Blog post",
+      "url": "https://thebulletin.org/2023/03/chat-gpt-for-biology/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Protein design",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The article directly addresses AI capabilities for protein design/engineering and explicitly frames the risk implications of protein-generation systems, treating this as a distinct biosecurity concern separate from general LLM risks.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2797,
+        "output": 70
+      }
+    },
+    {
+      "id": "recaednbpRrt9wQWN",
+      "title": "The UK’s AI Safety Summit and The Future of AI Bioweapons",
+      "type": "Webpage",
+      "url": "https://councilonstrategicrisks.org/2023/11/06/the-uks-ai-safety-summit-and-the-future-of-ai-bioweapons/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "International governance",
+        "Threat Assessment",
+        "United Kingdom"
+      ],
+      "confidence": "medium",
+      "reasoning": "The item examines AI's role in bioweapons development through the lens of UK AI governance initiatives, addressing threat characterization and capability implications in the biological domain without focusing on specific evaluation methods or mitigation strategies.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2781,
+        "output": 79
+      }
+    },
+    {
+      "id": "recafsrC3BFKit1ol",
+      "title": "Autonomous chemical research with large language models | Nature",
+      "type": "Webpage",
+      "url": "https://www.nature.com/articles/s41586-023-06792-0",
+      "hasAbstract": false,
+      "tags": [
+        "AI agents",
+        "Capabilities",
+        "LLMs"
+      ],
+      "confidence": "low",
+      "reasoning": "The title indicates autonomous AI systems (agents) using large language models to conduct chemical research, demonstrating capabilities in an applied scientific domain, but without an abstract the biosecurity relevance is unclear.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2689,
+        "output": 70
+      }
+    },
+    {
+      "id": "recbQdb4ekyVRKgNk",
+      "title": "How U.S. Export Controls Risk Undermining Biosecurity",
+      "type": "Webpage",
+      "url": "https://www.lawfaremedia.org/article/how-u.s.-export-controls-risk-undermining-biosecurity",
+      "hasAbstract": true,
+      "tags": [
+        "Cyberbiosecurity",
+        "Dual-use research",
+        "International governance",
+        "Policy",
+        "United States"
+      ],
+      "confidence": "medium",
+      "reasoning": "This is a policy analysis examining US export controls and their biosecurity implications, addressing the dual-use dilemma of how regulations intended to prevent proliferation may have unintended consequences; cyberbiosecurity is tagged cautiously as export controls relate to infrastructure security, though the abstract alone does not fully confirm this framing.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2731,
+        "output": 109
+      }
+    },
+    {
+      "id": "recbUleaT00cNi7gL",
+      "title": "A Framework to Evaluate the Risks of LLMs for Assisting CBRN Production Processes",
+      "type": "Report",
+      "url": "https://nonproliferation.org/a-framework-to-evaluate-the-risks-of-llms-for-assisting-cbrn-production-processes/",
+      "hasAbstract": true,
+      "tags": [
+        "LLMs",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly addresses risk assessment of LLMs in a CBRN weapons production context, analyzing threat pathways rather than measuring capabilities, and includes framework development for evaluating these risks.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2747,
+        "output": 73
+      }
+    },
+    {
+      "id": "recbVdxSeOfdWzYO7",
+      "title": "AI can design viruses, toxins and other bioweapons. How worried should we be?",
+      "type": "Journal article",
+      "url": "https://www.nature.com/articles/d41586-026-01476-x",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "LLMs",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The article discusses AI capabilities in bioweapon design (virology/toxins) and risk debate among scientists, suggesting threat characterization and capability analysis rather than detailed evaluation or risk-scoring methods.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2720,
+        "output": 74
+      }
+    },
+    {
+      "id": "recc5eryLCN3smo7C",
+      "title": "AI could pose pandemic-scale biosecurity risks. Here’s how to make it safer",
+      "type": "Journal article",
+      "url": "https://www.nature.com/articles/d41586-024-03815-2",
+      "hasAbstract": true,
+      "tags": [
+        "International governance",
+        "Mitigations",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract directly addresses pandemic-scale biosecurity risks from AI, proposes mitigation approaches through multi-stakeholder collaboration, and discusses governance structures needed to prevent harmful uses — all core topics covered by these tags.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2773,
+        "output": 86
+      }
+    },
+    {
+      "id": "reccJJfmtoGhdwrlS",
+      "title": "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2411.00640",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Transparency and reporting"
+      ],
+      "confidence": "high",
+      "reasoning": "This paper is directly about evaluation methodology for LLMs, specifically how to conduct and report evaluation experiments properly using statistical techniques, which fits both 'Evaluations' (the measurement methods and analysis) and 'Transparency and reporting' (how to report results informatively).",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2842,
+        "output": 85
+      }
+    },
+    {
+      "id": "reccKsiZYP0qzEssC",
+      "title": "Developing Guardrails for AI Biodesign Tools",
+      "type": "Blog post",
+      "url": "https://www.nti.org/wp-content/uploads/2024/11/NTIBio_Paper_Developing-Guardrails-for-AI-Biodesign-Tools_FINAL.pdf",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Mitigations",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The report directly addresses safeguards and risk mitigation strategies for AI biodesign tools, analyzing both the capabilities/risks of BDTs and proposing structured guardrails to reduce misuse potential.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2941,
+        "output": 86
+      }
+    },
+    {
+      "id": "reccQ4JxeeFqcwxgu",
+      "title": "On the Responsible Development and Use of Chem-Bio AI Models: Comments on Evaluations, Mitigations, and Emerging Trends",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/perspectives/PEA3674-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Dual-use research",
+        "Evaluations",
+        "Mitigations",
+        "NIST",
+        "Request for Information (RFI)"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a public comment submitted to the NIST RFI on chemical and biological AI models, substantively addressing evaluation methodologies and mitigation approaches for chem-bio AI systems, with explicit focus on dual-use considerations.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2868,
+        "output": 102
+      }
+    },
+    {
+      "id": "reccXsxu5DTxFfiTE",
+      "title": "Understanding the Theoretical Limits of AI-Enabled Pathogen Design: Insights from a Delphi Study",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA4087-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The Delphi study systematically characterizes constraints on AI-enabled pathogen design and misuse barriers, combining threat characterization with structured risk assessment and capability limitation analysis.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2813,
+        "output": 71
+      }
+    },
+    {
+      "id": "reccu9GidbTGA5dTp",
+      "title": "AI can fuel biological weapons. We must harness its power for defense",
+      "type": "Newspaper article",
+      "url": "https://www.theguardian.com/commentisfree/2026/jul/27/ai-biological-weapons-defense",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Health security",
+        "Prevention",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The article discusses both the offensive potential of AI in biological weapons development and the defensive response through public health strengthening, touching on threat characterization, AI capabilities in biology, prevention measures, and health security benefits.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2712,
+        "output": 80
+      }
+    },
+    {
+      "id": "recde6NhiRzWj5iqM",
+      "title": "How new technology could make it easier to identify covert bioweapons programs",
+      "type": "Blog post",
+      "url": "https://thebulletin.org/2025/09/how-new-technology-could-make-it-easier-to-identify-covert-bioweapons-programs/",
+      "hasAbstract": true,
+      "tags": [
+        "Attribution and forensics",
+        "Bioweapons history",
+        "International governance"
+      ],
+      "confidence": "high",
+      "reasoning": "The item directly addresses detection and identification of covert bioweapons programs through new technologies and approaches, fitting attribution/forensics; discusses the bioweapons treaty regime (International governance); and situates this within historical understanding of what bioweapons programs look like (Bioweapons history).",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2777,
+        "output": 99
+      }
+    },
+    {
+      "id": "recdneibmMpwVI0Y0",
+      "title": "LAB-Bench: Measuring Capabilities of Language Models for Biology Research",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2407.10362",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations",
+        "LLMs"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper presents LAB-Bench, a benchmark dataset for evaluating LLM capabilities on practical biology research tasks, making it centrally about evaluation methodology, LLM capabilities in biology, and biological tools/AI-for-biology systems.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3088,
+        "output": 95
+      }
+    },
+    {
+      "id": "recdruuWzn8vN5BnF",
+      "title": "Expanding our analysis of biological AI models",
+      "type": "Webpage",
+      "url": "https://epoch.ai/blog/expanding-our-analysis-of-biological-ai-models",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Data governance",
+        "Evaluations",
+        "Transparency and reporting"
+      ],
+      "confidence": "high",
+      "reasoning": "The item directly analyzes biological AI models' safeguards, accessibility, training data, and foundational systems — covering evaluation of capabilities, transparency of model attributes, and governance of training data; the explicit release of a database makes this a transparency/reporting and evaluation contribution.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2745,
+        "output": 94
+      }
+    },
+    {
+      "id": "recdxUHJOYeq5BBnF",
+      "title": "Disseminating In Silico and Computational Biological Research: Navigating Benefits and Risks: Proceedings of a Workshop",
+      "type": "Book",
+      "url": "https://nap.nationalacademies.org/catalog/29174/disseminating-in-silico-and-computational-biological-research-navigating-benefits-and",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Data governance",
+        "Dual-use research",
+        "Policy",
+        "Transparency and reporting"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a workshop proceedings directly addressing dual-use research frameworks in the context of AI and computational biology, with explicit focus on oversight approaches, risk assessment methodologies, publishing standards, and policy implications for in silico research dissemination.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2948,
+        "output": 89
+      }
+    },
+    {
+      "id": "receByBWRLMjlpq0U",
+      "title": "3.1 Artificial Intelligence and the Future of Biotechnology",
+      "type": "Journal article",
+      "url": "https://doi.org/10.25611/1233-X161",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Mitigations",
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "This comprehensive review discusses AI capabilities in biotechnology, risk assessment frameworks, mitigation strategies including synthesis screening and access controls, and calls for harmonized national and international policy and governance to manage both benefits and risks.",
+      "warnings": [
+        "dropped \"International governance\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 3107,
+        "output": 89
+      }
+    },
+    {
+      "id": "recexRHcgTdbn55um",
+      "title": "Enhancing Biosecurity with Language Models: Defining Research Directions",
+      "type": "Preprint",
+      "url": "https://papers.ssrn.com/abstract=4772574",
+      "hasAbstract": true,
+      "tags": [
+        "Framework",
+        "Health security",
+        "LLMs"
+      ],
+      "confidence": "high",
+      "reasoning": "The item directly addresses LLM applications in biosecurity work through expert interviews, proposing research directions and datasets to enhance biosecurity capabilities rather than assessing misuse risks, and suggesting a structured approach for LLM-based tool development.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2870,
+        "output": 78
+      }
+    },
+    {
+      "id": "recfK9rREw7ydi3r3",
+      "title": "Using Embodied Artificial Intelligence Agents to Automate Biorisk Management Tasks in High-Containment Laboratories",
+      "type": "Journal article",
+      "url": "https://www.liebertpub.com/doi/10.1089/apb.2024.0068",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Mitigations",
+        "Risk assessments",
+        "Synthetic biology"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly focuses on embodied AI agents automating biorisk management tasks through risk assessment models and physical operations, and discusses synthetic biology challenges as the context for these applications.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2980,
+        "output": 73
+      }
+    },
+    {
+      "id": "recfSevE8MEkwPhrV",
+      "title": "A structured protocol for elicitation experiments | AISI Work",
+      "type": "Webpage",
+      "url": "https://www.aisi.gov.uk/blog/our-approach-to-ai-capability-elicitation",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Risk assessments",
+        "United Kingdom"
+      ],
+      "confidence": "medium",
+      "reasoning": "The item describes a structured protocol for elicitation experiments aimed at calibrating AI risk assessment, which aligns with both evaluation methodology and risk assessment frameworks; it is published by AISI, a UK institution, making UK jurisdiction relevant.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2712,
+        "output": 83
+      }
+    },
+    {
+      "id": "recfkNiF2pjy22s0F",
+      "title": "Securing Dual-Use Pathogen Data of Concern",
+      "type": "",
+      "url": "https://openreview.net/forum?id=ZgD951FVe7&referrer=%5Bthe%20profile%20of%20Oliver%20M%20Crook%5D(%2Fprofile%3Fid%3D~Oliver_M_Crook1)",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Data governance",
+        "Dual-use research",
+        "Framework",
+        "Pretraining"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper introduces a data classification framework (BDL) for pathogen data used in AI training, directly addressing data governance, dual-use research concerns, pretraining data controls, and biological AI tools, with explicit governance proposals.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2989,
+        "output": 93
+      }
+    },
+    {
+      "id": "recfwv5XUX3HooSfk",
+      "title": "'Agentic' life sciences AI is exacerbating bioweapons concerns. Here's what to do about it  - Bulletin of the Atomic Scientists",
+      "type": "Webpage",
+      "url": "https://thebulletin.org/2026/02/agentic-life-sciences-ai-is-exacerbating-bioweapons-concerns-heres-what-to-do-about-it/",
+      "hasAbstract": false,
+      "tags": [
+        "AI agents",
+        "Mitigations",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "low",
+      "reasoning": "Title suggests the item discusses autonomous AI systems in life sciences as a biosecurity threat and proposes policy or mitigation solutions; limited confidence due to lack of abstract.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2716,
+        "output": 71
+      }
+    },
+    {
+      "id": "recfxbx45z6Npom2P",
+      "title": "What will be the impact of AI on the bioweapons treaty?",
+      "type": "Blog post",
+      "url": "https://thebulletin.org/2024/11/what-will-be-the-impact-of-ai-on-the-bioweapons-treaty/",
+      "hasAbstract": true,
+      "tags": [
+        "Bioweapons history",
+        "International governance",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The item directly analyzes how AI advancement affects the Biological Weapons Convention and international bioweapons governance, framed around threat landscape and policy implications.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2759,
+        "output": 73
+      }
+    },
+    {
+      "id": "recga4wVZIN4mlhue",
+      "title": "Could AI-designed proteins be weaponized? Scientists lay out safety guidelines",
+      "type": "Journal article",
+      "url": "https://www.nature.com/articles/d41586-024-00699-0",
+      "hasAbstract": true,
+      "tags": [
+        "Dual-use research",
+        "Mitigations",
+        "Protein design"
+      ],
+      "confidence": "high",
+      "reasoning": "The article discusses safety guidelines for AI-designed proteins, addressing both the dual-use concern of weaponization and mitigation strategies for responsible use of protein-design AI tools.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2728,
+        "output": 66
+      }
+    },
+    {
+      "id": "recggOInlYGw5wIiL",
+      "title": "Towards a Grand Unified Threat Model of Biotechnology",
+      "type": "Webpage",
+      "url": "https://philsci-archive-dev.library.pitt.edu/22539/",
+      "hasAbstract": true,
+      "tags": [
+        "Policy",
+        "Taxonomy",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The item presents a unified theoretical model for characterizing biotechnological threats, categorizing actors and their capabilities, and derives policy implications for biosecurity regulation — making it substantively about threat characterization, classification schemes, and policy analysis.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3068,
+        "output": 80
+      }
+    },
+    {
+      "id": "recgkqeVf2uIg9vQD",
+      "title": "Multimodal AI agents for capturing and sharing laboratory practice | bioRxiv",
+      "type": "Webpage",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.10.05.680425v1",
+      "hasAbstract": false,
+      "tags": [
+        "AI agents",
+        "Biological Tools"
+      ],
+      "confidence": "low",
+      "reasoning": "Title indicates autonomous AI systems operating in laboratory settings, matching the 'AI agents' definition (lab automation agents, end-to-end research agents), and biological design tools as the subject; without abstract, confidence is necessarily low.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2696,
+        "output": 74
+      }
+    },
+    {
+      "id": "recgp9xVXQwYRLKTr",
+      "title": "Artificial intelligence: possible risks and benefits for BWC and CWC",
+      "type": "Journal article",
+      "url": "https://cbwnet.org/media/pages/publications/working-paper/artificial-intelligence-possible-risks-and-benefits-for-bwc-and-cwc/ff95cdf423-1702984262/wp-5-website-version.pdf",
+      "hasAbstract": true,
+      "tags": [
+        "Dual-use research",
+        "International governance",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly discusses dual-use risks from AI applications in life sciences, frames the concern around treaty regimes (BWC and CWC), and addresses the deliberate misuse threat landscape without being limited to a single jurisdiction or framework.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2833,
+        "output": 83
+      }
+    },
+    {
+      "id": "rech9dGcyEUZFnb6M",
+      "title": "The fight over AI biosecurity risk takes a twist",
+      "type": "Webpage",
+      "url": "https://www.politico.com/newsletters/digital-future-daily/2024/02/06/the-fight-over-ai-biosecurity-risk-takes-a-twist-00139945",
+      "hasAbstract": true,
+      "tags": [
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The article characterizes the biosecurity threat landscape and policy debate around AI, making it substantively about threat assessment and policy positioning rather than specific technical mitigations or evaluations.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2733,
+        "output": 63
+      }
+    },
+    {
+      "id": "rechA2hnw8pXsppf8",
+      "title": "Rosetta Commons' Response to NIST RFI on Safety Considerations for Chemical and/or Biological AI Models",
+      "type": "",
+      "url": "https://www.linkedin.com/posts/samuel-curtis_rosetta-commons-community-response-to-nist-activity-7270478284222533632-KHjs/",
+      "hasAbstract": true,
+      "tags": [
+        "NIST",
+        "Policy",
+        "Protein design",
+        "Request for Information (RFI)"
+      ],
+      "confidence": "high",
+      "reasoning": "This is an explicit response to the NIST RFI on chemical and biological AI models, submitted by the Rosetta Commons community to inform policy development around biomolecular design and biosecurity considerations.",
+      "warnings": [
+        "dropped \"Comment / Statement\" (over the Document kind limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 2955,
+        "output": 93
+      }
+    },
+    {
+      "id": "rechS626qCw7IYPak",
+      "title": "Sounding the alarm on AI-enhanced bioweapons",
+      "type": "Webpage",
+      "url": "https://www.europeanleadershipnetwork.org/commentary/sounding-the-alarm-on-ai-enhanced-bioweapons/",
+      "hasAbstract": true,
+      "tags": [
+        "International governance",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The piece characterizes AI-enhanced bioweapons as a threat and proposes governance solutions including BWC funding and an emerging technology unit, directly addressing threat assessment and international governance of dual-use AI-biology technologies.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2796,
+        "output": 79
+      }
+    },
+    {
+      "id": "rechowryGjksckmTN",
+      "title": "Synthetic biology, AI and automation: A forward‑looking technology assessment",
+      "type": "Journal article",
+      "url": "https://www.oecd.org/en/publications/synthetic-biology-ai-and-automation_12158721-en.html",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Biological Tools",
+        "Framework",
+        "Policy",
+        "Synthetic biology"
+      ],
+      "confidence": "high",
+      "reasoning": "This is an OECD strategic assessment of the convergence of synthetic biology, AI (including LLMs and robotics), and automation, explicitly identifying governance implications, policy options, and international collaboration needs — making it substantively about synthetic biology, biological tools, AI agents, governance frameworks, policy recommendations, and international coordination.",
+      "warnings": [
+        "dropped \"International governance\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 2888,
+        "output": 110
+      }
+    },
+    {
+      "id": "reciCsTCyUvbaWhm4",
+      "title": "BioLP-bench: Measuring understanding of biological lab protocols by large language models",
+      "type": "Preprint",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.08.21.608694v3",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations",
+        "LLMs"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper introduces a new benchmark (BioLP-bench) for evaluating LLM performance on understanding biological lab protocols, making it primarily an evaluation methodology paper with direct focus on LLM capabilities in biology and benchmarking practice.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2951,
+        "output": 87
+      }
+    },
+    {
+      "id": "recimCErPBN0Lzlzz",
+      "title": "Quantitative models of AI-driven bioterrorism and lab leak biorisk",
+      "type": "Journal article",
+      "url": "https://adamjones.me/blog/ai-biorisk-paper/quantitative-models-of-AI-driven-bioterrorism-and-lab-leak-biorisk.pdf?",
+      "hasAbstract": true,
+      "tags": [
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper presents a quantitative model for assessing pandemic risks from bioterrorism and lab leaks under different AI scenarios, fitting squarely within risk assessment methodology; the threat landscape characterization of bioterrorism and lab leak pathways also supports the Threat Assessment tag.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2966,
+        "output": 90
+      }
+    },
+    {
+      "id": "recioMlOXyOcwevPF",
+      "title": "Measuring Biological Capabilities and Risks of AI Agents: Generating and Interpreting Evidence from Agentic Evaluations",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/perspectives/PEA4710-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Capabilities",
+        "Evaluations",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly addresses design and interpretation of evaluations specifically for autonomous AI systems in biological contexts, spanning capability measurement, risk assessment methodology, and agentic systems as distinct subjects.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2787,
+        "output": 71
+      }
+    },
+    {
+      "id": "recj44ZAiTHsab0xG",
+      "title": "Artificial intelligence challenges in the face of biological threats: emerging catastrophic risks for public health",
+      "type": "Journal article",
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1382356/full",
+      "hasAbstract": true,
+      "tags": [
+        "LLMs",
+        "Mitigations",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The abstract describes the threat landscape from AI-biology convergence, characterizes emerging catastrophic risks including misuse pathways, and calls for preventive measures and governance—fitting threat assessment, risk assessment, and policy tags; mentions AI broadly without specifying biological tools or other narrower topics, warranting LLMs and mitigations tags for the safeguard emphasis.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2882,
+        "output": 118
+      }
+    },
+    {
+      "id": "recjN5zkhi5vdLung",
+      "title": "Measuring Biological Capabilities and Risks of AI Agents: Generating and Interpreting Evidence from Agentic Evaluations",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/perspectives/PEA4710-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Evaluations",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly focuses on agentic evaluations as a tool for measuring both AI capabilities and risks in biology, making AI agents, evaluations, and risk assessment methodology the core subjects.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2787,
+        "output": 69
+      }
+    },
+    {
+      "id": "recjfRvD9d2NosDVL",
+      "title": "Recommendations and Reporting Checklist for Rigorous & Transparent Human Baselines in Model Evaluations",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2506.13776",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Framework",
+        "Transparency and reporting"
+      ],
+      "confidence": "high",
+      "reasoning": "This paper presents a framework and checklist for rigorous human baselines in AI model evaluations, with systematic review of existing practices, directly addressing evaluation methodology and transparency standards rather than capability measurement or risk assessment themselves.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3017,
+        "output": 74
+      }
+    },
+    {
+      "id": "recjuzS7mIDpIbmWr",
+      "title": "AIxBio: Opportunities to Strengthen Health Security",
+      "type": "Preprint",
+      "url": "https://papers.ssrn.com/abstract=4912421",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Health security",
+        "Pandemic preparedness",
+        "Policy"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly frames AI's role in health security and pandemic preparedness as the primary subject, discusses AI capabilities in biological contexts, and provides policy recommendations for US policymakers on governance and deployment frameworks.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2977,
+        "output": 75
+      }
+    },
+    {
+      "id": "reckOLix2MEVv4EN7",
+      "title": "Securing the Language of Life: Inheritable Watermarks from DNA Language Models to Proteins",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2509.18207",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Mitigations",
+        "Transparency and reporting"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper proposes watermarking techniques as a mitigation for DNA language models to enable tracking of designed sequences and prevent misuse, while using biological tools (DNA language models) as the subject; transparency and reporting applies because watermarks are fundamentally a tracking and accountability mechanism.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3028,
+        "output": 92
+      }
+    },
+    {
+      "id": "reckPWI2dBqhpTT7l",
+      "title": "Grant-Making to Address AI-Bio Risk Challenges",
+      "type": "Blog post",
+      "url": "https://www.frontiermodelforum.org/updates/latest-from-the-fmf-grant-making-to-address-ai-bio-risk-challenges/",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "LLMs",
+        "Mitigations",
+        "Risk assessments"
+      ],
+      "confidence": "low",
+      "reasoning": "Only a title and abstract are available; the abstract mentions support for research at the AI-bio intersection without specifying which topics are covered, so tagging is conservative and focused on the most likely areas given FMF's mandate around frontier AI safety.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2750,
+        "output": 91
+      }
+    },
+    {
+      "id": "reckrljYQfHNP48um",
+      "title": "How AlphaFold and other AI tools could help us prepare for the next pandemic",
+      "type": "Journal article",
+      "url": "https://www.nature.com/articles/d41586-023-03201-4",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Health security",
+        "Pandemic preparedness",
+        "Virology"
+      ],
+      "confidence": "high",
+      "reasoning": "The article discusses AI capabilities (AlphaFold) for specific biological applications in viral evolution prediction and vaccine design within pandemic preparedness context, focusing on benefits rather than misuse risks.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2721,
+        "output": 74
+      }
+    },
+    {
+      "id": "recl9gRqe2CrcbUuC",
+      "title": "AIxBio Horizon Scan Winter 2025-2026",
+      "type": "Blog post",
+      "url": "https://www.nti.org/analysis/articles/aixbio-horizon-scan-winter-2025-2026/",
+      "hasAbstract": true,
+      "tags": [],
+      "confidence": "low",
+      "reasoning": "This is a horizon scan that likely surveys the AIxBio landscape broadly without substantive focus on any specific topic, mitigation, framework, or jurisdiction that would warrant tagging beyond 'framework' — but the abstract does not describe a named framework proposal, only references existing ones; conservative approach favors no tags.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2757,
+        "output": 84
+      }
+    },
+    {
+      "id": "reclCpxj6SsWtvn8T",
+      "title": "Dual use of artificial-intelligence-powered drug discovery",
+      "type": "Journal article",
+      "url": "https://www.proquest.com/docview/2641736775/abstract/13816D3B63D24FD2PQ/1",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "LLMs",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The article directly addresses dual-use concerns in AI-powered drug discovery through a computational demonstration of misuse potential, combining threat characterization with capability analysis of AI systems for biochemical design.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2757,
+        "output": 79
+      }
+    },
+    {
+      "id": "recljB1hNgOUD9HA8",
+      "title": "Strengthening biosecurity in the era of AI",
+      "type": "Blog post",
+      "url": "https://blogs.microsoft.com/on-the-issues/2026/06/04/strengthening-biosecurity-in-the-era-of-ai/",
+      "hasAbstract": true,
+      "tags": [
+        "Health security",
+        "Mitigations",
+        "Policy"
+      ],
+      "confidence": "medium",
+      "reasoning": "The blog post discusses safeguards and biosecurity in the context of AI and biology, balancing risk mitigation with innovation benefits, which aligns with mitigations, health security framing of the upside, and policy considerations.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2728,
+        "output": 73
+      }
+    },
+    {
+      "id": "recmR1sdTmL7ctYLK",
+      "title": "Bridging the Digital to Physical Divide: Evaluating LLM Agents on Benchtop DNA Acquisition",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA4591-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Capabilities",
+        "Cloud labs",
+        "Evaluations",
+        "LLMs"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a benchmarking study evaluating frontier LLM agents on dual-use DNA synthesis and lab protocol tasks, measuring their capability to perform benchtop DNA acquisition, which combines evaluation methodology, agent capability assessment, and hardware-level access pathways.",
+      "warnings": [
+        "dropped \"Jailbreaks and red-teaming\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 2864,
+        "output": 104
+      }
+    },
+    {
+      "id": "recmdkI5YIBJPI33q",
+      "title": "Contemporary Foundation AI Models Increase Biological Weapons Risk",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/perspectives/PEA3853-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly identifies flawed safety assessments and inadequate benchmarks as core concerns, proposes improved benchmarks for risk evaluation, and characterizes how contemporary AI models increase biological weapons risk—spanning risk assessment methodology, evaluation gaps, threat characterization, and capability analysis.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2771,
+        "output": 93
+      }
+    },
+    {
+      "id": "recn1hfXbLLlNU98x",
+      "title": "Semantic design of functional de novo genes from a genomic language model",
+      "type": "Journal article",
+      "url": "https://www.nature.com/articles/s41586-025-09749-7",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations",
+        "Protein design"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a methods paper demonstrating a genomic language model's capability to design functional de novo genes with experimental validation; it exemplifies both the capability of frontier biological AI models and the evaluation of those capabilities through wet-lab experiments, and the biological tools themselves are central to the contribution.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2998,
+        "output": 96
+      }
+    },
+    {
+      "id": "recn7QJXVH0roGojn",
+      "title": "Protein design meets biosecurity",
+      "type": "Journal article",
+      "url": "https://www.science.org/doi/10.1126/science.ado1671",
+      "hasAbstract": true,
+      "tags": [
+        "Department of Homeland Security",
+        "Dual-use research",
+        "Protein design",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract describes a DHS-led assessment of AI dual-use risks in biological (and CBRN) contexts, with protein design mentioned in the title and Baker/Church's expertise in that domain; this is substantively about risk assessment methodology, dual-use analysis, and a specific DHS initiative.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2826,
+        "output": 111
+      }
+    },
+    {
+      "id": "recn8ED1vfkvmKjLL",
+      "title": "We Need A ‘Science of Evals’",
+      "type": "Blog post",
+      "url": "https://www.apolloresearch.ai/blog/we-need-a-science-of-evals/",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations"
+      ],
+      "confidence": "high",
+      "reasoning": "The post directly argues for rigorous scientific approaches to AI model evaluation methodology, making it substantively about evaluation practices and their validity.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2749,
+        "output": 48
+      }
+    },
+    {
+      "id": "recnjnbLOlgvPfYl3",
+      "title": "Resilient Biosecurity in the Era of AI-Enabled Bioweapons",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2509.02610",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Mitigations",
+        "Protein design",
+        "Risk assessments",
+        "Virology"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper evaluates protein prediction tools as biosecurity safeguards against AI-designed bioweapons, finding them inadequate; it addresses protein design risk in a virology context and proposes mitigation strategies including pandemic preparedness infrastructure.",
+      "warnings": [
+        "dropped \"Pandemic preparedness\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 2973,
+        "output": 98
+      }
+    },
+    {
+      "id": "recnrS0aZ399QjvwQ",
+      "title": "How AI tools could enable bioterrorism",
+      "type": "Magazine article",
+      "url": "https://www.economist.com/science-and-technology/2026/05/05/how-ai-tools-could-enable-bioterrorism",
+      "hasAbstract": false,
+      "tags": [
+        "LLMs",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
+      "confidence": "low",
+      "reasoning": "The title indicates discussion of how AI enables bioterrorism, which addresses the threat landscape from non-state actors and likely covers LLM capabilities, but without an abstract the specific scope and framing remain unclear.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2694,
+        "output": 78
+      }
+    },
+    {
+      "id": "recoAFuaXFyy9Zaol",
+      "title": "Large Language Models Often Know When They Are Being Evaluated",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2505.23836",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "LLMs"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly investigates evaluation methodology and potential failures thereof (evaluations), tests whether models can detect and evade evaluation conditions (jailbreaks/red-teaming), includes evaluation of agentic settings (AI agents), and focuses on frontier LLM behavior (LLMs).",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3029,
+        "output": 103
+      }
+    },
+    {
+      "id": "recoc2v78nGqPOQnX",
+      "title": "A Labour of Harm: Artificial Intelligence and Biological Weapons Acquisition",
+      "type": "Preprint",
+      "url": "https://papers.ssrn.com/abstract=6299518",
+      "hasAbstract": true,
+      "tags": [
+        "Bioweapons history",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The paper examines how AI changes the threat landscape for biological weapons acquisition beyond lab capabilities, including historical and actor-focused dimensions, but the abstract is truncated so confidence is not higher.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2757,
+        "output": 79
+      }
+    },
+    {
+      "id": "recoi1fLuND6bw5p4",
+      "title": "Kosmos: An AI Scientist for Autonomous Discovery",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2511.02824",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Capabilities"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a paper about an autonomous AI agent system (Kosmos) designed to conduct scientific research; it demonstrates capabilities in data analysis, literature search, and hypothesis generation across multiple scientific domains, making it substantively about AI agents and AI capabilities in scientific discovery.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3318,
+        "output": 78
+      }
+    },
+    {
+      "id": "recp2L2RoyUCrQEY7",
+      "title": "Driving AIxBio Innovation Through Data and Standardization",
+      "type": "Blog post",
+      "url": "https://www.biotech.senate.gov/press-releases/driving-aixbio-innovation-through-data-and-standardization/",
+      "hasAbstract": true,
+      "tags": [
+        "Data governance",
+        "Metadata"
+      ],
+      "confidence": "medium",
+      "reasoning": "The abstract explicitly addresses biological data generation and standardization, which directly correspond to data governance and metadata as defined in the vocabulary—the former concerning access and provenance, the latter covering standards and exchange formats for biodesign.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2723,
+        "output": 71
+      }
+    },
+    {
+      "id": "recpJi8VytbCembUo",
+      "title": "On the Extinction Risk from Artificial Intelligence",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA3034-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Mitigations",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The report uses scenario analysis to assess extinction risk from AI across multiple domains including pathogens, identifies risk indicators, and proposes mitigations—fitting risk assessment and threat characterization, though biosecurity-specific content appears secondary to the broader extinction-risk framing.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2792,
+        "output": 95
+      }
+    },
+    {
+      "id": "recpmjL8zKxhDAhSe",
+      "title": "The whack-a-mole governance challenge for AI-enabled synthetic biology: literature review and emerging frameworks",
+      "type": "Journal article",
+      "url": "https://www.frontiersin.org/articles/10.3389/fbioe.2024.1359768",
+      "hasAbstract": true,
+      "tags": [
+        "Dual-use research",
+        "Framework",
+        "Policy",
+        "Synthetic biology",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper is a literature review and governance analysis examining policy frameworks for AI-enabled synthetic biology, explicitly addressing dual-use concerns, emerging governance approaches, and the threat landscape including both deliberate misuse and legitimate experimental risks.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3053,
+        "output": 87
+      }
+    },
+    {
+      "id": "recptz9qNiHoZPQIo",
+      "title": "Large Language Models in Biology",
+      "type": "Blog post",
+      "url": "https://cset.georgetown.edu/article/large-language-models-in-biology/",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "LLMs"
+      ],
+      "confidence": "medium",
+      "reasoning": "The item discusses how LLMs are being applied in specific biological domains (drug discovery, genetics, precision medicine), focusing on their capabilities and applications rather than risks, mitigations, or evaluations.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2757,
+        "output": 74
+      }
+    },
+    {
+      "id": "recq87aCaSWOWoznC",
+      "title": "When is it important that open-weight models aren't released?",
+      "type": "Journal article",
+      "url": "https://www.lesswrong.com/posts/TeF8Az2EiWenR9APF/when-is-it-important-that-open-weight-models-aren-t-released",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Open-weight LLMs",
+        "Risk assessments"
+      ],
+      "confidence": "medium",
+      "reasoning": "The article addresses open-weight model release decisions in the context of CBRN (chemical, biological, radiological, nuclear) capabilities, evaluating both benefits and dangers through a risk-assessment lens rather than proposing specific mitigations or policy prescriptions.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2715,
+        "output": 88
+      }
+    },
+    {
+      "id": "recqUAKEZ4Nrwdipe",
+      "title": "Safeguarding Against Global Catastrophe: Risks, Opportunities & Governance options at the Intersection of Artificial Intelligence and Biology",
+      "type": "Report",
+      "url": "https://www.nti.org/analysis/articles/safeguarding-against-global-catastrophe/",
+      "hasAbstract": true,
+      "tags": [
+        "International governance",
+        "Mitigations",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The report characterizes the AIxBio threat landscape through a tabletop exercise, assesses risks from intentional misuse, discusses governance options and mitigation strategies, and engages international partners on pandemic preparedness at a strategic level.",
+      "warnings": [
+        "dropped \"Pandemic preparedness\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 2900,
+        "output": 100
+      }
+    },
+    {
+      "id": "recqYp8CMQ1ZmLk4u",
+      "title": "HealthBench: Evaluating Large Language Models Towards Improved Human Health",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2505.08775",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Health security",
+        "LLMs"
+      ],
+      "confidence": "high",
+      "reasoning": "HealthBench is an evaluation benchmark for LLM performance in healthcare contexts; the abstract emphasizes health benefits and safety measurement, fitting the Evaluations and Health security tags, with LLMs as the subject model class.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3067,
+        "output": 78
+      }
+    },
+    {
+      "id": "recqij6L0Ao5qG8pO",
+      "title": "Breaking Down the Biden AI EO: Screening DNA Synthesis and Biorisk",
+      "type": "Blog post",
+      "url": "https://cset.georgetown.edu/article/breaking-down-the-biden-ai-eo-screening-dna-synthesis-and-biorisk/",
+      "hasAbstract": true,
+      "tags": [
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "United States"
+      ],
+      "confidence": "high",
+      "reasoning": "The blog post directly analyzes the Biden AI Executive Order's implications for biotechnology, specifically discussing DNA synthesis screening requirements, making it substantively about both nucleic acid synthesis oversight and US policy on AI and biosecurity.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2802,
+        "output": 79
+      }
+    },
+    {
+      "id": "recqjXruQFgU3fDwf",
+      "title": "Frontier Capability Assessments",
+      "type": "Blog post",
+      "url": "https://www.frontiermodelforum.org/technical-reports/frontier-capability-assessments/",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Framework",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The document explicitly describes frontier capability assessment methodologies and practices for demonstrating acceptable risk levels, making it substantively about both evaluation techniques and risk assessment frameworks as a field-wide standard.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2786,
+        "output": 67
+      }
+    },
+    {
+      "id": "recqlnOuBF0nbqhR8",
+      "title": "Introducing SecureBio’s ‘Trends in Biology’ AI Benchmarks Dashboard",
+      "type": "Blog post",
+      "url": "https://securebio.substack.com/p/introducing-securebios-trends-in",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations"
+      ],
+      "confidence": "medium",
+      "reasoning": "The item presents benchmarks for measuring AI capabilities in biology, making it fundamentally about evaluation methodology; it aggregates capability data across models, positioning it as a dashboard resource for tracking biological AI capabilities trends.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2706,
+        "output": 76
+      }
+    },
+    {
+      "id": "recqoVrayu07WrJsR",
+      "title": "A Vignette: AI × Bio and the Vanishing Middle",
+      "type": "Webpage",
+      "url": "https://www.connectedideasproject.com/p/ep-54-a-vignette-ai-bio-and-the-vanishing-middle",
+      "hasAbstract": true,
+      "tags": [],
+      "confidence": "low",
+      "reasoning": "The title and item type suggest an opinion or commentary piece on the AI×Bio landscape, but without an abstract or body text, the specific substantive focus cannot be determined reliably, making conservative tagging appropriate.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2707,
+        "output": 62
+      }
+    },
+    {
+      "id": "recr0h7vSz4Ve106f",
+      "title": "Biosecurity in the Age of AI",
+      "type": "Report",
+      "url": "https://www.helenabiosecurity.org",
+      "hasAbstract": true,
+      "tags": [
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The report summarizes a convening of senior leaders to examine AI biosecurity risks and evaluate policy responses, indicating both threat characterization and policy development focus, though the abstract provides limited detail on specific topics covered.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2754,
+        "output": 69
+      }
+    },
+    {
+      "id": "recr5oHma9fi3A4dh",
+      "title": "Expanding our analysis of biological AI models",
+      "type": "Webpage",
+      "url": "https://epoch.ai/blog/expanding-our-analysis-of-biological-ai-models",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Data governance",
+        "Evaluations",
+        "Transparency and reporting"
+      ],
+      "confidence": "high",
+      "reasoning": "The item catalogs biological AI models systematically, analyzing their safeguards, accessibility, training data, and foundation models—directly addressing tool governance, data provenance, transparency practices, and comparative evaluation of the ecosystem.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2733,
+        "output": 82
+      }
+    },
+    {
+      "id": "recriOBw5x7Ch4zvk",
+      "title": "A call for built-in biosecurity safeguards for generative AI tools",
+      "type": "Journal article",
+      "url": "https://www.nature.com/articles/s41587-025-02650-8",
+      "hasAbstract": false,
+      "tags": [
+        "Biological Tools",
+        "Jailbreaks and red-teaming",
+        "Mitigations"
+      ],
+      "confidence": "low",
+      "reasoning": "Title indicates a call for safeguards in generative AI tools for biology, suggesting focus on mitigation strategies and safety considerations for biological AI applications, but without abstract details confidence is low.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2791,
+        "output": 80
+      }
+    },
+    {
+      "id": "recseDmIbJ1qrYN8E",
+      "title": "CSR Recommends Antitrust Guidelines Update to Permit AI Companies to Share Data on Biorisks - The Council on Strategic Risks",
+      "type": "Blog post",
+      "url": "https://councilonstrategicrisks.org/2026/05/27/csr-recommends-antitrust-guidelines-update-to-permit-ai-companies-to-share-data-on-biorisks/",
+      "hasAbstract": true,
+      "tags": [
+        "Data governance",
+        "Policy"
+      ],
+      "confidence": "high",
+      "reasoning": "The item explicitly recommends antitrust policy updates regarding data sharing on biorisks in AI and biology contexts, and addresses data governance at the AIxBio nexus, making both policy and data governance substantively central to the recommendation.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2748,
+        "output": 77
+      }
+    },
+    {
+      "id": "recspMnceqSWSiYsQ",
+      "title": "Artificial Intelligence and Automated Laboratories for Biotechnology: Leveraging Opportunities and Mitigating Risks: Proceedings of a Workshop—in Brief",
+      "type": "Book",
+      "url": "https://nap.nationalacademies.org/catalog/27469",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Biological Tools",
+        "Cloud labs",
+        "Health security",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The workshop proceedings directly address AI and automated laboratories (including remotely controlled equipment and robotic systems), analyze both opportunities and risks in biotechnology, and discuss biosecurity, health safety, and mitigation strategies for these emerging capabilities.",
+      "warnings": [
+        "dropped \"Mitigations\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 2882,
+        "output": 93
+      }
+    },
+    {
+      "id": "recsvuTzrJ8WfQQbm",
+      "title": "Remote Labor Index: Measuring AI Automation of Remote Work",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2510.26787",
+      "hasAbstract": true,
+      "tags": [
+        "AI agents",
+        "Capabilities",
+        "Evaluations"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a benchmark paper measuring AI agent capabilities on economically valuable real-world tasks, directly assessing what frontier models can automate in practice — a core evaluation and capability assessment relevant to AIxBio stakeholders tracking AI impacts.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3136,
+        "output": 78
+      }
+    },
+    {
+      "id": "rectCgSUe81pCj8dD",
+      "title": "Beyond sequence similarity: toward function-based screening of nucleic acid synthesis",
+      "type": "Journal article",
+      "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1832724/full",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Mitigations",
+        "Nucleic acid synthesis screening",
+        "Protein design",
+        "Risk assessments"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly addresses function-based screening for nucleic acid synthesis orders to mitigate biosecurity risks from AI-generated sequences, proposing a framework for detecting hazardous biological functions beyond sequence similarity — core topics in synthesis screening, risk assessment, and mitigations for biological design tools.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3079,
+        "output": 111
+      }
+    },
+    {
+      "id": "rectjanvGa85U2Ar2",
+      "title": "The convergence of AI and synthetic biology: the looming deluge",
+      "type": "Journal article",
+      "url": "https://www.nature.com/articles/s44385-025-00021-1",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Mitigations",
+        "Policy",
+        "Synthetic biology"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract explicitly discusses AI-driven synthetic biology tools, their capabilities and applications, dual-use risks, governance gaps, and proposes regulatory and oversight strategies, directly addressing the convergence of AI capabilities with synthetic biology workflows and the need for responsible governance.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2861,
+        "output": 93
+      }
+    },
+    {
+      "id": "rectq9AFP0AYuNgzk",
+      "title": "When AI Biosafety Safeguards Block Public Health",
+      "type": "Blog post",
+      "url": "https://ldkerr1964.substack.com/p/when-ai-biosafety-safeguards-block",
+      "hasAbstract": true,
+      "tags": [
+        "Health security",
+        "LLMs",
+        "Transparency and reporting"
+      ],
+      "confidence": "high",
+      "reasoning": "The item critiques LLM safeguards that are blocking legitimate public health research, specifically regarding transparency in access control processes and the tension between safety and health security benefits.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2734,
+        "output": 68
+      }
+    },
+    {
+      "id": "recuevBWdLwGA8noJ",
+      "title": "Interpreting Dual-Use Biology Benchmarks for Frontier AI: Measurement, Saturation, and Generational Analysis",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA5055-1.html",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Evaluations",
+        "Taxonomy"
+      ],
+      "confidence": "high",
+      "reasoning": "The paper directly analyzes dual-use biology benchmark performance using item response theory and a taxonomy to characterize AI capability gains, distinguishing saturated tasks from discriminating frontier tasks relevant to biosecurity risk.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2807,
+        "output": 78
+      }
+    },
+    {
+      "id": "recut5EatjPyWvjB0",
+      "title": "Understanding AI-Enabled Biological Threats: Hype, Hazard, and Governance",
+      "type": "Webpage",
+      "url": "https://www.engbio.cam.ac.uk/news/understanding-ai-enabled-biological-threats-hype-hazard-and-governance",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Jailbreaks and red-teaming",
+        "Policy",
+        "Threat Assessment"
+      ],
+      "confidence": "medium",
+      "reasoning": "The abstract characterizes the threat landscape from AI-enabled biology, analyzes capability thresholds (barriers to weapons development), and discusses governance approaches, but the webpage format and broad framing suggest moderate rather than high confidence in the specific technical depth of each topic.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2786,
+        "output": 98
+      }
+    },
+    {
+      "id": "recvf6j1w9fsDEVoW",
+      "title": "Advancing regulatory variant effect prediction with AlphaGenome",
+      "type": "Journal article",
+      "url": "https://www.nature.com/articles/s41586-025-10014-0",
+      "hasAbstract": true,
+      "tags": [
+        "Evaluations",
+        "Protein design"
+      ],
+      "confidence": "medium",
+      "reasoning": "The paper presents a deep learning model for predicting genomic functional effects from DNA sequences with evaluation against existing methods, fitting both 'Protein design' (as a DNA/biological design tool) and 'Evaluations' (as a capability benchmark), though the primary contribution is the model itself rather than biosecurity-specific risk assessment or capability characterization.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3093,
+        "output": 101
+      }
+    },
+    {
+      "id": "recvzBDLB2Y6FikLs",
+      "title": "AIs Are Disseminating Expert-Level Virology Skills",
+      "type": "Webpage",
+      "url": "https://www.ai-frontiers.org/articles/ais-are-disseminating-expert-level-virology-skills",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Threat Assessment",
+        "Virology"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract directly establishes that frontier AI models now exceed human expert capability in virology lab tasks, which is both a capability finding and a core threat-assessment observation about changing barriers to bioweapons development.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2732,
+        "output": 80
+      }
+    },
+    {
+      "id": "recwH64C5yhF9cckg",
+      "title": "AI-Enabled Protein Design: A Strategic Asset for Global Health and Biosecurity",
+      "type": "Journal article",
+      "url": "https://nam.edu/ai-enabled-protein-design-a-strategic-asset-for-global-health-and-biosecurity/",
+      "hasAbstract": true,
+      "tags": [
+        "Capabilities",
+        "Health security",
+        "Protein design"
+      ],
+      "confidence": "high",
+      "reasoning": "The article focuses on AI-enabled protein design tools (AlphaFold, RoseTTAfold, RFdiffusion) and their beneficial applications for health security and medical countermeasures, emphasizing both the technological capability and the upside for global health.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2877,
+        "output": 88
+      }
+    },
+    {
+      "id": "recx1YQFEwWr6eCtH",
+      "title": "Emerging applications of artificial intelligence in pathogen genomics",
+      "type": "Journal article",
+      "url": "https://www.frontiersin.org/journals/bacteriology/articles/10.3389/fbrio.2024.1326958/full",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Health security",
+        "Pandemic preparedness"
+      ],
+      "confidence": "high",
+      "reasoning": "This review examines AI capabilities for pathogen genomics in clinical and public health settings, including language models and foundation models applied to microbial sequences, with direct implications for precision medicine, outbreak detection, and health security—not focused on misuse risks or dual-use concerns.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2909,
+        "output": 95
+      }
+    },
+    {
+      "id": "recxDuv3b2q8wbAEU",
+      "title": "NeurIPS 2025 Workshop on Biosecurity Safeguards for Generative AI",
+      "type": "Webpage",
+      "url": "https://blog.stephenturner.us/p/neurips-2025-biosafe-genai",
+      "hasAbstract": true,
+      "tags": [
+        "Event report"
+      ],
+      "confidence": "medium",
+      "reasoning": "This is a webpage listing accepted papers from a specific workshop event, making it an event report rather than a standalone research contribution, though the abstract alone provides limited detail about the substantive content of the workshop itself.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2737,
+        "output": 63
+      }
+    },
+    {
+      "id": "recxiZ3WXO5hWEcKB",
+      "title": "Sequence modeling and design from molecular to genome scale with Evo",
+      "type": "Journal article",
+      "url": "https://www.science.org/doi/10.1126/science.ado9336",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Protein design",
+        "Synthetic biology"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a foundational model paper demonstrating capabilities across sequence modeling, protein design, and genome-scale generation with specific examples of functional system design (CRISPR-Cas, transposons); it should be tagged for its core subject matter as a biological design tool and its demonstrated capabilities rather than as a risk assessment or evaluation framework.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 3002,
+        "output": 108
+      }
+    },
+    {
+      "id": "recxlyncWmjH5TWdH",
+      "title": "AI and biosecurity: The need for governance",
+      "type": "Journal article",
+      "url": "https://www.science.org/doi/10.1126/science.adq1977",
+      "hasAbstract": true,
+      "tags": [
+        "Biological Tools",
+        "Dual-use research",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
+      "confidence": "high",
+      "reasoning": "The abstract plainly discusses risk assessment frameworks for AI-driven biological models, dual-use concerns, policy recommendations for mandatory oversight, international coordination, and genome synthesis screening, making all these tags directly supported by the text.",
+      "warnings": [
+        "dropped \"International governance\" (over the Topic limit)",
+        "dropped \"Nucleic acid synthesis screening\" (over the Topic limit)"
+      ],
+      "approved": true,
+      "usage": {
+        "input": 2900,
+        "output": 104
+      }
+    },
+    {
+      "id": "recyZnic2VxTCD0nR",
+      "title": "Focus 2026",
+      "type": "Webpage",
+      "url": "https://www.etterretningstjenesten.no/publikasjoner/focus/focus2026_contents",
+      "hasAbstract": true,
+      "tags": [
+        "International governance",
+        "Threat Assessment"
+      ],
+      "confidence": "low",
+      "reasoning": "The title and item type suggest a threat assessment from a national intelligence service, but without access to the full content, it is unclear whether this document addresses AI and biosecurity specifically or is merely flagged as a general threat assessment; the tags reflect the likely governance and strategic relevance if it addresses emerging dual-use technologies.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2685,
+        "output": 95
+      }
+    },
+    {
+      "id": "recyyb0FerPhpoUEo",
+      "title": "NTI and CACDA Issue Joint Statement Calling for Stronger Biosecurity and Responsible AI-Biotechnology Innovation",
+      "type": "Blog post",
+      "url": "https://www.nti.org/news/nti-and-cacda-issue-joint-statement-calling-for-stronger-biosecurity-and-responsible-ai-biotechnology-innovation/",
+      "hasAbstract": true,
+      "tags": [
+        "Comment / Statement",
+        "International governance"
+      ],
+      "confidence": "high",
+      "reasoning": "This is a joint statement from two organizations calling for international action on biosecurity and AI-biotech governance, which is clearly about international governance and takes the form of a public statement.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2773,
+        "output": 61
+      }
+    },
+    {
+      "id": "reczTPbwn5yCqzZAK",
+      "title": "Failing crops, mystery deaths and no warning: How a bioweapon attack would unfold",
+      "type": "Blog post",
+      "url": "https://inews.co.uk/opinion/failing-crops-mystery-deaths-and-no-warning-how-a-bioweapon-attack-would-unfold-4199808",
+      "hasAbstract": true,
+      "tags": [
+        "Bioweapons history",
+        "Pandemic preparedness",
+        "Threat Assessment",
+        "United Kingdom"
+      ],
+      "confidence": "high",
+      "reasoning": "The article examines how a bioweapon attack would develop, UK preparedness gaps between scientific and political systems, and implicit lessons from bioweapons history for modern biosecurity—directly addressing threat characterization, pandemic response, and UK-specific institutional weaknesses.",
+      "warnings": [],
+      "approved": true,
+      "usage": {
+        "input": 2717,
+        "output": 105
+      }
+    }
+  ]
+}
