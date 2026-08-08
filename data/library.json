@@ -2927,6 +2927,22 @@
       "year": "2025"
     },
     {
+      "abstract": "The offensive potential is no longer theoretical. We need to develop systems to strengthen public health as quickly as AI is accelerating biological design",
+      "creators": "",
+      "date": "2026-07-27",
+      "doi": "",
+      "id": "reccu9GidbTGA5dTp",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-07-27",
+      "tags": [],
+      "title": "AI can fuel biological weapons. We must harness its power for defense",
+      "type": "Newspaper article",
+      "url": "https://www.theguardian.com/commentisfree/2026/jul/27/ai-biological-weapons-defense",
+      "year": "2026"
+    },
+    {
       "abstract": "A recent project asked what the telltale signs of a bioweapons program would be? There are gaps in the information members of the global bioweapons treaty have access to, but new approaches and technologies can help close these.",
       "creators": "Filippa Lentzos; Hailey Wingo; Jez Littlewood; Alberto Muti",
       "date": "2025-09-15",
@@ -3261,7 +3277,7 @@
       "id": "rechowryGjksckmTN",
       "institution": "",
       "institutions": [],
-      "publication": "OECD Science, Technology and Industry Policy Papers",
+      "publication": "",
       "publicationDate": "2025-12-03",
       "tags": [],
       "title": "Synthetic biology, AI and automation: A forward‑looking technology assessment",
@@ -3887,6 +3903,22 @@
       "year": "2025"
     },
     {
+      "abstract": "A comprehensive view of biology capabilities of AI models",
+      "creators": "SecureBio",
+      "date": "2026-06-13",
+      "doi": "",
+      "id": "recqlnOuBF0nbqhR8",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-06-13",
+      "tags": [],
+      "title": "Introducing SecureBio’s ‘Trends in Biology’ AI Benchmarks Dashboard",
+      "type": "Blog post",
+      "url": "https://securebio.substack.com/p/introducing-securebios-trends-in",
+      "year": "2026"
+    },
+    {
       "abstract": "Accelerationists vs. catastrophists in the decade defining convergence",
       "creators": "Alexander Titus",
       "date": "2026-01-13",
@@ -4071,6 +4103,38 @@
       "type": "Journal article",
       "url": "https://www.nature.com/articles/s44385-025-00021-1",
       "year": "2025"
+    },
+    {
+      "abstract": "ChatGPT’s new restrictions are obstructing legitimate analysis of the Bundibugyo Ebola response—and its Trusted Access process offers remarkably little transparency when the system gets it wrong.",
+      "creators": "Larry Kerr",
+      "date": "2026-08-06",
+      "doi": "",
+      "id": "rectq9AFP0AYuNgzk",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-08-06",
+      "tags": [],
+      "title": "When AI Biosafety Safeguards Block Public Health",
+      "type": "Blog post",
+      "url": "https://ldkerr1964.substack.com/p/when-ai-biosafety-safeguards-block",
+      "year": "2026"
+    },
+    {
+      "abstract": "The authors use item response theory and an interpretive taxonomy to address the motivating question: “What can benchmark data reveal about what artificial intelligence (AI) can do now that it could not do before?” Findings indicate that many benchmark tasks are no longer informative, but there is a discriminating frontier of tasks, with recent gains in performance concentrated in difficult tasks theorized to be relevant to real-world risks.",
+      "creators": "Grant Ellison; Jeffrey Lee; Barbara Del Castello; Sunishchal Dev; Kyle Brady",
+      "date": "2026-08-06",
+      "doi": "",
+      "id": "recuevBWdLwGA8noJ",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-08-06",
+      "tags": [],
+      "title": "Interpreting Dual-Use Biology Benchmarks for Frontier AI: Measurement, Saturation, and Generational Analysis",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA5055-1.html",
+      "year": "2026"
     },
     {
       "abstract": "The intersection of AI and engineering biology offers a unique opportunity to address pressing societal issues, but also poses a potential threat to global biosecurity. Is AI lowering barriers to biological weapons development? What are the risks and how likely are they to emerge? Can AI be used as a tool to aid biosecurity as well as threaten it? Researchers from the Centre for the Study of Existential Risk discuss.",
