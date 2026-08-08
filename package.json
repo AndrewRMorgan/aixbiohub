@@ -1,0 +1,20 @@
+{
+  "name": "aixbiohub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site and data pipeline for the AIxBio Hub research library.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "serve": "node scripts/serve.js",
+    "fetch": "node scripts/fetch-airtable.js",
+    "suggest-tags": "node scripts/suggest-tags.js",
+    "apply-tags": "node scripts/apply-tags.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0"
+  }
+}

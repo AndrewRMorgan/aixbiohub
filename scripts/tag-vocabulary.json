@@ -1,0 +1,97 @@
+{
+  "_comment": [
+    "The controlled vocabulary for scripts/suggest-tags.js. This file is the ONLY",
+    "source of allowed tags: it is compiled into a JSON Schema enum, so the model",
+    "cannot invent a tag even if it wants to — an off-list value is rejected by the",
+    "API before it ever reaches us.",
+    "",
+    "Every one of the 27 tags already present in the Airtable base appears below,",
+    "spelled exactly as it is stored there. Airtable's Tags field is a select field:",
+    "sending an option that does not already exist returns",
+    "INVALID_MULTIPLE_CHOICE_OPTIONS and rejects the whole batch. So any tag marked",
+    "\"new\": true must be added as an option in Airtable before apply-tags.js can",
+    "write it — scripts/apply-tags.js checks this for you and names the missing ones.",
+    "",
+    "Descriptions are written for the model, not for humans browsing the site. Say",
+    "what the tag covers AND what it excludes; ambiguous descriptions are the main",
+    "cause of over-tagging."
+  ],
+
+  "facets": [
+    {
+      "name": "Topic",
+      "maxPerRecord": 3,
+      "guidance": "What the item is substantively about. Pick the smallest set that a researcher filtering the library would expect this item to appear under. Two precise tags beat four loose ones.",
+      "tags": [
+        { "name": "Evaluations", "description": "Benchmarks, capability tests, or evaluation methodology for measuring what AI models can do in biology. Use for the benchmark or eval itself, and for critiques of eval practice. Not for risk assessment frameworks — use 'Risk assessments'." },
+        { "name": "Risk assessments", "description": "Structured methods for assessing risk from a model or tool, including uplift studies and risk-scoring tools. Distinguished from 'Evaluations': evaluations measure capability, risk assessments reason about consequence and likelihood." },
+        { "name": "Threat Assessment", "description": "Characterising the threat landscape — who the actors are, what pathways exist, how the deliberate-misuse picture is changing. Descriptive and strategic rather than measurement-focused." },
+        { "name": "Capabilities", "description": "Analysis of what frontier models are actually capable of in a biological context, including capability thresholds and forecasts. Use alongside 'Evaluations' only when capability trends are a distinct subject, not the measurement method." },
+        { "name": "Mitigations", "description": "Technical or procedural safeguards that reduce misuse risk — refusal training, unlearning, access controls, safeguard evaluation, tamper resistance. Not policy instruments; use 'Policy' for those." },
+        { "name": "Pretraining", "description": "Interventions at the pretraining stage specifically: training-data filtering, corpus curation, deep-ignorance approaches. A narrower sibling of 'Mitigations'." },
+        { "name": "Prevention", "description": "Upstream measures that stop a biological threat from being created or acquired at all, as opposed to detecting or responding to one." },
+        { "name": "Biological Tools", "description": "Biological design tools and AI-for-biology models as a category — BDTs, bio-foundation models, genome and protein language models — including their governance and risk management. Use 'Protein design' for protein-structure-specific work." },
+        { "name": "Protein design", "description": "AI-driven protein structure prediction and de novo protein design, and the biosecurity implications thereof." },
+        { "name": "LLMs", "description": "General-purpose large language models as the subject — chatbot uplift, model releases, LLM safeguards. Not for bio-specific sequence models; use 'Biological Tools'." },
+        { "name": "Open-weight LLMs", "description": "Risks, governance, and safeguard durability specific to models whose weights are publicly released." },
+        { "name": "AI agents", "description": "Autonomous or semi-autonomous AI systems that plan and act — AI co-scientists, agentic benchmarks, lab automation agents, end-to-end research agents. NEW.", "new": true },
+        { "name": "Nucleic acid synthesis screening", "description": "Screening of DNA/RNA synthesis orders, sequences of concern, gene synthesis oversight, and mail-order DNA biosecurity. NEW.", "new": true },
+        { "name": "Cloud labs", "description": "Remotely operated and automated laboratories, and the access pathway they create between a digital design and physical material." },
+        { "name": "Virology", "description": "Virology-specific capability, knowledge, or risk — including virology benchmarks and viral escape prediction." },
+        { "name": "Synthetic biology", "description": "Synthetic biology and genome engineering as a field, including how AI is changing its practice. NEW.", "new": true },
+        { "name": "Pandemic preparedness", "description": "Preparedness, early warning, detection, and response to biological events — including AI-enabled biosurveillance and resilience. NEW.", "new": true },
+        { "name": "Attribution and forensics", "description": "Tracing an engineered biological agent to its source; bioforensics; deterrence that depends on attribution. NEW.", "new": true },
+        { "name": "Jailbreaks and red-teaming", "description": "Adversarial testing of safeguards — jailbreak attacks, red-team exercises, violet teaming, safeguard circumvention. NEW.", "new": true },
+        { "name": "Data governance", "description": "Governance of biological data itself — access to sequence and experimental datasets, training-data provenance, data-sharing regimes. NEW.", "new": true },
+        { "name": "Metadata", "description": "Metadata standards and exchange formats for biodesign, provenance, and traceability." },
+        { "name": "Taxonomy", "description": "Classification schemes and typologies — of mitigations, risks, capabilities, or actors." },
+        { "name": "Framework", "description": "A named framework, standard, or structured methodology proposed for adoption. Use when the framework is the contribution, not merely referenced." },
+        { "name": "Transparency and reporting", "description": "Disclosure practices — model cards, system cards, safety-framework publication, standards for reporting evaluation results. NEW.", "new": true },
+        { "name": "Policy", "description": "Policy analysis and recommendations directed at governments or regulators. Use for the policy substance; 'Comment / Statement' and 'Request for Information (RFI)' describe the document's form instead." },
+        { "name": "International governance", "description": "Multilateral and cross-border governance — treaty regimes, the BWC, UN processes, international summits, red lines, cross-national coordination. NEW.", "new": true },
+        { "name": "Dual-use research", "description": "The dual-use dilemma itself — benefit/risk balancing, dual-use review processes, responsible-innovation norms. NEW.", "new": true },
+        { "name": "Health security", "description": "Benefits and opportunities of AI in biology for health and biosecurity, rather than the misuse risk. Use for items whose main argument is upside. NEW.", "new": true },
+        { "name": "Cyberbiosecurity", "description": "The security of biological infrastructure, instrumentation, and data pipelines as cyber-physical systems. NEW.", "new": true },
+        { "name": "Bioweapons history", "description": "Historical bioweapons programmes and past acquisition attempts, and the lessons drawn from them for the AI era. NEW.", "new": true },
+        { "name": "Non-state actors", "description": "Terrorist groups, lone actors, and other non-state threats — barriers to acquisition, novice uplift framed around who is being uplifted. NEW.", "new": true }
+      ]
+    },
+
+    {
+      "name": "Document kind",
+      "maxPerRecord": 1,
+      "guidance": "Only where the document's form is not already captured by the Item Type field (which separately records Report, Preprint, Journal article, Blog post, Webpage, Book, and so on). Leave empty for an ordinary article, report, or paper — most records should get nothing here.",
+      "tags": [
+        { "name": "Request for Information (RFI)", "description": "A submitted response to a government request for information or public consultation. In this library these are overwhelmingly responses to the NIST RFI on chemical and biological AI models — pair with the 'NIST' tag when so." },
+        { "name": "Comment / Statement", "description": "A public statement, open letter, joint statement, or op-ed-style position piece signed by an organisation or group of experts." },
+        { "name": "Event report", "description": "Proceedings, summaries, or readouts from a workshop, conference, roundtable, or summit." }
+      ]
+    },
+
+    {
+      "name": "Jurisdiction",
+      "maxPerRecord": 2,
+      "guidance": "Only when the item is specifically about that jurisdiction's policy, institutions, or strategic position. Do NOT tag by the author's nationality or the publisher's location — a US think tank writing about global risk is not 'United States'.",
+      "tags": [
+        { "name": "United States", "description": "US federal policy, legislation, agencies, or national security posture." },
+        { "name": "United Kingdom", "description": "UK policy, institutions such as AISI, or national strategy." },
+        { "name": "European Union", "description": "EU policy and law, including the EU AI Act. NEW.", "new": true },
+        { "name": "Australia", "description": "Australian policy and national strategy." },
+        { "name": "China", "description": "Chinese policy, capability, or US–China dynamics. NEW.", "new": true },
+        { "name": "Global South", "description": "Governance, capacity, and equity concerns for lower- and middle-income countries. NEW.", "new": true }
+      ]
+    },
+
+    {
+      "name": "Named body or initiative",
+      "maxPerRecord": 2,
+      "guidance": "Only when the item is directed at, responding to, or substantially about that specific body or initiative. Do NOT use this to record the author's own organisation — the Institution field already does that, and duplicating it here makes the tag facet useless.",
+      "tags": [
+        { "name": "NIST", "description": "The item responds to or analyses NIST activity — most often the NIST RFI on safety considerations for chemical and biological AI models." },
+        { "name": "Department of Homeland Security", "description": "DHS reporting, mandates, or programmes are the subject." },
+        { "name": "AI Action Plan", "description": "The US AI Action Plan specifically." },
+        { "name": "Anthropic", "description": "Anthropic's own safeguards, model policy, or research are the subject of the item." }
+      ]
+    }
+  ]
+}
