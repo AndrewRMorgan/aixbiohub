@@ -1,0 +1,122 @@
+name: Suggest tags
+
+# Step 1 of 2. Asks Claude to draft Tags for Research records that don't have
+# any, and pushes the result to a branch for review. Airtable is NOT touched
+# here — this job only reads the committed data/library.json snapshot and needs
+# no Airtable credentials at all.
+#
+# Review the pushed file, edit it if needed, then run the "Apply tags" workflow
+# FROM THAT BRANCH to write the approved rows to Airtable.
+
+on:
+  # Manual only, and deliberately so: this costs money per run and its output
+  # needs a human to read it before it goes anywhere.
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'How many records to process (blank = all untagged). Start with 20.'
+        required: false
+        default: '20'
+      require_abstract:
+        description: 'Skip records with no abstract (they can only be tagged from the title)'
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: suggest-tags
+  cancel-in-progress: false
+
+jobs:
+  suggest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Full history so the snapshot-age check below can find the last
+          # commit that touched data/library.json.
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # data/library.json is committed by fetch-airtable.yml. If that job hasn't
+      # run since the last Airtable edit, the snapshot is stale and we would
+      # generate suggestions for records whose state has moved on. apply-tags.js
+      # re-reads Airtable and skips those, so this is a wasted-spend warning
+      # rather than a correctness problem.
+      - name: Report snapshot age
+        run: |
+          echo "data/library.json last changed: $(git log -1 --format=%cI -- data/library.json)"
+          echo "Untagged records in snapshot:"
+          node -e "const r=require('./data/library.json').research;console.log('  ' + r.filter(x=>x.title&&!(x.tags||[]).length).length + ' of ' + r.length)"
+
+      # Inputs go through env rather than being interpolated into the script.
+      # A ${{ }} expression is pasted in as literal shell source, so a crafted
+      # input value would otherwise execute as code.
+      - name: Draft tag suggestions
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INPUT_LIMIT: ${{ inputs.limit }}
+          INPUT_REQUIRE_ABSTRACT: ${{ inputs.require_abstract }}
+        run: |
+          set -euo pipefail
+
+          args=()
+          if [ -n "$INPUT_LIMIT" ]; then
+            case "$INPUT_LIMIT" in
+              ''|*[!0-9]*) echo "::error::limit must be a whole number, got '$INPUT_LIMIT'"; exit 1 ;;
+            esac
+            args+=(--limit "$INPUT_LIMIT")
+          fi
+          if [ "$INPUT_REQUIRE_ABSTRACT" = "true" ]; then
+            args+=(--require-abstract)
+          fi
+
+          # "${args[@]}" (no default expansion) is the only form that yields
+          # zero arguments when the array is empty. "${args[@]-}" passes a
+          # single empty string, which the scripts reject as an unknown flag.
+          echo "Running: node scripts/suggest-tags.js ${args[*]:-}"
+          node scripts/suggest-tags.js "${args[@]}"
+
+      - name: Push suggestions to a review branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="tags/suggestions-${{ github.run_number }}"
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b "$BRANCH"
+          git add --force data/tag-suggestions.json
+          git commit -m "Tag suggestions from run ${{ github.run_number }}"
+          git push origin "$BRANCH"
+
+          FILE_URL="${{ github.server_url }}/${{ github.repository }}/blob/$BRANCH/data/tag-suggestions.json"
+
+          {
+            echo "## Tag suggestions ready for review"
+            echo
+            echo "Branch: \`$BRANCH\`"
+            echo
+            echo "**[Review the suggestions]($FILE_URL)**"
+            echo
+            echo "### Next steps"
+            echo "1. Read the file. Set \`\"approved\": false\` on anything wrong, or edit its \`tags\` array."
+            echo "2. Commit any edits to \`$BRANCH\`."
+            echo "3. Run the **Apply tags** workflow, selecting \`$BRANCH\` as the branch."
+            echo
+            echo "Nothing has been written to Airtable."
+          } >> "$GITHUB_STEP_SUMMARY"

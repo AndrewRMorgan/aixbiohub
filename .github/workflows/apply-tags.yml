@@ -1,0 +1,118 @@
+name: Apply tags
+
+# Step 2 of 2. Writes the reviewed suggestions to Airtable.
+#
+# IMPORTANT: run this FROM THE REVIEW BRANCH that "Suggest tags" pushed
+# (pick it in the "Use workflow from" dropdown). It reads
+# data/tag-suggestions.json from whichever branch you select, so running it
+# from main will find no file and stop.
+#
+# Defaults to a dry run. The `confirm` input is the only thing that lets it
+# write, and it is off unless you tick it.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'WRITE to Airtable. Leave unticked for a dry run.'
+        type: boolean
+        required: false
+        default: false
+      skip_low:
+        description: 'Skip low-confidence suggestions (records with no abstract)'
+        type: boolean
+        required: false
+        default: false
+
+# Read-only: this job writes to Airtable, never to the repository.
+permissions:
+  contents: read
+
+concurrency:
+  group: apply-tags
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the selected branch
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check the suggestions file exists
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          if [ ! -f data/tag-suggestions.json ]; then
+            echo "::error::No data/tag-suggestions.json on branch '$BRANCH'."
+            echo "::error::Run the 'Suggest tags' workflow first, then re-run this from the branch it pushed."
+            exit 1
+          fi
+          node -e "const p=require('./data/tag-suggestions.json');console.log(p.suggestions.length+' suggestions, generated '+p.generatedAt)"
+
+      # AIRTABLE_WRITE_TOKEN is deliberately a different secret from the
+      # AIRTABLE_TOKEN used by fetch-airtable.yml. That one only needs
+      # data.records:read; widening it would mean the daily fetch job runs with
+      # a credential that can modify the base.
+      - name: Apply to Airtable
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_WRITE_TOKEN }}
+          INPUT_CONFIRM: ${{ inputs.confirm }}
+          INPUT_SKIP_LOW: ${{ inputs.skip_low }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${AIRTABLE_TOKEN:-}" ]; then
+            echo "::error::Secret AIRTABLE_WRITE_TOKEN is not set."
+            echo "::error::Create a PAT with data.records:read, data.records:write and schema.bases:read."
+            exit 1
+          fi
+
+          args=()
+          if [ "$INPUT_CONFIRM" = "true" ]; then
+            args+=(--confirm)
+          fi
+          if [ "$INPUT_SKIP_LOW" = "true" ]; then
+            args+=(--skip-low)
+          fi
+
+          # tee keeps the log for the job summary; PIPESTATUS preserves the
+          # script's exit code, which `set -o pipefail` alone would take from tee.
+          # "${args[@]}" (no default expansion) is the only form that yields
+          # zero arguments when the array is empty — the default dry-run case.
+          # "${args[@]-}" passes a single empty string, which parseArgs rejects.
+          node scripts/apply-tags.js "${args[@]}" 2>&1 | tee apply-output.txt
+          exit "${PIPESTATUS[0]}"
+
+      - name: Summarise
+        if: always()
+        env:
+          INPUT_CONFIRM: ${{ inputs.confirm }}
+        run: |
+          {
+            if [ "$INPUT_CONFIRM" = "true" ]; then
+              echo "## Applied to Airtable"
+            else
+              echo "## Dry run — nothing written"
+              echo
+              echo "Re-run with **confirm** ticked to write."
+            fi
+            echo
+            echo '```'
+            tail -n 40 apply-output.txt 2>/dev/null || echo "(no output captured)"
+            echo '```'
+            if [ "$INPUT_CONFIRM" = "true" ]; then
+              echo
+              echo "Next: run **Fetch Airtable data** to refresh \`data/library.json\` and rebuild the site."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
