@@ -9,6 +9,10 @@ dist/
 .env
 .env.local
 
+# Tag suggestions — a scratch file for review, regenerated on demand by
+# scripts/suggest-tags.js. The tags themselves live in Airtable once applied.
+data/tag-suggestions.json
+
 # Mac
 .DS_Store
 
