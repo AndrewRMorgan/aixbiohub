@@ -163,7 +163,11 @@
       ],
       "publication": "",
       "publicationDate": "2025-08-11",
-      "tags": [],
+      "tags": [
+        "Non-state actors",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Assessing the Impacts of Technology Maturity and Diffusion on Malicious Biological Agent Development Capabilities: Demonstrating a Transparent, Repeatable Assessment Method",
       "type": "Report",
       "url": "https://www.rand.org/pubs/research_reports/RRA3662-1.html",
@@ -179,7 +183,11 @@
       "institutions": [],
       "publication": "Science",
       "publicationDate": "2025-02-21",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Protein design"
+      ],
       "title": "Simulating 500 million years of evolution with a language model",
       "type": "Journal article",
       "url": "https://www.science.org/doi/10.1126/science.ads0018",
@@ -213,7 +221,11 @@
       "institutions": [],
       "publication": "Frontiers in Bioengineering and Biotechnology",
       "publicationDate": "2026-06-04",
-      "tags": [],
+      "tags": [
+        "Framework",
+        "Metadata",
+        "Nucleic acid synthesis screening"
+      ],
       "title": "Developing a standard definition for sequences of concern",
       "type": "Journal article",
       "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1830842/full",
@@ -231,7 +243,11 @@
       ],
       "publication": "",
       "publicationDate": "2025-02-28",
-      "tags": [],
+      "tags": [
+        "Dual-use research",
+        "Evaluations",
+        "LLMs"
+      ],
       "title": "Automated Grading for Efficiently Evaluating the Dual-Use Biological Capabilities of Large Language Models",
       "type": "Report",
       "url": "https://www.rand.org/pubs/working_papers/WRA3124-1.html",
@@ -249,7 +265,11 @@
       ],
       "publication": "",
       "publicationDate": "2024-12-01",
-      "tags": [],
+      "tags": [
+        "Mitigations",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Anticipating Biological Risk: A Toolkit for Strategic Biosecurity Policy",
       "type": "Report",
       "url": "https://cset.georgetown.edu/publication/anticipating-biological-risk-a-toolkit-for-strategic-biosecurity-policy/",
@@ -265,7 +285,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-12-18",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations"
+      ],
       "title": "Measuring AI’s capability to accelerate biological research in the wet lab",
       "type": "Webpage",
       "url": "https://openai.com/index/accelerating-biological-research-in-the-wet-lab/",
@@ -297,7 +321,11 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2024-12-04",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "The Reality of AI and Biorisk",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2412.01946",
@@ -313,7 +341,10 @@
       "institutions": [],
       "publication": "Science",
       "publicationDate": "2026-02-19",
-      "tags": [],
+      "tags": [
+        "Framework",
+        "Risk assessments"
+      ],
       "title": "The science and practice of proportionality in AI risk evaluations",
       "type": "Journal article",
       "url": "https://www.science.org/doi/10.1126/science.aea3835",
@@ -331,7 +362,11 @@
       ],
       "publication": "",
       "publicationDate": "2025-11-25",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "LLMs"
+      ],
       "title": "Toward Comprehensive Benchmarking of the Biological Knowledge of Frontier Large Language Models",
       "type": "Report",
       "url": "https://www.rand.org/pubs/research_reports/RRA3797-1.html",
@@ -365,7 +400,9 @@
       ],
       "publication": "",
       "publicationDate": "2025-01-01",
-      "tags": [],
+      "tags": [
+        "Biological Tools"
+      ],
       "title": "Risk Mitigation for Biological Design Tools",
       "type": "Report",
       "url": "https://ebrc.org/wp-content/uploads/2025/09/Risk-Mitigation-for-Biological-Design-Tools-FINAL_2.pdf",
@@ -381,7 +418,12 @@
       "institutions": [],
       "publication": "Medium",
       "publicationDate": "2024-12-04",
-      "tags": [],
+      "tags": [
+        "Dual-use research",
+        "Global South",
+        "International governance",
+        "Threat Assessment"
+      ],
       "title": "Exploring AI–Biosecurity Governance in the Global South",
       "type": "Blog post",
       "url": "https://medium.com/tina.wuenn/exploring-ai-biosecurity-governance-in-the-global-south-81f80c130582",
@@ -397,7 +439,12 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2024-01-23",
-      "tags": [],
+      "tags": [
+        "Framework",
+        "Risk assessments",
+        "Threat Assessment",
+        "United States"
+      ],
       "title": "Towards Risk Analysis of the Impact of AI on the Deliberate Biological Threat Landscape",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2401.12755",
@@ -434,7 +481,10 @@
       "institutions": [],
       "publication": "TIME",
       "publicationDate": "2026-02-12",
-      "tags": [],
+      "tags": [
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "The Weapons of Mass Destruction AI Security Gap",
       "type": "Webpage",
       "url": "https://time.com/7373405/weapons-of-mass-destruction-ai-security-gap/",
@@ -450,7 +500,11 @@
       "institutions": [],
       "publication": "Frontiers in Bioengineering and Biotechnology",
       "publicationDate": "2025-02-05",
-      "tags": [],
+      "tags": [
+        "Dual-use research",
+        "Mitigations",
+        "Protein design"
+      ],
       "title": "Responsible AI in biotechnology: balancing discovery, innovation and biosecurity risks",
       "type": "Journal article",
       "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2025.1537471/full",
@@ -485,7 +539,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-06-18",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Mitigations",
+        "Threat Assessment"
+      ],
       "title": "Preparing for future AI capabilities in biology",
       "type": "Webpage",
       "url": "https://openai.com/index/preparing-for-future-ai-capabilities-in-biology/",
@@ -501,7 +559,10 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-12-08",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Cloud labs"
+      ],
       "title": "LabOS: The AI-XR Co-Scientist That Sees and Works With Humans",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2510.14861",
@@ -538,7 +599,11 @@
       ],
       "publication": "",
       "publicationDate": "2023-10-16",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Jailbreaks and red-teaming",
+        "Threat Assessment"
+      ],
       "title": "The Operational Risks of AI in Large-Scale Biological Attacks: A Red-Team Approach",
       "type": "Report",
       "url": "https://www.rand.org/pubs/research_reports/RRA2977-1.html",
@@ -554,7 +619,11 @@
       "institutions": [],
       "publication": "Bulletin of the Atomic Scientists",
       "publicationDate": "2023-11-07",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Jailbreaks and red-teaming",
+        "Threat Assessment"
+      ],
       "title": "Can't quite develop that dangerous pathogen? AI may soon be able to help",
       "type": "Blog post",
       "url": "https://thebulletin.org/2023/11/cant-quite-develop-that-dangerous-pathogen-ai-may-soon-be-able-to-help/",
@@ -572,7 +641,13 @@
       ],
       "publication": "",
       "publicationDate": "2025-12-12",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Evaluations",
+        "Non-state actors",
+        "Risk assessments"
+      ],
       "title": "Dual-Use AI Capabilities and the Risk of Bioterrorism",
       "type": "Report",
       "url": "https://www.governance.ai/research-paper/dual-use-ai-capabilities-and-the-risk-of-bioterrorism-converting-capability-evaluations-to-risk-assessments",
@@ -590,7 +665,11 @@
       ],
       "publication": "",
       "publicationDate": "2025-12-01",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "United Kingdom"
+      ],
       "title": "Frontier AI Trends Report",
       "type": "Report",
       "url": "https://www.aisi.gov.uk/frontier-ai-trends-report",
@@ -606,7 +685,13 @@
       "institutions": [],
       "publication": "Biotechnology and Bioengineering",
       "publicationDate": "2026-01-17",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Framework",
+        "Mitigations",
+        "Pretraining",
+        "Risk assessments"
+      ],
       "title": "Prioritizing Feasible and Impactful Actions to Enable Secure AI Development and Use in Biology",
       "type": "Journal article",
       "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/bit.70132",
@@ -622,7 +707,12 @@
       "institutions": [],
       "publication": "bioRxiv",
       "publicationDate": "2025-05-16",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Nucleic acid synthesis screening",
+        "Protein design",
+        "Risk assessments"
+      ],
       "title": "Experimental Evaluation of AI-Driven Protein Design Risks Using Safe Biological Proxies",
       "type": "Preprint",
       "url": "https://www.biorxiv.org/content/10.1101/2025.05.15.654077v1",
@@ -638,7 +728,11 @@
       "institutions": [],
       "publication": "bioRxiv",
       "publicationDate": "2025-10-06",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Biological Tools",
+        "Synthetic biology"
+      ],
       "title": "Multimodal AI agents for capturing and sharing laboratory practice",
       "type": "Preprint",
       "url": "https://www.biorxiv.org/content/10.1101/2025.10.05.680425v1",
@@ -675,7 +769,12 @@
       "institutions": [],
       "publication": "Big Think",
       "publicationDate": "2026-02-18",
-      "tags": [],
+      "tags": [
+        "International governance",
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "Prevention"
+      ],
       "title": "How to deter biothreats in the age of gene synthesis",
       "type": "Blog post",
       "url": "https://bigthink.com/science-tech/deterring-biothreats/",
@@ -691,7 +790,12 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-05-20",
-      "tags": [],
+      "tags": [
+        "Event report",
+        "Mitigations",
+        "Pandemic preparedness",
+        "Threat Assessment"
+      ],
       "title": "Building Resilience Against Artificial Intelligence–Enabled Biological Threats: Conference Proceedings from a RAND and Helena Workshop",
       "type": "Report",
       "url": "https://www.rand.org/pubs/conf_proceedings/CFA4954-1.html",
@@ -707,7 +811,11 @@
       "institutions": [],
       "publication": "Bulletin of the Atomic Scientists",
       "publicationDate": "2025-12-01",
-      "tags": [],
+      "tags": [
+        "Attribution and forensics",
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "Tracing engineered biothreats with AI forensics: Five steps to improve attribution",
       "type": "Blog post",
       "url": "https://thebulletin.org/2025/12/tracing-engineered-biothreats-with-ai-forensics-five-steps-to-improve-attribution/",
@@ -739,7 +847,12 @@
       "institutions": [],
       "publication": "OpenAI",
       "publicationDate": "2026-07-22",
-      "tags": [],
+      "tags": [
+        "Health security",
+        "Pandemic preparedness",
+        "Policy",
+        "Prevention"
+      ],
       "title": "Biodefense in the Intelligence Age",
       "type": "Webpage",
       "url": "https://openai.com/index/biodefense-in-the-intelligence-age/",
@@ -757,7 +870,12 @@
       ],
       "publication": "",
       "publicationDate": "2024-02-08",
-      "tags": [],
+      "tags": [
+        "Health security",
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "Biosecurity and AI: Risks and Opportunities",
       "type": "Report",
       "url": "https://www.safe.ai/blog/biosecurity-and-ai-risks-and-opportunities",
@@ -773,7 +891,12 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-01-28",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Framework",
+        "Mitigations",
+        "Risk assessments"
+      ],
       "title": "A Framework for Managed Access to Biological AI Tools",
       "type": "Report",
       "url": "https://www.nti.org/analysis/articles/a-framework-for-managed-access-to-biological-ai-tools/",
@@ -789,7 +912,13 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-03-19",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "Mitigations",
+        "Threat Assessment"
+      ],
       "title": "Foundation models may exhibit staged progression in novel CBRN threat disclosure",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2503.15182",
@@ -805,7 +934,10 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-08-07",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Evaluations"
+      ],
       "title": "Establishing Best Practices for Building Rigorous Agentic Benchmarks",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2507.02825",
@@ -841,7 +973,13 @@
       ],
       "publication": "",
       "publicationDate": "2023-10-01",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Mitigations",
+        "Risk assessments",
+        "Threat Assessment",
+        "United Kingdom"
+      ],
       "title": "Capabilities and risks from frontier AI",
       "type": "Report",
       "url": "https://assets.publishing.service.gov.uk/media/65395abae6c968000daa9b25/frontier-ai-capabilities-risks-report.pdf",
@@ -859,7 +997,13 @@
       ],
       "publication": "",
       "publicationDate": "2023-12-15",
-      "tags": [],
+      "tags": [
+        "Framework",
+        "Mitigations",
+        "Policy",
+        "Risk assessments",
+        "United States"
+      ],
       "title": "Catching bugs: The Federal Select Agent Program and lessons for AI regulation",
       "type": "Report",
       "url": "https://www.iaps.ai/research/federal-select-agent-program",
@@ -896,7 +1040,11 @@
       ],
       "publication": "",
       "publicationDate": "2025-04-24",
-      "tags": [],
+      "tags": [
+        "Cloud labs",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
       "title": "Documenting Cloud Labs and Examining How Remotely Operated Automated Laboratories Could Enable Bad Actors",
       "type": "Report",
       "url": "https://www.rand.org/pubs/perspectives/PEA3851-1.html",
@@ -914,7 +1062,11 @@
       ],
       "publication": "",
       "publicationDate": "2025-01-01",
-      "tags": [],
+      "tags": [
+        "Cyberbiosecurity",
+        "International governance",
+        "Policy"
+      ],
       "title": "Cyberbiosecurity: A Matter of International Peace and Security?",
       "type": "Report",
       "url": "https://www.unidir.org/cyberbiosecurity",
@@ -930,7 +1082,13 @@
       "institutions": [],
       "publication": "Frontiers in Public Health",
       "publicationDate": "2025-11-26",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Cyberbiosecurity",
+        "Health security",
+        "Pandemic preparedness",
+        "Synthetic biology"
+      ],
       "title": "From pandemics to preparedness: harnessing AI, CRISPR, and synthetic biology to counter biosecurity threats",
       "type": "Journal article",
       "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1711344/full",
@@ -946,7 +1104,11 @@
       "institutions": [],
       "publication": "Big Think",
       "publicationDate": "2026-02-18",
-      "tags": [],
+      "tags": [
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "Prevention"
+      ],
       "title": "How to deter biothreats in the age of gene synthesis",
       "type": "Blog post",
       "url": "https://bigthink.com/science-tech/deterring-biothreats/",
@@ -962,7 +1124,12 @@
       "institutions": [],
       "publication": "Social Science Research Network",
       "publicationDate": "2026-02-10",
-      "tags": [],
+      "tags": [
+        "Bioweapons history",
+        "Capabilities",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
       "title": "A Labour of Harm: Artificial Intelligence and Biological Weapons Acquisition",
       "type": "Preprint",
       "url": "https://papers.ssrn.com/abstract=6299518",
@@ -999,7 +1166,10 @@
       "institutions": [],
       "publication": "TechCrunch",
       "publicationDate": "2025-04-16",
-      "tags": [],
+      "tags": [
+        "LLMs",
+        "Mitigations"
+      ],
       "title": "OpenAI's latest AI models have a new safeguard to prevent biorisks",
       "type": "Blog post",
       "url": "https://techcrunch.com/2025/04/16/openais-latest-ai-models-have-a-new-safeguard-to-prevent-biorisks/",
@@ -1015,7 +1185,12 @@
       "institutions": [],
       "publication": "bioRxiv",
       "publicationDate": "2025-09-17",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations",
+        "Protein design"
+      ],
       "title": "Generative design of novel bacteriophages with genome language models",
       "type": "Preprint",
       "url": "https://www.biorxiv.org/content/10.1101/2025.09.12.675911v1",
@@ -1031,7 +1206,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2024-11-16",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "Non-state actors"
+      ],
       "title": "From Protocol to Pipette: What Two New RCTs Tell Us About AI Biosecurity Risk",
       "type": "Webpage",
       "url": "https://blog.stephenturner.us/p/ai-biosecurity-uplift-rct?utm_medium=web&_src_ref=linkedin.com",
@@ -1047,7 +1226,11 @@
       "institutions": [],
       "publication": "EMBO reports",
       "publicationDate": "2024-05-14",
-      "tags": [],
+      "tags": [
+        "Protein design",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Security challenges by AI-assisted protein design",
       "type": "Journal article",
       "url": "https://www.embopress.org/doi/full/10.1038/s44319-024-00124-7",
@@ -1063,7 +1246,10 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-12-16",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Evaluations"
+      ],
       "title": "FrontierScience: Evaluating AI's ability to perform expert-level scientific tasks",
       "type": "Journal article",
       "url": "",
@@ -1079,7 +1265,12 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2023-07-14",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "LLMs",
+        "Threat Assessment"
+      ],
       "title": "Artificial intelligence and biological misuse: Differentiating risks of language models and biological design tools",
       "type": "Preprint",
       "url": "https://arxiv.org/abs/2306.13952",
@@ -1129,7 +1320,12 @@
       "institutions": [],
       "publication": "CNAS",
       "publicationDate": "2011-07-01",
-      "tags": [],
+      "tags": [
+        "Attribution and forensics",
+        "Bioweapons history",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
       "title": "Aum Shinrikyo: Insights Into How Terrorists Develop Biological and Chemical Weapons",
       "type": "Webpage",
       "url": "https://www.cnas.org/publications/reports/aum-shinrikyo-insights-into-how-terrorists-develop-biological-and-chemical-weapons",
@@ -1145,7 +1341,13 @@
       "institutions": [],
       "publication": "Applied Biosafety",
       "publicationDate": "2023-12-27",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "LLMs",
+        "Mitigations",
+        "Nucleic acid synthesis screening",
+        "United States"
+      ],
       "title": "Safeguarding Mail-Order DNA Synthesis in the Age of Artificial Intelligence",
       "type": "Journal article",
       "url": "https://www.liebertpub.com/doi/10.1089/apb.2023.0020",
@@ -1179,7 +1381,11 @@
       "institutions": [],
       "publication": "The Nuclear Threat Initiative",
       "publicationDate": "2026-02-18",
-      "tags": [],
+      "tags": [
+        "Comment / Statement",
+        "International governance",
+        "Policy"
+      ],
       "title": "NTI and CACDA Issue Joint Statement Calling for Stronger Biosecurity and Responsible AI-Biotechnology Innovation",
       "type": "Blog post",
       "url": "https://www.nti.org/news/nti-and-cacda-issue-joint-statement-calling-for-stronger-biosecurity-and-responsible-ai-biotechnology-innovation/",
@@ -1195,7 +1401,12 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2024-05-15",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "LLMs",
+        "Mitigations"
+      ],
       "title": "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2403.03218",
@@ -1211,7 +1422,12 @@
       "institutions": [],
       "publication": "Frontiers in Microbiology",
       "publicationDate": "2026-06-01",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Dual-use research",
+        "Framework",
+        "Risk assessments"
+      ],
       "title": "Dual-use artificial intelligence and biology: upstream risk-benefit reviews",
       "type": "Journal article",
       "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1832974/full",
@@ -1227,7 +1443,12 @@
       "institutions": [],
       "publication": "Newsweek",
       "publicationDate": "2026-05-26",
-      "tags": [],
+      "tags": [
+        "China",
+        "International governance",
+        "Non-state actors",
+        "United States"
+      ],
       "title": "The US and China Must Unite on AI To Stop the Next Bio Threat | Opinion",
       "type": "Webpage",
       "url": "https://www.newsweek.com/us-china-must-unite-ai-to-stop-next-bio-threat-opinion-11992525",
@@ -1243,7 +1464,11 @@
       "institutions": [],
       "publication": "bioRxiv",
       "publicationDate": "2025-09-07",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Biological Tools",
+        "Evaluations"
+      ],
       "title": "BioML-bench: Evaluation of AI Agents for End-to-End Biomedical ML",
       "type": "Preprint",
       "url": "https://www.biorxiv.org/content/10.1101/2025.09.01.673319v2",
@@ -1259,7 +1484,13 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-11-20",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Evaluations",
+        "Open-weight LLMs",
+        "Risk assessments",
+        "Virology"
+      ],
       "title": "Best Practices for Biorisk Evaluations on Open-Weight Bio-Foundation Models",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2510.27629",
@@ -1275,7 +1506,10 @@
       "institutions": [],
       "publication": "Federation of American Scientists",
       "publicationDate": "2023-12-12",
-      "tags": [],
+      "tags": [
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "Bio x AI: Policy Recommendations for a New Frontier",
       "type": "Blog post",
       "url": "https://fas.org/publication/bio-x-ai-policy-recommendations/",
@@ -1291,7 +1525,12 @@
       "institutions": [],
       "publication": "Frontier Model Forum",
       "publicationDate": "2025-05-12",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Framework",
+        "Risk assessments"
+      ],
       "title": "Frontier AI Biosafety Thresholds",
       "type": "Blog post",
       "url": "https://www.frontiermodelforum.org/issue-briefs/frontier-ai-biosafety-thresholds/",
@@ -1307,7 +1546,11 @@
       "institutions": [],
       "publication": "Frontiers in Bioengineering and Biotechnology",
       "publicationDate": "2025-10-28",
-      "tags": [],
+      "tags": [
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "United States"
+      ],
       "title": "Why implementation gaps could undermine synthetic nucleic acid oversight",
       "type": "Journal article",
       "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2025.1689753/full",
@@ -1323,7 +1566,12 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2023-11-05",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "LLMs",
+        "Threat Assessment"
+      ],
       "title": "Can Chatbots Help You Build a Bioweapon?",
       "type": "Magazine article",
       "url": "https://foreignpolicy.com/2023/11/05/ai-artificial-intelligence-chatbot-bioweapon-virus-bacteria-genetic-engineering/",
@@ -1339,7 +1587,9 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "",
-      "tags": [],
+      "tags": [
+        "International governance"
+      ],
       "title": "UN AI Resource Hub",
       "type": "Webpage",
       "url": "https://aitoolbox.act4sdgs.org/activities.php",
@@ -1374,7 +1624,13 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-07-01",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "LLMs",
+        "Mitigations",
+        "Risk assessments",
+        "Virology"
+      ],
       "title": "Forecasting biosecurity risks from large language models and the efficacy of safeguards",
       "type": "Journal article",
       "url": "https://forecastingresearch.org/ai-enabled-biorisk",
@@ -1408,7 +1664,13 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2023-11-01",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Jailbreaks and red-teaming",
+        "Open-weight LLMs",
+        "Risk assessments",
+        "Virology"
+      ],
       "title": "Will releasing the weights of future large language models grant widespread access to pandemic agents?",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2310.18233",
@@ -1440,7 +1702,10 @@
       "institutions": [],
       "publication": "Google Docs",
       "publicationDate": "",
-      "tags": [],
+      "tags": [
+        "International governance",
+        "Policy"
+      ],
       "title": "FINAL INHR AIxBio Recommendations_White Paper for Endorsement.docx",
       "type": "Webpage",
       "url": "https://docs.google.com/document/d/1fnGaR1tP7EC6NinpdLWVF55umEjKAO3Z/edit?usp=drive_link&ouid=100670427311798292339&rtpof=true&sd=true&usp=embed_facebook",
@@ -1456,7 +1721,13 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-05-28",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "Risk assessments",
+        "Virology"
+      ],
       "title": "GeneBreaker: Jailbreak Attacks against DNA Language Models with Pathogenicity Guidance",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2505.23839",
@@ -1472,7 +1743,10 @@
       "institutions": [],
       "publication": "Nature",
       "publicationDate": "2023-12-01",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Capabilities"
+      ],
       "title": "Autonomous chemical research with large language models",
       "type": "Journal article",
       "url": "https://www.nature.com/articles/s41586-023-06792-0",
@@ -1527,7 +1801,13 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-03-14",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Framework",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "The Age of AI in the Life Sciences: Benefits and Biosecurity Considerations",
       "type": "Book",
       "url": "https://nap.nationalacademies.org/catalog/28868/the-age-of-ai-in-the-life-sciences-benefits-and",
@@ -1545,7 +1825,13 @@
       ],
       "publication": "",
       "publicationDate": "2024-08-13",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment",
+        "United States"
+      ],
       "title": "AI and the Evolution of Biological National Security Risks",
       "type": "Report",
       "url": "https://s3.us-east-1.amazonaws.com/files.cnas.org/documents/AIBiologicalRisk_2024_Final.pdf",
@@ -1580,7 +1866,10 @@
       "institutions": [],
       "publication": "Center for Security and Emerging Technology",
       "publicationDate": "2023-12-01",
-      "tags": [],
+      "tags": [
+        "LLMs",
+        "Threat Assessment"
+      ],
       "title": "AI and Biorisk: An Explainer",
       "type": "Blog post",
       "url": "https://cset.georgetown.edu/publication/ai-and-biorisk-an-explainer/",
@@ -1614,7 +1903,13 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2024-06-25",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Evaluations",
+        "Policy",
+        "Risk assessments"
+      ],
       "title": "Prioritizing High-Consequence Biological Capabilities in Evaluations of Artificial Intelligence Models",
       "type": "Preprint",
       "url": "https://papers.ssrn.com/abstract=4873106",
@@ -1630,7 +1925,9 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2023-11-20",
-      "tags": [],
+      "tags": [
+        "Evaluations"
+      ],
       "title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2311.12022",
@@ -1665,7 +1962,12 @@
       "institutions": [],
       "publication": "Health Security",
       "publicationDate": "2026-02-22",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Health security",
+        "Pandemic preparedness",
+        "Policy"
+      ],
       "title": "AIxBio: Opportunities to Strengthen Health Security",
       "type": "Journal article",
       "url": "",
@@ -1683,7 +1985,13 @@
       ],
       "publication": "",
       "publicationDate": "2024-07-26",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "Framework",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "The near-term impact of AI on biological misuse",
       "type": "Report",
       "url": "https://www.longtermresilience.org/reports/the-near-term-impact-of-ai-on-biological-misuse/",
@@ -1717,7 +2025,12 @@
       "institutions": [],
       "publication": "Biotech",
       "publicationDate": "2024-01-01",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Policy",
+        "Risk assessments",
+        "United States"
+      ],
       "title": "AIxBio White Papers",
       "type": "Blog post",
       "url": "https://www.biotech.senate.gov/press-releases/aixbio-white-paper-1-introduction-to-ai-and-biotech/",
@@ -1749,7 +2062,11 @@
       "institutions": [],
       "publication": "Cornell University Press",
       "publicationDate": "2014-11-13",
-      "tags": [],
+      "tags": [
+        "Bioweapons history",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
       "title": "Barriers to Bioweapons: The Challenges of Expertise and Organization for Weapons Development",
       "type": "Book",
       "url": "https://doi.org/10.7591/cornell/9780801452888.001.0001",
@@ -1765,7 +2082,13 @@
       "institutions": [],
       "publication": "Human Genetics",
       "publicationDate": "2025-09-16",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Data governance",
+        "Framework",
+        "International governance",
+        "Policy"
+      ],
       "title": "Regulating genome language models: navigating policy challenges at the intersection of AI and genetics",
       "type": "Journal article",
       "url": "https://doi.org/10.1007/s00439-025-02768-4",
@@ -1781,7 +2104,12 @@
       "institutions": [],
       "publication": "Microsoft Research",
       "publicationDate": "2025-10-06",
-      "tags": [],
+      "tags": [
+        "Jailbreaks and red-teaming",
+        "Mitigations",
+        "Open-weight LLMs",
+        "Transparency and reporting"
+      ],
       "title": "When AI Meets Biology: Promise, Risk, and Responsibility",
       "type": "Blog post",
       "url": "https://www.microsoft.com/en-us/research/blog/when-ai-meets-biology-promise-risk-and-responsibility/",
@@ -1813,7 +2141,13 @@
       "institutions": [],
       "publication": "Frontiers in Microbiology",
       "publicationDate": "2025-11-26",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Mitigations",
+        "Protein design",
+        "Risk assessments"
+      ],
       "title": "Without Safeguard, AI-Bio Integration Risks Accelerating Future Pandemics",
       "type": "Journal article",
       "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2025.1734561/full",
@@ -1845,7 +2179,13 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-01-01",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "International governance",
+        "Risk assessments",
+        "Threat Assessment",
+        "Transparency and reporting"
+      ],
       "title": "International AI Safety Report",
       "type": "Report",
       "url": "https://www.gov.uk/government/publications/international-ai-safety-report-2025",
@@ -1861,7 +2201,11 @@
       "institutions": [],
       "publication": "BioPharmaTrend",
       "publicationDate": "2023-10-20",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Health security",
+        "Synthetic biology"
+      ],
       "title": "From Gene Editing to Pathway Design: How AI is Transforming Synthetic Biology",
       "type": "Webpage",
       "url": "https://www.biopharmatrend.com/post/642-from-gene-editing-to-pathway-design-how-ai-is-transforming-synthetic-biology/",
@@ -1893,7 +2237,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-08-04",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Mitigations",
+        "Transparency and reporting"
+      ],
       "title": "Third-Party Assessments",
       "type": "Blog post",
       "url": "https://www.frontiermodelforum.org/technical-reports/third-party-assessments/",
@@ -1909,7 +2257,11 @@
       "institutions": [],
       "publication": "The Nuclear Threat Initiative",
       "publicationDate": "2025-12-09",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "AIxBio = Big Promise + New Risks",
       "type": "Blog post",
       "url": "https://www.nti.org/risky-business/aixbio-big-promise-new-risks/",
@@ -1925,7 +2277,11 @@
       "institutions": [],
       "publication": "Epoch AI",
       "publicationDate": "2025-10-30",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "LLMs",
+        "Open-weight LLMs"
+      ],
       "title": "Open-weight models lag state-of-the-art by around 3 months on average",
       "type": "Webpage",
       "url": "https://epoch.ai/data-insights/open-weights-vs-closed-weights-models",
@@ -1941,7 +2297,13 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2026-02-26",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "Non-state actors"
+      ],
       "title": "LLM Novice Uplift on Dual-Use, In Silico Biology Tasks",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2602.23329",
@@ -1959,7 +2321,13 @@
       ],
       "publication": "",
       "publicationDate": "2023-10-30",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "International governance",
+        "Mitigations",
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "The Convergence of Artificial Intelligence and the Life Sciences",
       "type": "Report",
       "url": "https://www.nti.org/analysis/articles/the-convergence-of-artificial-intelligence-and-the-life-sciences/",
@@ -1975,7 +2343,13 @@
       "institutions": [],
       "publication": "Frontiers in Microbiology",
       "publicationDate": "2026-05-18",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Data governance",
+        "Evaluations",
+        "Framework",
+        "Metadata"
+      ],
       "title": "Aligning innovation and security in AI-enabled biotechnology: a framework for designing and funding mutually reinforcing approaches",
       "type": "Journal article",
       "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1820739/full",
@@ -2007,7 +2381,11 @@
       "institutions": [],
       "publication": "TIME",
       "publicationDate": "2025-04-22",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
       "title": "Exclusive: AI Bests Virus Experts, Raising Biohazard Fears",
       "type": "Webpage",
       "url": "https://time.com/7279010/ai-virus-lab-biohazard-study/",
@@ -2079,7 +2457,13 @@
       ],
       "publication": "",
       "publicationDate": "2024-07-12",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Mitigations",
+        "Policy",
+        "Threat Assessment",
+        "United States"
+      ],
       "title": "Advances in AI and Increased Biological Risks",
       "type": "Report",
       "url": "https://councilonstrategicrisks.org/2024/07/12/advances-in-ai-and-increased-biological-risks/",
@@ -2114,7 +2498,10 @@
       "institutions": [],
       "publication": "Bloomberg",
       "publicationDate": "2024-08-02",
-      "tags": [],
+      "tags": [
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "AI-Made Bioweapons Are Washington’s Latest Security Obsession",
       "type": "Newspaper article",
       "url": "https://www.bloomberg.com/news/features/2024-08-02/national-security-threat-from-ai-made-bioweapons-grips-us-government",
@@ -2130,7 +2517,10 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "",
-      "tags": [],
+      "tags": [
+        "International governance",
+        "Policy"
+      ],
       "title": "AI governance through global red lines can help prevent unacceptable risks",
       "type": "Webpage",
       "url": "https://oecd.ai/en/wonk/ai-governance-through-global-red-lines-can-help-prevent-unacceptable-risks",
@@ -2146,7 +2536,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-04-15",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "Understanding AI-Enabled Biological Threats: Hype, Hazard, and Governance",
       "type": "Webpage",
       "url": "https://www.engbio.cam.ac.uk/news/understanding-ai-enabled-biological-threats-hype-hazard-and-governance",
@@ -2162,7 +2556,11 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-10-28",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Framework",
+        "Transparency and reporting"
+      ],
       "title": "What do model reports say about their ChemBio benchmark evaluations? Comparing recent releases to the STREAM framework",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2510.20927",
@@ -2178,7 +2576,13 @@
       "institutions": [],
       "publication": "Social Science Research Network",
       "publicationDate": "2025-10-26",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Framework",
+        "Mitigations",
+        "Open-weight LLMs",
+        "Risk assessments"
+      ],
       "title": "Open Technical Problems in Open-Weight AI Model Risk Management",
       "type": "Preprint",
       "url": "https://papers.ssrn.com/abstract=5705186",
@@ -2194,7 +2598,13 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2023-06-06",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Jailbreaks and red-teaming",
+        "LLMs",
+        "Nucleic acid synthesis screening"
+      ],
       "title": "Can large language models democratize access to dual-use biotechnology?",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2306.03809",
@@ -2210,7 +2620,13 @@
       "institutions": [],
       "publication": "Risk Analysis",
       "publicationDate": "2025-01-08",
-      "tags": [],
+      "tags": [
+        "Framework",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment",
+        "United States"
+      ],
       "title": "Toward risk analysis of the impact of artificial intelligence on the deliberate biological threat landscape",
       "type": "Journal article",
       "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/risa.17691",
@@ -2226,7 +2642,10 @@
       "institutions": [],
       "publication": "The Belfer Center for Science and International Affairs",
       "publicationDate": "2023-11-06",
-      "tags": [],
+      "tags": [
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Biosecurity in the Age of AI: What’s the Risk?",
       "type": "Webpage",
       "url": "https://www.belfercenter.org/publication/biosecurity-age-ai-whats-risk",
@@ -2276,7 +2695,11 @@
       "institutions": [],
       "publication": "Nature",
       "publicationDate": "2023-10-01",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Pandemic preparedness",
+        "Virology"
+      ],
       "title": "Learning from prepandemic data to forecast viral escape",
       "type": "Journal article",
       "url": "https://www.nature.com/articles/s41586-023-06617-0",
@@ -2292,7 +2715,13 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-02-03",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Capabilities",
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "Nucleic acid synthesis screening"
+      ],
       "title": "Bridging the Digital to Physical Divide: Evaluating LLM Agents on Benchtop DNA Acquisition",
       "type": "Report",
       "url": "https://www.rand.org/pubs/research_reports/RRA4591-1.html",
@@ -2350,7 +2779,13 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2023-11-30",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Dual-use research",
+        "Policy",
+        "Protein design",
+        "Risk assessments"
+      ],
       "title": "Towards Responsible Governance of Biological Design Tools",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2311.15936",
@@ -2366,7 +2801,12 @@
       "institutions": [],
       "publication": "Epoch AI",
       "publicationDate": "2025-06-13",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Do the biorisk evaluations of AI labs actually measure the risk of developing bioweapons?",
       "type": "Webpage",
       "url": "https://epoch.ai/gradient-updates/do-the-biorisk-evaluations-of-ai-labs-actually-measure-the-risk-of-developing-bioweapons",
@@ -2436,7 +2876,12 @@
       "institutions": [],
       "publication": "IndiaBioscience",
       "publicationDate": "2024-08-12",
-      "tags": [],
+      "tags": [
+        "Global South",
+        "International governance",
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "Emerging biosecurity threats in the age of AI",
       "type": "Webpage",
       "url": "https://indiabioscience.org/columns/indian-scenario/emerging-biosecurity-threats-in-the-age-of-ai",
@@ -2452,7 +2897,11 @@
       "institutions": [],
       "publication": "Bulletin of the Atomic Scientists",
       "publicationDate": "2024-03-18",
-      "tags": [],
+      "tags": [
+        "Jailbreaks and red-teaming",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "How to better research the possible threats posed by AI-driven misuse of biology",
       "type": "Blog post",
       "url": "https://thebulletin.org/2024/03/how-to-better-research-the-possible-threats-posed-by-ai-driven-misuse-of-biology/",
@@ -2488,7 +2937,12 @@
       "institutions": [],
       "publication": "bioRxiv",
       "publicationDate": "2024-10-03",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Jailbreaks and red-teaming",
+        "Mitigations",
+        "Protein design"
+      ],
       "title": "Unlearning Virus Knowledge Toward Safe and Responsible Mutation Effect Predictions",
       "type": "Preprint",
       "url": "https://www.biorxiv.org/content/10.1101/2024.10.02.616274v1",
@@ -2504,7 +2958,12 @@
       "institutions": [],
       "publication": "Foreign Affairs",
       "publicationDate": "2024-08-20",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "International governance",
+        "Synthetic biology",
+        "Threat Assessment"
+      ],
       "title": "The New Bioweapons",
       "type": "Magazine article",
       "url": "https://www.foreignaffairs.com/world/new-bioweapons-covid-biology",
@@ -2520,7 +2979,12 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "",
-      "tags": [],
+      "tags": [
+        "Health security",
+        "Pandemic preparedness",
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "Strengthening Preparedness Against Novel Biological Threat Agents Enabled Through Artificial Intelligence and Other Emerging Technologies",
       "type": "Webpage",
       "url": "https://www.nationalacademies.org/projects/CHPP-LSB-25-04",
@@ -2536,7 +3000,11 @@
       "institutions": [],
       "publication": "Nuclear Threat Initiative",
       "publicationDate": "2024-12-10",
-      "tags": [],
+      "tags": [
+        "Dual-use research",
+        "International governance",
+        "Policy"
+      ],
       "title": "“Emergent Abilities,” AI, and Biosecurity: Conceptual Ambiguity, Stability, and Policy",
       "type": "Book section",
       "url": "https://www.nti.org/analysis/articles/disincentivizing-bioweapons-theory-and-policy-approaches/",
@@ -2552,7 +3020,12 @@
       "institutions": [],
       "publication": "Applied Biosafety",
       "publicationDate": "2024-06-20",
-      "tags": [],
+      "tags": [
+        "Framework",
+        "LLMs",
+        "Risk assessments",
+        "Synthetic biology"
+      ],
       "title": "Biosecurity Risk Assessment for the Use of Artificial Intelligence in Synthetic Biology",
       "type": "Journal article",
       "url": "https://www.liebertpub.com/doi/full/10.1089/apb.2023.0031",
@@ -2568,7 +3041,13 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-02-11",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Risk assessments",
+        "Taxonomy",
+        "Threat Assessment",
+        "Virology"
+      ],
       "title": "Developing a Risk-Scoring Tool for Artificial Intelligence–Enabled Biological Design: A Method to Assess the Risks of Using Artificial Intelligence to Modify Select Viral Capabilities",
       "type": "Report",
       "url": "https://www.rand.org/pubs/research_reports/RRA4490-1.html",
@@ -2586,7 +3065,11 @@
       ],
       "publication": "",
       "publicationDate": "2024-11-28",
-      "tags": [],
+      "tags": [
+        "Dual-use research",
+        "Event report",
+        "International governance"
+      ],
       "title": "Spiez Convergence: Report on the sixth conference",
       "type": "Report",
       "url": "https://backend.spiezlab.admin.ch/fileservice/sdweb-docs-prod-spiezlab-files/files/2024/11/28/788ad019-6d7f-4f3c-826f-ba04564ae167.pdf",
@@ -2602,7 +3085,12 @@
       "institutions": [],
       "publication": "Science",
       "publicationDate": "2025-10-02",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Mitigations",
+        "Nucleic acid synthesis screening",
+        "Protein design"
+      ],
       "title": "Strengthening nucleic acid biosecurity screening against generative protein design tools",
       "type": "Journal article",
       "url": "https://www.science.org/doi/10.1126/science.adu8578",
@@ -2620,7 +3108,12 @@
       ],
       "publication": "",
       "publicationDate": "2024-02-27",
-      "tags": [],
+      "tags": [
+        "NIST",
+        "Policy",
+        "Threat Assessment",
+        "United States"
+      ],
       "title": "Chemical & Biological Weapons and Artificial Intelligence: Problem Analysis and US Policy Recommendations",
       "type": "Report",
       "url": "https://futureoflife.org/document/chemical-biological-weapons-and-artificial-intelligence-problem-analysis-and-us-policy-recommendations/",
@@ -2636,7 +3129,10 @@
       "institutions": [],
       "publication": "Center for Security and Emerging Technology",
       "publicationDate": "2025-04-21",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Evaluations"
+      ],
       "title": "Exploring AI Methods in Biology Research",
       "type": "Blog post",
       "url": "https://cset.georgetown.edu/article/exploring-ai-methods-in-biology-research/",
@@ -2652,7 +3148,11 @@
       "institutions": [],
       "publication": "TIME",
       "publicationDate": "2024-08-27",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "AI Could One Day Engineer a Pandemic, Experts Warn",
       "type": "Webpage",
       "url": "https://time.com/7014800/ai-pandemic-bioterrorism/",
@@ -2668,7 +3168,11 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2023-08-27",
-      "tags": [],
+      "tags": [
+        "Dual-use research",
+        "Framework",
+        "Jailbreaks and red-teaming"
+      ],
       "title": "The Promise and Peril of Artificial Intelligence -- Violet Teaming Offers a Balanced Path Forward",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2308.14253",
@@ -2700,7 +3204,13 @@
       "institutions": [],
       "publication": "bioRxiv",
       "publicationDate": "2024-12-04",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Evaluations",
+        "Mitigations",
+        "Nucleic acid synthesis screening",
+        "Protein design"
+      ],
       "title": "Toward AI-Resilient Screening of Nucleic Acid Synthesis Orders: Process, Results, and Recommendations",
       "type": "Preprint",
       "url": "https://www.biorxiv.org/content/10.1101/2024.12.02.626439v1",
@@ -2718,7 +3228,13 @@
       ],
       "publication": "",
       "publicationDate": "2024-01-31",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "LLMs",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Building an early warning system for LLM-aided biological threat creation",
       "type": "Report",
       "url": "https://openai.com/research/building-an-early-warning-system-for-llm-aided-biological-threat-creation",
@@ -2734,7 +3250,11 @@
       "institutions": [],
       "publication": "Bulletin of the Atomic Scientists",
       "publicationDate": "2023-03-24",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Protein design",
+        "Risk assessments"
+      ],
       "title": "There's a 'ChatGPT' for biology. What could go wrong?",
       "type": "Blog post",
       "url": "https://thebulletin.org/2023/03/chat-gpt-for-biology/",
@@ -2750,7 +3270,12 @@
       "institutions": [],
       "publication": "The Council on Strategic Risks",
       "publicationDate": "2023-11-06",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "International governance",
+        "Threat Assessment",
+        "United Kingdom"
+      ],
       "title": "The UK’s AI Safety Summit and The Future of AI Bioweapons",
       "type": "Webpage",
       "url": "https://councilonstrategicrisks.org/2023/11/06/the-uks-ai-safety-summit-and-the-future-of-ai-bioweapons/",
@@ -2802,7 +3327,13 @@
       "institutions": [],
       "publication": "Lawfare",
       "publicationDate": "2025-12-02",
-      "tags": [],
+      "tags": [
+        "Cyberbiosecurity",
+        "Dual-use research",
+        "International governance",
+        "Policy",
+        "United States"
+      ],
       "title": "How U.S. Export Controls Risk Undermining Biosecurity",
       "type": "Webpage",
       "url": "https://www.lawfaremedia.org/article/how-u.s.-export-controls-risk-undermining-biosecurity",
@@ -2820,7 +3351,11 @@
       ],
       "publication": "",
       "publicationDate": "2024-02-28",
-      "tags": [],
+      "tags": [
+        "LLMs",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "A Framework to Evaluate the Risks of LLMs for Assisting CBRN Production Processes",
       "type": "Report",
       "url": "https://nonproliferation.org/a-framework-to-evaluate-the-risks-of-llms-for-assisting-cbrn-production-processes/",
@@ -2836,7 +3371,11 @@
       "institutions": [],
       "publication": "Nature",
       "publicationDate": "2026-05-13",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "LLMs",
+        "Threat Assessment"
+      ],
       "title": "AI can design viruses, toxins and other bioweapons. How worried should we be?",
       "type": "Journal article",
       "url": "https://www.nature.com/articles/d41586-026-01476-x",
@@ -2852,7 +3391,13 @@
       "institutions": [],
       "publication": "Nature",
       "publicationDate": "2024-11-21",
-      "tags": [],
+      "tags": [
+        "International governance",
+        "Mitigations",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "AI could pose pandemic-scale biosecurity risks. Here’s how to make it safer",
       "type": "Journal article",
       "url": "https://www.nature.com/articles/d41586-024-03815-2",
@@ -2868,7 +3413,10 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2024-11-01",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Transparency and reporting"
+      ],
       "title": "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2411.00640",
@@ -2884,7 +3432,12 @@
       "institutions": [],
       "publication": "The Nuclear Threat Initiative",
       "publicationDate": "2024-11-14",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Mitigations",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Developing Guardrails for AI Biodesign Tools",
       "type": "Blog post",
       "url": "https://www.nti.org/wp-content/uploads/2024/11/NTIBio_Paper_Developing-Guardrails-for-AI-Biodesign-Tools_FINAL.pdf",
@@ -2902,7 +3455,13 @@
       ],
       "publication": "",
       "publicationDate": "2024-12-17",
-      "tags": [],
+      "tags": [
+        "Dual-use research",
+        "Evaluations",
+        "Mitigations",
+        "NIST",
+        "Request for Information (RFI)"
+      ],
       "title": "On the Responsible Development and Use of Chem-Bio AI Models: Comments on Evaluations, Mitigations, and Emerging Trends",
       "type": "Report",
       "url": "https://www.rand.org/pubs/perspectives/PEA3674-1.html",
@@ -2920,7 +3479,11 @@
       ],
       "publication": "",
       "publicationDate": "2025-09-24",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Understanding the Theoretical Limits of AI-Enabled Pathogen Design: Insights from a Delphi Study",
       "type": "Report",
       "url": "https://www.rand.org/pubs/research_reports/RRA4087-1.html",
@@ -2936,7 +3499,12 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-07-27",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Health security",
+        "Prevention",
+        "Threat Assessment"
+      ],
       "title": "AI can fuel biological weapons. We must harness its power for defense",
       "type": "Newspaper article",
       "url": "https://www.theguardian.com/commentisfree/2026/jul/27/ai-biological-weapons-defense",
@@ -2952,7 +3520,11 @@
       "institutions": [],
       "publication": "Bulletin of the Atomic Scientists",
       "publicationDate": "2025-09-15",
-      "tags": [],
+      "tags": [
+        "Attribution and forensics",
+        "Bioweapons history",
+        "International governance"
+      ],
       "title": "How new technology could make it easier to identify covert bioweapons programs",
       "type": "Blog post",
       "url": "https://thebulletin.org/2025/09/how-new-technology-could-make-it-easier-to-identify-covert-bioweapons-programs/",
@@ -2968,7 +3540,12 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2024-07-17",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations",
+        "LLMs"
+      ],
       "title": "LAB-Bench: Measuring Capabilities of Language Models for Biology Research",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2407.10362",
@@ -2984,7 +3561,12 @@
       "institutions": [],
       "publication": "Epoch AI",
       "publicationDate": "",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Data governance",
+        "Evaluations",
+        "Transparency and reporting"
+      ],
       "title": "Expanding our analysis of biological AI models",
       "type": "Webpage",
       "url": "https://epoch.ai/blog/expanding-our-analysis-of-biological-ai-models",
@@ -3000,7 +3582,13 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-07-25",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Data governance",
+        "Dual-use research",
+        "Policy",
+        "Transparency and reporting"
+      ],
       "title": "Disseminating In Silico and Computational Biological Research: Navigating Benefits and Risks: Proceedings of a Workshop",
       "type": "Book",
       "url": "https://nap.nationalacademies.org/catalog/29174/disseminating-in-silico-and-computational-biological-research-navigating-benefits-and",
@@ -3016,7 +3604,13 @@
       "institutions": [],
       "publication": "Rice University",
       "publicationDate": "2025-01-01",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Mitigations",
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "Risk assessments"
+      ],
       "title": "3.1 Artificial Intelligence and the Future of Biotechnology",
       "type": "Journal article",
       "url": "https://doi.org/10.25611/1233-X161",
@@ -3032,7 +3626,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2024-03-25",
-      "tags": [],
+      "tags": [
+        "Framework",
+        "Health security",
+        "LLMs"
+      ],
       "title": "Enhancing Biosecurity with Language Models: Defining Research Directions",
       "type": "Preprint",
       "url": "https://papers.ssrn.com/abstract=4772574",
@@ -3087,7 +3685,12 @@
       "institutions": [],
       "publication": "Applied Biosafety",
       "publicationDate": "2025-04-24",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Mitigations",
+        "Risk assessments",
+        "Synthetic biology"
+      ],
       "title": "Using Embodied Artificial Intelligence Agents to Automate Biorisk Management Tasks in High-Containment Laboratories",
       "type": "Journal article",
       "url": "https://www.liebertpub.com/doi/10.1089/apb.2024.0068",
@@ -3103,7 +3706,11 @@
       "institutions": [],
       "publication": "UK AI Security Institute",
       "publicationDate": "2025-07-16",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Risk assessments",
+        "United Kingdom"
+      ],
       "title": "A structured protocol for elicitation experiments | AISI Work",
       "type": "Webpage",
       "url": "https://www.aisi.gov.uk/blog/our-approach-to-ai-capability-elicitation",
@@ -3119,7 +3726,13 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-11-24",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Data governance",
+        "Dual-use research",
+        "Framework",
+        "Pretraining"
+      ],
       "title": "Securing Dual-Use Pathogen Data of Concern",
       "type": "",
       "url": "https://openreview.net/forum?id=ZgD951FVe7&referrer=%5Bthe%20profile%20of%20Oliver%20M%20Crook%5D(%2Fprofile%3Fid%3D~Oliver_M_Crook1)",
@@ -3151,7 +3764,12 @@
       "institutions": [],
       "publication": "Bulletin of the Atomic Scientists",
       "publicationDate": "2024-11-16",
-      "tags": [],
+      "tags": [
+        "Bioweapons history",
+        "International governance",
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "What will be the impact of AI on the bioweapons treaty?",
       "type": "Blog post",
       "url": "https://thebulletin.org/2024/11/what-will-be-the-impact-of-ai-on-the-bioweapons-treaty/",
@@ -3167,7 +3785,11 @@
       "institutions": [],
       "publication": "Nature",
       "publicationDate": "2024-03-08",
-      "tags": [],
+      "tags": [
+        "Dual-use research",
+        "Mitigations",
+        "Protein design"
+      ],
       "title": "Could AI-designed proteins be weaponized? Scientists lay out safety guidelines",
       "type": "Journal article",
       "url": "https://www.nature.com/articles/d41586-024-00699-0",
@@ -3183,7 +3805,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2023-09-12",
-      "tags": [],
+      "tags": [
+        "Policy",
+        "Taxonomy",
+        "Threat Assessment"
+      ],
       "title": "Towards a Grand Unified Threat Model of Biotechnology",
       "type": "Webpage",
       "url": "https://philsci-archive-dev.library.pitt.edu/22539/",
@@ -3215,7 +3841,11 @@
       "institutions": [],
       "publication": "Artificial intelligence",
       "publicationDate": "2023-07-01",
-      "tags": [],
+      "tags": [
+        "Dual-use research",
+        "International governance",
+        "Threat Assessment"
+      ],
       "title": "Artificial intelligence: possible risks and benefits for BWC and CWC",
       "type": "Journal article",
       "url": "https://cbwnet.org/media/pages/publications/working-paper/artificial-intelligence-possible-risks-and-benefits-for-bwc-and-cwc/ff95cdf423-1702984262/wp-5-website-version.pdf",
@@ -3231,7 +3861,10 @@
       "institutions": [],
       "publication": "POLITICO",
       "publicationDate": "2024-11-01",
-      "tags": [],
+      "tags": [
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "The fight over AI biosecurity risk takes a twist",
       "type": "Webpage",
       "url": "https://www.politico.com/newsletters/digital-future-daily/2024/02/06/the-fight-over-ai-biosecurity-risk-takes-a-twist-00139945",
@@ -3247,7 +3880,12 @@
       "institutions": [],
       "publication": "Rosetta Commons",
       "publicationDate": "2024-12-03",
-      "tags": [],
+      "tags": [
+        "NIST",
+        "Policy",
+        "Protein design",
+        "Request for Information (RFI)"
+      ],
       "title": "Rosetta Commons' Response to NIST RFI on Safety Considerations for Chemical and/or Biological AI Models",
       "type": "",
       "url": "https://www.linkedin.com/posts/samuel-curtis_rosetta-commons-community-response-to-nist-activity-7270478284222533632-KHjs/",
@@ -3263,7 +3901,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2024-02-26",
-      "tags": [],
+      "tags": [
+        "International governance",
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "Sounding the alarm on AI-enhanced bioweapons",
       "type": "Webpage",
       "url": "https://www.europeanleadershipnetwork.org/commentary/sounding-the-alarm-on-ai-enhanced-bioweapons/",
@@ -3279,7 +3921,13 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-12-03",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Biological Tools",
+        "Framework",
+        "Policy",
+        "Synthetic biology"
+      ],
       "title": "Synthetic biology, AI and automation: A forward‑looking technology assessment",
       "type": "Journal article",
       "url": "https://www.oecd.org/en/publications/synthetic-biology-ai-and-automation_12158721-en.html",
@@ -3316,7 +3964,12 @@
       "institutions": [],
       "publication": "bioRxiv",
       "publicationDate": "2024-09-12",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations",
+        "LLMs"
+      ],
       "title": "BioLP-bench: Measuring understanding of biological lab protocols by large language models",
       "type": "Preprint",
       "url": "https://www.biorxiv.org/content/10.1101/2024.08.21.608694v3",
@@ -3332,7 +3985,10 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-06-26",
-      "tags": [],
+      "tags": [
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Quantitative models of AI-driven bioterrorism and lab leak biorisk",
       "type": "Journal article",
       "url": "https://adamjones.me/blog/ai-biorisk-paper/quantitative-models-of-AI-driven-bioterrorism-and-lab-leak-biorisk.pdf?",
@@ -3348,7 +4004,12 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-02-10",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Capabilities",
+        "Evaluations",
+        "Risk assessments"
+      ],
       "title": "Measuring Biological Capabilities and Risks of AI Agents: Generating and Interpreting Evidence from Agentic Evaluations",
       "type": "Report",
       "url": "https://www.rand.org/pubs/perspectives/PEA4710-1.html",
@@ -3364,7 +4025,13 @@
       "institutions": [],
       "publication": "Frontiers in Artificial Intelligence",
       "publicationDate": "2024-05-10",
-      "tags": [],
+      "tags": [
+        "LLMs",
+        "Mitigations",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Artificial intelligence challenges in the face of biological threats: emerging catastrophic risks for public health",
       "type": "Journal article",
       "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1382356/full",
@@ -3380,7 +4047,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-02-10",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Evaluations",
+        "Risk assessments"
+      ],
       "title": "Measuring Biological Capabilities and Risks of AI Agents: Generating and Interpreting Evidence from Agentic Evaluations",
       "type": "Report",
       "url": "https://www.rand.org/pubs/perspectives/PEA4710-1.html",
@@ -3396,7 +4067,11 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-06-09",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Framework",
+        "Transparency and reporting"
+      ],
       "title": "Recommendations and Reporting Checklist for Rigorous & Transparent Human Baselines in Model Evaluations",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2506.13776",
@@ -3412,7 +4087,12 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2024-06-30",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Health security",
+        "Pandemic preparedness",
+        "Policy"
+      ],
       "title": "AIxBio: Opportunities to Strengthen Health Security",
       "type": "Preprint",
       "url": "https://papers.ssrn.com/abstract=4912421",
@@ -3428,7 +4108,11 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-09-20",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Mitigations",
+        "Transparency and reporting"
+      ],
       "title": "Securing the Language of Life: Inheritable Watermarks from DNA Language Models to Proteins",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2509.18207",
@@ -3460,7 +4144,12 @@
       "institutions": [],
       "publication": "Nature",
       "publicationDate": "2023-10-11",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Health security",
+        "Pandemic preparedness",
+        "Virology"
+      ],
       "title": "How AlphaFold and other AI tools could help us prepare for the next pandemic",
       "type": "Journal article",
       "url": "https://www.nature.com/articles/d41586-023-03201-4",
@@ -3492,7 +4181,12 @@
       "institutions": [],
       "publication": "Nature Machine Intelligence",
       "publicationDate": "2022-03-07",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "LLMs",
+        "Threat Assessment"
+      ],
       "title": "Dual use of artificial-intelligence-powered drug discovery",
       "type": "Journal article",
       "url": "https://www.proquest.com/docview/2641736775/abstract/13816D3B63D24FD2PQ/1",
@@ -3508,7 +4202,11 @@
       "institutions": [],
       "publication": "Microsoft On the Issues",
       "publicationDate": "2026-06-04",
-      "tags": [],
+      "tags": [
+        "Health security",
+        "Mitigations",
+        "Policy"
+      ],
       "title": "Strengthening biosecurity in the era of AI",
       "type": "Blog post",
       "url": "https://blogs.microsoft.com/on-the-issues/2026/06/04/strengthening-biosecurity-in-the-era-of-ai/",
@@ -3545,7 +4243,13 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-02-03",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Capabilities",
+        "Cloud labs",
+        "Evaluations",
+        "LLMs"
+      ],
       "title": "Bridging the Digital to Physical Divide: Evaluating LLM Agents on Benchtop DNA Acquisition",
       "type": "Report",
       "url": "https://www.rand.org/pubs/research_reports/RRA4591-1.html",
@@ -3563,7 +4267,12 @@
       ],
       "publication": "",
       "publicationDate": "2025-12-31",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Evaluations",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Contemporary Foundation AI Models Increase Biological Weapons Risk",
       "type": "Report",
       "url": "https://www.rand.org/pubs/perspectives/PEA3853-1.html",
@@ -3579,7 +4288,12 @@
       "institutions": [],
       "publication": "Nature",
       "publicationDate": "2025-11-19",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations",
+        "Protein design"
+      ],
       "title": "Semantic design of functional de novo genes from a genomic language model",
       "type": "Journal article",
       "url": "https://www.nature.com/articles/s41586-025-09749-7",
@@ -3595,7 +4309,12 @@
       "institutions": [],
       "publication": "Science",
       "publicationDate": "2024-01-26",
-      "tags": [],
+      "tags": [
+        "Department of Homeland Security",
+        "Dual-use research",
+        "Protein design",
+        "Risk assessments"
+      ],
       "title": "Protein design meets biosecurity",
       "type": "Journal article",
       "url": "https://www.science.org/doi/10.1126/science.ado1671",
@@ -3611,7 +4330,9 @@
       "institutions": [],
       "publication": "Apollo Research",
       "publicationDate": "2024-01-22",
-      "tags": [],
+      "tags": [
+        "Evaluations"
+      ],
       "title": "We Need A ‘Science of Evals’",
       "type": "Blog post",
       "url": "https://www.apolloresearch.ai/blog/we-need-a-science-of-evals/",
@@ -3627,7 +4348,13 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-08-30",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Mitigations",
+        "Protein design",
+        "Risk assessments",
+        "Virology"
+      ],
       "title": "Resilient Biosecurity in the Era of AI-Enabled Bioweapons",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2509.02610",
@@ -3659,7 +4386,12 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-07-16",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Evaluations",
+        "Jailbreaks and red-teaming",
+        "LLMs"
+      ],
       "title": "Large Language Models Often Know When They Are Being Evaluated",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2505.23836",
@@ -3693,7 +4425,11 @@
       "institutions": [],
       "publication": "Social Science Research Network",
       "publicationDate": "2026-02-10",
-      "tags": [],
+      "tags": [
+        "Bioweapons history",
+        "Non-state actors",
+        "Threat Assessment"
+      ],
       "title": "A Labour of Harm: Artificial Intelligence and Biological Weapons Acquisition",
       "type": "Preprint",
       "url": "https://papers.ssrn.com/abstract=6299518",
@@ -3709,7 +4445,10 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-11-05",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Capabilities"
+      ],
       "title": "Kosmos: An AI Scientist for Autonomous Discovery",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2511.02824",
@@ -3725,7 +4464,10 @@
       "institutions": [],
       "publication": "Biotech",
       "publicationDate": "2024-06-01",
-      "tags": [],
+      "tags": [
+        "Data governance",
+        "Metadata"
+      ],
       "title": "Driving AIxBio Innovation Through Data and Standardization",
       "type": "Blog post",
       "url": "https://www.biotech.senate.gov/press-releases/driving-aixbio-innovation-through-data-and-standardization/",
@@ -3743,7 +4485,11 @@
       ],
       "publication": "",
       "publicationDate": "2025-05-06",
-      "tags": [],
+      "tags": [
+        "Mitigations",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "On the Extinction Risk from Artificial Intelligence",
       "type": "Report",
       "url": "https://www.rand.org/pubs/research_reports/RRA3034-1.html",
@@ -3759,7 +4505,13 @@
       "institutions": [],
       "publication": "Frontiers in Bioengineering and Biotechnology",
       "publicationDate": "2024-02-28",
-      "tags": [],
+      "tags": [
+        "Dual-use research",
+        "Framework",
+        "Policy",
+        "Synthetic biology",
+        "Threat Assessment"
+      ],
       "title": "The whack-a-mole governance challenge for AI-enabled synthetic biology: literature review and emerging frameworks",
       "type": "Journal article",
       "url": "https://www.frontiersin.org/articles/10.3389/fbioe.2024.1359768",
@@ -3796,7 +4548,11 @@
       "institutions": [],
       "publication": "Center for Security and Emerging Technology",
       "publicationDate": "2023-06-15",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "LLMs"
+      ],
       "title": "Large Language Models in Biology",
       "type": "Blog post",
       "url": "https://cset.georgetown.edu/article/large-language-models-in-biology/",
@@ -3812,7 +4568,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-06-09",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Open-weight LLMs",
+        "Risk assessments"
+      ],
       "title": "When is it important that open-weight models aren't released?",
       "type": "Journal article",
       "url": "https://www.lesswrong.com/posts/TeF8Az2EiWenR9APF/when-is-it-important-that-open-weight-models-aren-t-released",
@@ -3848,7 +4608,13 @@
       ],
       "publication": "",
       "publicationDate": "2025-12-03",
-      "tags": [],
+      "tags": [
+        "International governance",
+        "Mitigations",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "Safeguarding Against Global Catastrophe: Risks, Opportunities & Governance options at the Intersection of Artificial Intelligence and Biology",
       "type": "Report",
       "url": "https://www.nti.org/analysis/articles/safeguarding-against-global-catastrophe/",
@@ -3864,7 +4630,11 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-05-13",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Health security",
+        "LLMs"
+      ],
       "title": "HealthBench: Evaluating Large Language Models Towards Improved Human Health",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2505.08775",
@@ -3880,7 +4650,11 @@
       "institutions": [],
       "publication": "Center for Security and Emerging Technology",
       "publicationDate": "2023-11-16",
-      "tags": [],
+      "tags": [
+        "Nucleic acid synthesis screening",
+        "Policy",
+        "United States"
+      ],
       "title": "Breaking Down the Biden AI EO: Screening DNA Synthesis and Biorisk",
       "type": "Blog post",
       "url": "https://cset.georgetown.edu/article/breaking-down-the-biden-ai-eo-screening-dna-synthesis-and-biorisk/",
@@ -3896,7 +4670,11 @@
       "institutions": [],
       "publication": "Frontier Model Forum",
       "publicationDate": "2025-04-22",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Framework",
+        "Risk assessments"
+      ],
       "title": "Frontier Capability Assessments",
       "type": "Blog post",
       "url": "https://www.frontiermodelforum.org/technical-reports/frontier-capability-assessments/",
@@ -3912,7 +4690,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-06-13",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Evaluations"
+      ],
       "title": "Introducing SecureBio’s ‘Trends in Biology’ AI Benchmarks Dashboard",
       "type": "Blog post",
       "url": "https://securebio.substack.com/p/introducing-securebios-trends-in",
@@ -3946,7 +4728,10 @@
       ],
       "publication": "",
       "publicationDate": "2023-07-01",
-      "tags": [],
+      "tags": [
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "Biosecurity in the Age of AI",
       "type": "Report",
       "url": "https://www.helenabiosecurity.org",
@@ -3962,7 +4747,12 @@
       "institutions": [],
       "publication": "Epoch AI",
       "publicationDate": "2026-02-20",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Data governance",
+        "Evaluations",
+        "Transparency and reporting"
+      ],
       "title": "Expanding our analysis of biological AI models",
       "type": "Webpage",
       "url": "https://epoch.ai/blog/expanding-our-analysis-of-biological-ai-models",
@@ -3994,7 +4784,10 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-05-27",
-      "tags": [],
+      "tags": [
+        "Data governance",
+        "Policy"
+      ],
       "title": "CSR Recommends Antitrust Guidelines Update to Permit AI Companies to Share Data on Biorisks - The Council on Strategic Risks",
       "type": "Blog post",
       "url": "https://councilonstrategicrisks.org/2026/05/27/csr-recommends-antitrust-guidelines-update-to-permit-ai-companies-to-share-data-on-biorisks/",
@@ -4010,7 +4803,13 @@
       "institutions": [],
       "publication": "National Academies Press",
       "publicationDate": "2024-08-05",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Biological Tools",
+        "Cloud labs",
+        "Health security",
+        "Risk assessments"
+      ],
       "title": "Artificial Intelligence and Automated Laboratories for Biotechnology: Leveraging Opportunities and Mitigating Risks: Proceedings of a Workshop—in Brief",
       "type": "Book",
       "url": "https://nap.nationalacademies.org/catalog/27469",
@@ -4045,7 +4844,11 @@
       "institutions": [],
       "publication": "arXiv",
       "publicationDate": "2025-10-30",
-      "tags": [],
+      "tags": [
+        "AI agents",
+        "Capabilities",
+        "Evaluations"
+      ],
       "title": "Remote Labor Index: Measuring AI Automation of Remote Work",
       "type": "Preprint",
       "url": "http://arxiv.org/abs/2510.26787",
@@ -4061,7 +4864,13 @@
       "institutions": [],
       "publication": "Frontiers in Bioengineering and Biotechnology",
       "publicationDate": "2026-05-14",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Mitigations",
+        "Nucleic acid synthesis screening",
+        "Protein design",
+        "Risk assessments"
+      ],
       "title": "Beyond sequence similarity: toward function-based screening of nucleic acid synthesis",
       "type": "Journal article",
       "url": "https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2026.1832724/full",
@@ -4098,7 +4907,13 @@
       "institutions": [],
       "publication": "npj Biomedical Innovations",
       "publicationDate": "2025-07-01",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Mitigations",
+        "Policy",
+        "Synthetic biology"
+      ],
       "title": "The convergence of AI and synthetic biology: the looming deluge",
       "type": "Journal article",
       "url": "https://www.nature.com/articles/s44385-025-00021-1",
@@ -4114,7 +4929,11 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-08-06",
-      "tags": [],
+      "tags": [
+        "Health security",
+        "LLMs",
+        "Transparency and reporting"
+      ],
       "title": "When AI Biosafety Safeguards Block Public Health",
       "type": "Blog post",
       "url": "https://ldkerr1964.substack.com/p/when-ai-biosafety-safeguards-block",
@@ -4130,7 +4949,12 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-08-06",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Dual-use research",
+        "Evaluations",
+        "Taxonomy"
+      ],
       "title": "Interpreting Dual-Use Biology Benchmarks for Frontier AI: Measurement, Saturation, and Generational Analysis",
       "type": "Report",
       "url": "https://www.rand.org/pubs/research_reports/RRA5055-1.html",
@@ -4146,7 +4970,12 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-04-15",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Jailbreaks and red-teaming",
+        "Policy",
+        "Threat Assessment"
+      ],
       "title": "Understanding AI-Enabled Biological Threats: Hype, Hazard, and Governance",
       "type": "Webpage",
       "url": "https://www.engbio.cam.ac.uk/news/understanding-ai-enabled-biological-threats-hype-hazard-and-governance",
@@ -4180,7 +5009,10 @@
       "institutions": [],
       "publication": "Nature",
       "publicationDate": "2026-01-01",
-      "tags": [],
+      "tags": [
+        "Evaluations",
+        "Protein design"
+      ],
       "title": "Advancing regulatory variant effect prediction with AlphaGenome",
       "type": "Journal article",
       "url": "https://www.nature.com/articles/s41586-025-10014-0",
@@ -4196,7 +5028,11 @@
       "institutions": [],
       "publication": "AI Frontiers",
       "publicationDate": "2025-04-22",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Threat Assessment",
+        "Virology"
+      ],
       "title": "AIs Are Disseminating Expert-Level Virology Skills",
       "type": "Webpage",
       "url": "https://www.ai-frontiers.org/articles/ais-are-disseminating-expert-level-virology-skills",
@@ -4212,7 +5048,11 @@
       "institutions": [],
       "publication": "NAM Perspectives",
       "publicationDate": "2024-10-28",
-      "tags": [],
+      "tags": [
+        "Capabilities",
+        "Health security",
+        "Protein design"
+      ],
       "title": "AI-Enabled Protein Design: A Strategic Asset for Global Health and Biosecurity",
       "type": "Journal article",
       "url": "https://nam.edu/ai-enabled-protein-design-a-strategic-asset-for-global-health-and-biosecurity/",
@@ -4246,7 +5086,12 @@
       "institutions": [],
       "publication": "Frontiers in Bacteriology",
       "publicationDate": "2024-03-06",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Health security",
+        "Pandemic preparedness"
+      ],
       "title": "Emerging applications of artificial intelligence in pathogen genomics",
       "type": "Journal article",
       "url": "https://www.frontiersin.org/journals/bacteriology/articles/10.3389/fbrio.2024.1326958/full",
@@ -4262,7 +5107,9 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2025-12-01",
-      "tags": [],
+      "tags": [
+        "Event report"
+      ],
       "title": "NeurIPS 2025 Workshop on Biosecurity Safeguards for Generative AI",
       "type": "Webpage",
       "url": "https://blog.stephenturner.us/p/neurips-2025-biosafe-genai",
@@ -4278,7 +5125,12 @@
       "institutions": [],
       "publication": "Science",
       "publicationDate": "2024-11-15",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Capabilities",
+        "Protein design",
+        "Synthetic biology"
+      ],
       "title": "Sequence modeling and design from molecular to genome scale with Evo",
       "type": "Journal article",
       "url": "https://www.science.org/doi/10.1126/science.ado9336",
@@ -4294,7 +5146,13 @@
       "institutions": [],
       "publication": "Science",
       "publicationDate": "2024-08-23",
-      "tags": [],
+      "tags": [
+        "Biological Tools",
+        "Dual-use research",
+        "Policy",
+        "Risk assessments",
+        "Threat Assessment"
+      ],
       "title": "AI and biosecurity: The need for governance",
       "type": "Journal article",
       "url": "https://www.science.org/doi/10.1126/science.adq1977",
@@ -4326,7 +5184,10 @@
       "institutions": [],
       "publication": "The Nuclear Threat Initiative",
       "publicationDate": "2026-02-18",
-      "tags": [],
+      "tags": [
+        "Comment / Statement",
+        "International governance"
+      ],
       "title": "NTI and CACDA Issue Joint Statement Calling for Stronger Biosecurity and Responsible AI-Biotechnology Innovation",
       "type": "Blog post",
       "url": "https://www.nti.org/news/nti-and-cacda-issue-joint-statement-calling-for-stronger-biosecurity-and-responsible-ai-biotechnology-innovation/",
@@ -4342,7 +5203,12 @@
       "institutions": [],
       "publication": "",
       "publicationDate": "2026-02-03",
-      "tags": [],
+      "tags": [
+        "Bioweapons history",
+        "Pandemic preparedness",
+        "Threat Assessment",
+        "United Kingdom"
+      ],
       "title": "Failing crops, mystery deaths and no warning: How a bioweapon attack would unfold",
       "type": "Blog post",
       "url": "https://inews.co.uk/opinion/failing-crops-mystery-deaths-and-no-warning-how-a-bioweapon-attack-would-unfold-4199808",
