@@ -1,8 +1,11 @@
 name: Fetch Airtable data
 
 # Job 1 of 2. Pulls Airtable into data/library.json and commits it ONLY if the
-# content actually changed. That commit is what triggers deploy-pages.yml, so
-# the site rebuilds when the data moves — not on a timer of its own.
+# content actually changed, then explicitly dispatches deploy-pages.yml so the
+# site rebuilds when the data moves — not on a timer of its own.
+#
+# The dispatch is not redundant with deploy-pages.yml's `on: push`. See the
+# comment on the trigger step below.
 
 on:
   schedule:
@@ -13,9 +16,10 @@ on:
   # Lets you pull fresh data on demand from the Actions tab.
   workflow_dispatch:
 
-# Needed for the commit below.
+# contents: write for the commit below; actions: write to dispatch the deploy.
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: fetch-airtable
@@ -40,6 +44,7 @@ jobs:
         run: node scripts/fetch-airtable.js
 
       - name: Commit only if the data changed
+        id: commit
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -50,6 +55,7 @@ jobs:
           # the very first time the file is added. Exit 0 means nothing staged.
           if git diff --cached --quiet; then
             echo "data/library.json unchanged — nothing to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
@@ -58,3 +64,23 @@ jobs:
 
           git commit -m "Update Airtable data"
           git push
+
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # A push made with the default GITHUB_TOKEN does NOT start another
+      # workflow run: GitHub blocks that to stop workflows retriggering
+      # themselves. So deploy-pages.yml's `on: push` never sees the commit
+      # above, and the site keeps serving stale data until somebody pushes by
+      # hand — which is exactly how 226 freshly tagged records sat unpublished.
+      #
+      # workflow_dispatch is a documented exception to that rule, so asking for
+      # the deploy explicitly is what actually ties a data change to a redeploy.
+      # Gating on the step output keeps the "only deploy when the data moved"
+      # property: a no-change day dispatches nothing.
+      - name: Trigger the Pages deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run deploy-pages.yml --ref "$GITHUB_REF_NAME"
+          echo "Dispatched deploy-pages.yml on $GITHUB_REF_NAME."
