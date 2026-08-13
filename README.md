@@ -29,7 +29,7 @@ Airtable  ──(daily cron)──►  fetch-airtable.yml
                                     │  committed ONLY if the content changed
                                     ▼
                               push to main
-                                    │
+                                    │  gh workflow run  (explicit dispatch)
                                     ▼
                              deploy-pages.yml
                                     │  scripts/build.js
@@ -42,9 +42,19 @@ Two separate workflows, on purpose:
 - **[`fetch-airtable.yml`](.github/workflows/fetch-airtable.yml)** — daily cron. Fetches every
   record (following Airtable's `offset` cursor, so nothing is truncated at 100), writes
   `data/library.json`, and commits it **only if `git diff` shows a real change**. No empty commits.
-- **[`deploy-pages.yml`](.github/workflows/deploy-pages.yml)** — runs on push to `main`. Builds
-  `dist/` and deploys. Because the fetch job's commit *is* a push, a data change is what
-  triggers the redeploy — there is no independent build timer.
+  When it does commit, it then dispatches the deploy explicitly.
+- **[`deploy-pages.yml`](.github/workflows/deploy-pages.yml)** — builds `dist/` and deploys. Runs
+  on a push to `main` (a human one) *and* on `workflow_dispatch`. There is no independent build
+  timer; a data change is what triggers the redeploy.
+
+**Why the fetch job dispatches the deploy by hand.** A push made with the default `GITHUB_TOKEN`
+does not start another workflow run — GitHub blocks that so workflows can't retrigger themselves.
+So `deploy-pages.yml`'s `on: push` never fires for the fetch job's commit, no matter that the
+commit is a real push to `main`. `workflow_dispatch` is the documented exception, which is why the
+fetch job ends with `gh workflow run deploy-pages.yml` (and needs `actions: write` to do it).
+
+Don't "simplify" this by deleting the dispatch step. Without it the data lands on `main` and the
+published site silently keeps serving the previous snapshot until someone pushes by hand.
 
 `data/library.json` is written deterministically (sorted keys, stable record order, no
 timestamps) so a diff on that file only ever reflects genuine content changes.
