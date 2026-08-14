@@ -122,12 +122,41 @@ const BASE = config.customDomain
   ? ''
   : normaliseBase(process.env.BASE_PATH || config.basePath);
 
+/**
+ * The Google Analytics (gtag.js) snippet, or '' when no ID is configured.
+ *
+ * The measurement ID is public by design — it ships in the page source — so it
+ * lives in site.config.json rather than in a secret. The ID is validated
+ * because it is interpolated into both a URL and a JS string literal, and a
+ * malformed value would break every page on the site rather than just itself.
+ */
+function analyticsSnippet(id) {
+  if (!id) return '';
+  if (!/^G-[A-Z0-9]+$/i.test(id)) {
+    console.error(
+      `googleAnalyticsId "${id}" in src/site.config.json is not a GA4 measurement ID ` +
+        '(expected the form G-XXXXXXXXXX).'
+    );
+    process.exit(1);
+  }
+  return (
+    `<script async src="https://www.googletagmanager.com/gtag/js?id=${id}"></script>\n` +
+    `<script>\n` +
+    `window.dataLayer = window.dataLayer || [];\n` +
+    `function gtag(){dataLayer.push(arguments);}\n` +
+    `gtag('js', new Date());\n` +
+    `gtag('config', '${id}');\n` +
+    `</script>\n`
+  );
+}
+
 const GLOBALS = {
   SITE_NAME: esc(config.siteName),
   DOMAIN: esc(config.domain),
   LITMAPS_URL: esc(config.litmapsUrl),
   YEAR: String(new Date().getFullYear()),
   BASE: BASE,
+  ANALYTICS: analyticsSnippet(config.googleAnalyticsId),
 };
 
 function renderPage({ out, body, title, description, active, bodyClass, wrapClass, scripts, vars }) {
