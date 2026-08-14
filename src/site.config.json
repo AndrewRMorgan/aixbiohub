@@ -8,6 +8,9 @@
   "//basePath": "Sub-path the site is served from, no trailing slash. The default GitHub Pages URL serves a project site under /<repo>, so this must be '/aixbiohub' there. Ignored when customDomain is set, because a custom domain serves from the root. Set this wrong and every link and stylesheet 404s.",
   "basePath": "/aixbiohub",
 
+  "//googleAnalyticsId": "GA4 measurement ID, e.g. 'G-XXXXXXXXXX'. When set, the gtag.js snippet is injected into every page's <head>. Set to null to ship no analytics at all — no script, no cookies.",
+  "googleAnalyticsId": "G-CXZEDYMSB0",
+
   "//litmapsUrl": "External citation map — opens in a new tab from the nav and the landing page.",
   "litmapsUrl": "https://app.litmaps.com/shared/b268a3d3-32ff-4102-b1dd-694af79d979c",
 
