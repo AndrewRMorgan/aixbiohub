@@ -471,10 +471,19 @@ function transformZoteroItem(zoteroItem, validOptions = EMPTY_OPTIONS) {
 // Airtable omits empty fields from responses entirely, so an absent value and
 // an empty array/string mean the same thing. Arrays are compared by content -
 // comparing them with !== compares references, which is always true.
+//
+// Values are trimmed before comparing because Airtable does not hand long text
+// back exactly as it was written: it appends a trailing newline. We wrote
+// "Stephen Turner" and read back "Stephen Turner\n", so every record looked
+// changed on every run and all 248 rows were rewritten twice a day forever -
+// around 80% of the base's total API usage, achieving nothing. Records with no
+// creators showed the same fault one step removed: we sent "", Airtable
+// returned "\n". Trailing whitespace is never a real edit, so it must not
+// count as one. fetch-airtable.js already trims for the same reason.
 function normalizeForCompare(value) {
   if (value === null || value === undefined) return '';
-  if (Array.isArray(value)) return [...value].map(String).sort().join('|');
-  return String(value);
+  if (Array.isArray(value)) return [...value].map((v) => String(v).trim()).sort().join('|');
+  return String(value).trim();
 }
 
 function findChangedField(existingFields, newFields) {
