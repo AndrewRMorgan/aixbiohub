@@ -2,8 +2,10 @@ name: Sync Zotero to Airtable
 
 on:
   schedule:
-    # Runs every 12 hours (at midnight and noon UTC)
-    - cron: '0 0,12 * * *'
+    # Daily at 00:35 UTC. The Zotero library changes at most a few times a week,
+    # so twice a day only bought duplicate work. Off the hour on purpose:
+    # GitHub delays scheduled runs that pile up on the hour mark.
+    - cron: '35 0 * * *'
   
   # Allows manual triggering from the Actions tab
   workflow_dispatch:
