@@ -3439,8 +3439,24 @@
       "year": "2025"
     },
     {
+      "abstract": "The use of artificial intelligence in biology offers great promise but could also endanger global health and national security. In this report, the authors develop a layered mitigation strategy that is robust against a variety of threat scenarios. The authors examine the strengths and weaknesses of a network of nine mitigations, describe areas of mutual reinforcement, and propose next steps for decisionmakers.",
+      "creators": "Steph Guerra; Aurelia Attal-Juncqua; John P. Tarangelo; Casey Aveggio; Katie Dammer; David Glickstein",
+      "date": "2026-08-18",
+      "doi": "",
+      "id": "reccY6NWpl7D3yq6T",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-08-18",
+      "tags": [],
+      "title": "Building a Defense-in-Depth Biosecurity Strategy for the AI Era",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA4999-1.html",
+      "year": "2026"
+    },
+    {
       "abstract": "The offensive potential is no longer theoretical. We need to develop systems to strengthen public health as quickly as AI is accelerating biological design",
-      "creators": "",
+      "creators": "Annie Jacobsen",
       "date": "2026-07-27",
       "doi": "",
       "id": "reccu9GidbTGA5dTp",
@@ -4203,6 +4219,22 @@
       "year": "2025"
     },
     {
+      "abstract": "Assessing a threat model in which malicious actors leverage large language model (LLM) agents to exploit biological tools (BTs), the authors evaluate whether agents can lower expertise barriers for hazardous biodesign. They find that LLM agents demonstrate emerging ability to use BTs for nucleic acid synthesis screening evasion, although success is inconsistent and model safeguards frequently limit testing of closed-weight systems.",
+      "creators": "Jeffrey Lee; Alyssa Worland; Christopher Rodriguez; Kyle Brady; Grant Ellison; Henry Alexander Bradley; Dawid Maciorowski; Jordan Despanie; Barbara Del Castello; Jason Johnson; Steph Guerra",
+      "date": "2026-08-11",
+      "doi": "",
+      "id": "recmzMivtIN5O1NxU",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-08-11",
+      "tags": [],
+      "title": "Testing Large Language Model Agents on the Use of Biological Tools for Nucleic Acid Synthesis Screening Evasion",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA4741-2.html",
+      "year": "2026"
+    },
+    {
       "abstract": "Generative genomic models can design increasingly complex biological systems1. However, controlling these models to generate novel sequences with desired functions remains challenging. Here, we show that Evo, a genomic language model, can leverage genomic context to perform function-guided design that accesses novel regions of sequence space. By learning semantic relationships across prokaryotic genes2, Evo enables a genomic ‘autocomplete’ in which a DNA prompt encoding genomic context for a function of interest guides the generation of novel sequences enriched for related functions, which we refer to as ‘semantic design’. We validate this approach by experimentally testing the activity of generated anti-CRISPR proteins and type II and III toxin–antitoxin systems, including de novo genes with no significant sequence similarity to natural proteins. In-context design of proteins and non-coding RNAs with Evo achieves robust activity and high experimental success rates even in the absence of structural priors, known evolutionary conservation or task-specific fine-tuning. We then use Evo to complete millions of prompts to produce SynGenome, a database containing over 120 billion base pairs of artificial intelligence-generated genomic sequences that enables semantic design across many functions. More broadly, these results demonstrate that generative genomics with biological language models can extend beyond natural sequences.",
       "creators": "Aditi T. Merchant; Samuel H. King; Eric Nguyen; Brian L. Hie",
       "date": "2025-11-19",
@@ -4896,6 +4928,22 @@
       "title": "Advancing regulatory variant effect prediction with AlphaGenome",
       "type": "Journal article",
       "url": "https://www.nature.com/articles/s41586-025-10014-0",
+      "year": "2026"
+    },
+    {
+      "abstract": "Biological tools (BTs) could potentially be misused by malicious actors seeking to design novel biological weapons. In this report, the authors evaluate seven large language model (LLM) agents on their abilities to select and operate BTs. They find that LLM agents are capable of performing initial interactions with BTs, which could lower expertise barriers for actors seeking to use BTs. Targeted testing of agent design capabilities is warranted.",
+      "creators": "Jeffrey Lee; Alyssa Worland; Kyle Brady; Grant Ellison; Henry Alexander Bradley; Christopher Rodriguez; Casey O. Barkan; Sunishchal Dev; Dawid Maciorowski; Jordan Despanie; Barbara Del Castello; Bria Persaud; Amar Pandya; Ella Guest; Steph Guerra",
+      "date": "2026-06-25",
+      "doi": "",
+      "id": "recvsT3bJvRFwPF4k",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-06-25",
+      "tags": [],
+      "title": "Can LLM Agents Select and Engage with Biological Tools? An Initial Biosecurity Assessment",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA4741-1.html",
       "year": "2026"
     },
     {
