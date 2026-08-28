@@ -312,6 +312,22 @@
       "year": "2026"
     },
     {
+      "abstract": "",
+      "creators": "Uri Klempner",
+      "date": "2026-07-27",
+      "doi": "",
+      "id": "rec2qX3WSonwXKRak",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-07-27",
+      "tags": [],
+      "title": "Artificial Intelligence and Extremist Capability: How AI Lowers the Barriers Between Intent and Capability",
+      "type": "Blog post",
+      "url": "https://gnet-research.org/2026/07/27/artificial-intelligence-and-extremist-capability-how-ai-lowers-the-barriers-between-intent-and-capability/",
+      "year": "2026"
+    },
+    {
       "abstract": "To accurately and confidently answer the question 'could an AI model or system increase biorisk', it is necessary to have both a sound theoretical threat model for how AI models or systems could increase biorisk and a robust method for testing that threat model. This paper provides an analysis of existing available research surrounding two AI and biorisk threat models: 1) access to information and planning via large language models (LLMs), and 2) the use of AI-enabled biological tools (BTs) in synthesizing novel biological artifacts. We find that existing studies around AI-related biorisk are nascent, often speculative in nature, or limited in terms of their methodological maturity and transparency. The available literature suggests that current LLMs and BTs do not pose an immediate risk, and more work is needed to develop rigorous approaches to understanding how future models could increase biorisks. We end with recommendations about how empirical work can be expanded to more precisely target biorisk and ensure rigor and validity of findings.",
       "creators": "Aidan Peppin; Anka Reuel; Stephen Casper; Elliot Jones; Andrew Strait; Usman Anwar; Anurag Agrawal; Sayash Kapoor; Sanmi Koyejo; Marie Pellat; Rishi Bommasani; Nick Frosst; Sara Hooker",
       "date": "2024-12-04",
@@ -511,6 +527,22 @@
       "year": "2025"
     },
     {
+      "abstract": "DOWNLOAD Introduction AI is rapidly advancing biotechnology by accelerating scientific discovery, biological design and experimental research.[1] Much of this progress is being driven by AI-enabled biological tools (BTs), including biological foundation models, specialized analytical tools, and components of increasingly automated biological workflows.[2] Recent breakthroughs illustrate both the breadth and accelerating pace of these advances. In […]",
+      "creators": "",
+      "date": "2026-07-31",
+      "doi": "",
+      "id": "rec4u3Y8fa5k6shvq",
+      "institution": "",
+      "institutions": [],
+      "publication": "Frontier Model Forum",
+      "publicationDate": "2026-07-31",
+      "tags": [],
+      "title": "Frontier AI Agents and Biological Tools: Preliminary Risks and Considerations",
+      "type": "Blog post",
+      "url": "https://www.frontiermodelforum.org/issue-briefs/frontier-ai-agents-and-biological-tools-preliminary-risks-and-considerations/",
+      "year": "2026"
+    },
+    {
       "abstract": "",
       "creators": "Beba Cibralic; Barbara Del Castello; Allison Berke; Aurelia Attal-Juncqua; Joshua Dettman; Alyssa Worland; Jeffrey Lee; Elika Somani; Lukas Till Berglund; Jay Atanda; Toby Webster",
       "date": "2024-12-02",
@@ -548,6 +580,54 @@
       "type": "Webpage",
       "url": "https://openai.com/index/preparing-for-future-ai-capabilities-in-biology/",
       "year": "2025"
+    },
+    {
+      "abstract": "The convergence of AI and biotechnology blurs boundaries and challenges existing regulations designed to consider technologies separately.",
+      "creators": "Chelsea R. Francek",
+      "date": "2026-08-18",
+      "doi": "10.64628/AA.h9gju5k9j",
+      "id": "rec66MFQ6l539tM9W",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-08-18",
+      "tags": [],
+      "title": "The use of AI in biotechnology is changing faster than the rules governing either technology",
+      "type": "Webpage",
+      "url": "https://theconversation.com/the-use-of-ai-in-biotechnology-is-changing-faster-than-the-rules-governing-either-technology-289796",
+      "year": "2026"
+    },
+    {
+      "abstract": "Lab skills come from hands-on mentorship, not from reading the entire internet.",
+      "creators": "Abi Olvera",
+      "date": "2026-04-23",
+      "doi": "",
+      "id": "rec6Ozmb0Z4YkbH4u",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-04-23",
+      "tags": [],
+      "title": "Tacit Knowledge: The Missing Factor in AI Bio Risk Assessments",
+      "type": "Webpage",
+      "url": "https://secondthoughts.ai/p/tacit-knowledge-the-missing-factor",
+      "year": "2026"
+    },
+    {
+      "abstract": "I interviewed dozens of biosecurity experts. The fear that AI will enable lone wolves to build pandemics is a case study in how domain expertise gets sidelined.",
+      "creators": "Abi Olvera",
+      "date": "2026-07-21",
+      "doi": "",
+      "id": "rec6VOVtlT5F32CB4",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-07-21",
+      "tags": [],
+      "title": "Why AI-assisted bioweapons won't kill us all",
+      "type": "Blog post",
+      "url": "https://abio.substack.com/p/why-ai-assisted-bioweapons-wont-kill",
+      "year": "2026"
     },
     {
       "abstract": "Modern science advances fastest when thought meets action. LabOS represents the first AI co-scientist that unites computational reasoning with physical experimentation through multimodal perception, self-evolving agents, and Extended-Reality(XR)-enabled human-AI collaboration. By connecting multi-model AI agents, smart glasses, and robots, LabOS allows AI to see what scientists see, understand experimental context, and assist in real-time execution. Across applications -- from cancer immunotherapy target discovery to stem-cell engineering and material science -- LabOS shows that AI can move beyond computational design to participation, turning the laboratory into an intelligent, collaborative environment where human and machine discovery evolve together.",
@@ -608,6 +688,22 @@
       "type": "Report",
       "url": "https://www.rand.org/pubs/research_reports/RRA2977-1.html",
       "year": "2023"
+    },
+    {
+      "abstract": "The moment an artificial intelligence (AI) lab publishes an open-weight model, it relinquishes the ability to recall it. The following is a preliminary assessment of what open-weight models mean for terrorist misuse.",
+      "creators": "Clara Broekaert",
+      "date": "2026-08-09",
+      "doi": "",
+      "id": "rec6iG3iwlrPripVk",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-08-09",
+      "tags": [],
+      "title": "Open-Weight AI Models and Terrorist Exploitation: A Preliminary Assessment",
+      "type": "Webpage",
+      "url": "https://www.militantwire.com/p/open-weight-ai-models-and-terrorist",
+      "year": "2026"
     },
     {
       "abstract": "AI tools are close to being able to do a host of dangerous things, like walking people through the mistakes they made during a failed attempt at making dangerous pathogens and guiding them to a better protocol. There needs to be a durable way to probe the ways these systems might be misused, even as newer and more powerful technologies are continuously released.",
@@ -1307,6 +1403,22 @@
       "year": "2011"
     },
     {
+      "abstract": "A response to “Why AI-assisted bioweapons won’t kill you.” Cover painting: The Fighting Temeraire by J.M.W. Turner (1839)",
+      "creators": "O. H. Scharfman",
+      "date": "2026-07-24",
+      "doi": "",
+      "id": "recDpqmBcmjXfuL3H",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-07-24",
+      "tags": [],
+      "title": "Bioweapons as the Optimist's Exception",
+      "type": "Blog post",
+      "url": "https://oliviahelens.substack.com/p/bioweapons-as-the-optimists-exception",
+      "year": "2026"
+    },
+    {
       "abstract": "Introduction: Artificial intelligence (AI) tools continue to be developed and used within the life sciences. The impact of these tools on the biosecurity landscape surrounding mail-order DNA synthesis and how to address the impacts have not been critically examined in the literature. Methods: The impacts of AI-driven chatbots and biological design tools on the biosecurity landscape surrounding mail-order DNA synthesis were analyzed and described. The findings are informed by the authors' experience in the field. Results: Generally, chatbots lower barriers to access of information that could be misused while biological design tools may provide new abilities to users with the intent of misuse. Six recommendations to the United States Government that attempt to maximize the benefits of these new technologies while mitigating risks are provided. Conclusion: Mandating mail-order DNA synthesis providers to screen DNA synthesis orders is a critical safeguarding step that should be taken as soon as possible. Over time, biological design tools will reduce the effectiveness of such a regulation and actions should be taken now to limit the negative impacts in the future.",
       "creators": "Stephanie Batalis; Caroline Schuerger; Gigi Kwik Gronvall; Matthew E. Walsh",
       "date": "2023-12-27",
@@ -1368,6 +1480,38 @@
       "year": "2024"
     },
     {
+      "abstract": "<p><span>The emergence of large language models and generative AI systems presents a significant and underexplored threat to biosecurity. While bioterrorism has",
+      "creators": "Alexandra Zini",
+      "date": "2026-06-01",
+      "doi": "10.2139/ssrn.6967578",
+      "id": "recEV3ssEbWsDjV5G",
+      "institution": "",
+      "institutions": [],
+      "publication": "Social Science Research Network",
+      "publicationDate": "2026-06-01",
+      "tags": [],
+      "title": "Emerging Threats: Artificial Intelligence and the Potential for Bioterrorism in the Digital Age <div> Navigating Risks, Theory, and Countermeasures in the Era of AI-Driven Biowarfare </div>",
+      "type": "Preprint",
+      "url": "https://papers.ssrn.com/abstract=6967578",
+      "year": "2026"
+    },
+    {
+      "abstract": "Rapid advancements in AI have enabled significant progress in protein and nucleic acid design, but they also pose biosecurity challenges. We examine the vulnerabilities of biosecurity screening software (BSS) to AI-reformulated synthetic homologs of proteins of concern (POCs) that have been fragmented into smaller segments. We evaluate four BSS tools that were recently patched to enhance their AI resiliency. Without any further modification, we found that two of the four tools were capable of robustly detecting fragments as short as 50 nucleotides, demonstrating screening capabilities that exceed those requested in the U.S. Framework for Nucleic Acid Synthesis. Upgraded versions of the other two tools improved performance. Although our findings confirm the effectiveness of the tested BSS tools, at the same time, they emphasize the urgency of developing alternate BSS approaches to counter evolving AI-enabled biosecurity risks.",
+      "creators": "Bruce J. Wittmann; Nicole E. Wheeler; Steven T. Murphy; Tom Mitchell; Brittany Magalis; Bryan T. Gemler; Kevin Flyangolts; James Diggans; Adam Clore; Jacob Beal; Craig Bartling; Tessa Alexanian; Eric Horvitz",
+      "date": "2026-03-05",
+      "doi": "10.64898/2026.03.04.709671",
+      "id": "recEa9toHclx7AZSY",
+      "institution": "",
+      "institutions": [],
+      "publication": "bioRxiv",
+      "publicationDate": "2026-03-05",
+      "tags": [],
+      "title": "The Limits of Sequence-Based Biosecurity Screening Tools in the Age of AI-Assisted Protein Design",
+      "type": "Preprint",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.03.04.709671v1",
+      "year": "2026"
+    },
+    {
       "abstract": "Biological AI models (BAIMs) are advancing rapidly and hold substantial promise. Yet, these models raise dual-use concerns, particularly regarding capabilities that could enhance pathogens with pandemic potential. Current risk mitigation discussions for BAIMs are concentrated in the post-development stage, focusing on evaluations and safeguards, after a model has been trained. We argue that upstream, pre-development risk–benefit review (RBR) is a necessary, missing component of effective BAIM governance. The broad range of models, their capabilities, and purpose-built applications, as well as a majority-academic developer community, make this approach feasible and realistic. We propose a review framework with the following five components and discuss key characteristics of each component: (1) review trigger criteria that determine whether a model should undergo an RBR. The review trigger criteria are (A) a model is reasonably anticipated to possess capabilities of concern or (B) it will be trained on sensitive pathogen data classified under the Biosecurity Data Levels (BDL) system; structured risk (2) and benefit (3) reviews using qualitative and quantitative criteria; (4) integration of risk and benefit scores into a composite assessment; and (5) proportionate risk mitigation recommendations. We expect that such reviews (2 through 5) would apply to only a small fraction of BAIMs and would benefit responsible developers by establishing clear expectations at the outset of model development. We discuss how such a framework could be implemented broadly across academic institutions, commercial developers, and federal, philanthropic, and private funding bodies, and address limitations such as the subjectivity of risk assessments. RBR for BAIMs remains nascent and will require expert-driven working groups to define capabilities of concern, establish clear review criteria, and assess risk mitigation efficacy. RBRs are a promising conceptual approach for BAIM risk management and should be pioneered, refined, and vetted through real-world application with model developers.",
       "creators": "Moritz S. Hanke; Shrestha Rath; Anita Cicero; Thomas V. Inglesby; Jaspreet Pannu",
       "date": "2026-06-01",
@@ -1407,6 +1551,22 @@
       "title": "The US and China Must Unite on AI To Stop the Next Bio Threat | Opinion",
       "type": "Webpage",
       "url": "https://www.newsweek.com/us-china-must-unite-ai-to-stop-next-bio-threat-opinion-11992525",
+      "year": "2026"
+    },
+    {
+      "abstract": "Conformity as a major driver of non-state terrorist tactics",
+      "creators": "Christopher Rodriguez",
+      "date": "2026-07-28",
+      "doi": "",
+      "id": "recGFDVTJt5c1m6mC",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-07-28",
+      "tags": [],
+      "title": "Why bioterror is actually rare",
+      "type": "Blog post",
+      "url": "https://cwrod.substack.com/p/responding-to-increased-attack-frequency",
       "year": "2026"
     },
     {
@@ -1987,6 +2147,38 @@
       "year": "2024"
     },
     {
+      "abstract": "Nine factors that practitioners say make bioweapons rare.",
+      "creators": "Abi Olvera",
+      "date": "2026-04-08",
+      "doi": "",
+      "id": "recLV3GHb9OK1jV5u",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-04-08",
+      "tags": [],
+      "title": "To Forecast AI's Impact on Biosecurity, We Asked: Why are Attacks So Rare?",
+      "type": "Webpage",
+      "url": "https://secondthoughts.ai/p/why-arent-bioweapons-common",
+      "year": "2026"
+    },
+    {
+      "abstract": "Personal thoughts on the present and future of safe biological AI.",
+      "creators": "Brian Hie",
+      "date": "",
+      "doi": "",
+      "id": "recLdey1bT0pbDEaC",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "",
+      "tags": [],
+      "title": "Present and future of safe biological AI",
+      "type": "Webpage",
+      "url": "https://brianhie.com/present_and_future",
+      "year": ""
+    },
+    {
       "abstract": "This white paper lays out policy options to promote U.S. innovation, provide oversight of AI models for biotechnology, and assess future risk.",
       "creators": "NSCEB",
       "date": "2024-01-01",
@@ -2307,6 +2499,22 @@
       "year": "2026"
     },
     {
+      "abstract": "Well, potentially anyway",
+      "creators": "Christopher Rodriguez",
+      "date": "2026-07-28",
+      "doi": "",
+      "id": "recPhMJ0i95LfMlqV",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-07-28",
+      "tags": [],
+      "title": "Bioterrorism is actually a problem right now",
+      "type": "Blog post",
+      "url": "https://cwrod.substack.com/p/responding-to-increased-attack-frequency",
+      "year": "2026"
+    },
+    {
       "abstract": "How are terrorists using AI? Semi-structured interviews with 27 former Boko Haram members conducted in northeast Nigeria in 2025 and 2026 reveal unprecedented detail about AI-assisted terrorist activity primarily through 2024. This report finds that both factions of Boko Haram use frontier AI, including ChatGPT, Claude, Gemini, Grok, Meta AI, and DeepSeek, to assist in combat and day-to-day operations. This AI use is institutionalized through specialized units and internal training. It has aided in attack planning, weapons troubleshooting, and the design of explosive devices, as users have successfully circumvented some safeguards. This know-how was transferred through transnational jihadist networks, with Islamic State operatives delivering in-person training. Respondents expressed strong enthusiasm for AI and, in some cases, openness to mass-casualty weapons, though documented use remains conventional. Terrorist adoption of AI has thus advanced further and more systematically than prior analysis has recognized, making it a present and growing reality that warrants attention from policymakers, security communities, and AI developers.",
       "creators": "Antonia Juelich",
       "date": "",
@@ -2443,6 +2651,22 @@
       "year": "2024"
     },
     {
+      "abstract": "An explainer",
+      "creators": "Conor Griffin",
+      "date": "2026-08-27",
+      "doi": "",
+      "id": "recQjnBKbT4vQRzOQ",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-08-27",
+      "tags": [],
+      "title": "AI & CBRN risks",
+      "type": "Webpage",
+      "url": "https://www.aipolicyperspectives.com/p/ai-and-cbrn-risks",
+      "year": "2026"
+    },
+    {
       "abstract": "Global AI red lines are one way to set enforceable limits on dangerous AI uses and behaviours to prevent unacceptable risks and build trust.",
       "creators": "",
       "date": "",
@@ -2460,6 +2684,22 @@
       "type": "Webpage",
       "url": "https://oecd.ai/en/wonk/ai-governance-through-global-red-lines-can-help-prevent-unacceptable-risks",
       "year": ""
+    },
+    {
+      "abstract": "Categories to build for the increased risks to come.",
+      "creators": "O. H. Scharfman",
+      "date": "2025-06-22",
+      "doi": "",
+      "id": "recREH70VfXmKVxVJ",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2025-06-22",
+      "tags": [],
+      "title": "Probable Extinction: AI-Enabled Biowarfare and Bioterrorism",
+      "type": "Blog post",
+      "url": "https://oliviahelens.substack.com/p/bioweapons-as-the-optimists-exception",
+      "year": "2025"
     },
     {
       "abstract": "The intersection of AI and engineering biology offers a unique opportunity to address pressing societal issues, but also poses a potential threat to global biosecurity. Is AI lowering barriers to biological weapons development? What are the risks and how likely are they to emerge? Can AI be used as a tool to aid biosecurity as well as threaten it? Researchers from the Centre for the Study of Existential Risk discuss.",
@@ -2641,6 +2881,22 @@
       "year": "2023"
     },
     {
+      "abstract": "Many important biological functions arise not from single genes but from complex interactions encoded by entire genomes. We report the first generative design of complete bacteriophage genomes using genome language models. We generated viable bacteriophages with target host tropism, using the phage ΦX174 as our design template. Experimental testing yielded 16 phages with diverse fitness profiles in laboratory conditions. Cryo–electron microscopy confirmed that a generated phage utilizes an evolutionarily distant DNA packaging protein in its capsid. A cocktail of generated phages rapidly overcomes ΦX174-resistant Escherichia coli strains, demonstrating a path toward artificial intelligence–generated phage therapies against rapidly evolving bacterial pathogens. This work provides a blueprint for the design of diverse synthetic bacteriophages and useful biological systems at the genome scale.",
+      "creators": "Samuel H. King; Claudia L. Driscoll; David B. Li; Daniel Guo; Aditi T. Merchant; Garyk Brixi; Max E. Wilkinson; Brian L. Hie",
+      "date": "2026-08-06",
+      "doi": "10.1126/science.aec2657",
+      "id": "recTooHAMZwNG0ib0",
+      "institution": "",
+      "institutions": [],
+      "publication": "Science",
+      "publicationDate": "2026-08-06",
+      "tags": [],
+      "title": "Generative design of bacteriophages with genome language models",
+      "type": "Journal article",
+      "url": "https://www.science.org/doi/10.1126/science.aec2657",
+      "year": "2026"
+    },
+    {
       "abstract": "Advances in AI-enabled biological tools (BTs) are catalysing life sciences research. BTs refer to the range of narrow but highly capable AI tools trained on biological data using machine learning techniques, which are important for many aspects of scientific research and development. While beneficial in many cases, BTs could be misused to enable actors across multiple steps in the development of",
       "creators": "James Smith; Sophie Rose; Richard Moulange; Cassidy Nelson",
       "date": "2024-03-27",
@@ -2759,6 +3015,22 @@
       "type": "Webpage",
       "url": "https://time.com/6967625/we-need-to-be-ready-for-biotechs-chatgpt-moment/",
       "year": "2024"
+    },
+    {
+      "abstract": "Researchers propose modifying protein-design algorithms to keep bad actors from misusing them",
+      "creators": "",
+      "date": "",
+      "doi": "",
+      "id": "recUbWQJfbzAXrO6l",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "",
+      "tags": [],
+      "title": "Built-in safeguards might stop AI from designing bioweapons",
+      "type": "Webpage",
+      "url": "https://www.science.org/content/article/built-safeguards-might-stop-ai-designing-bioweapons",
+      "year": ""
     },
     {
       "abstract": "Advances in AI have revolutionized chemical and biological design, driving breakthroughs in drug discovery. However, these advancements pose dual-use risks, particularly in the potential misuse of AI to create harmful biological agents. Despite the remarkable progress in the field, no standardized framework exists to evaluate the design capabilities of these systems. Unlike predictive models that can be evaluated cheaply in silico, design methods demand acting on the world. This necessitates real-world deployment to evaluate model capabilities. Addressing dual-use risks requires first understanding and quantifying AI capabilities, benchmarking systems against each other, and tracking their improvements over time. This response highlights the current challenges in evaluating AI chem-bio design methods and proposes a path forward through a robust evaluation framework based on real-world experimentation.",
@@ -3208,6 +3480,22 @@
       "type": "Blog post",
       "url": "https://thebulletin.org/2023/03/chat-gpt-for-biology/",
       "year": "2023"
+    },
+    {
+      "abstract": "",
+      "creators": "Daria Alexe",
+      "date": "2026-08-12",
+      "doi": "",
+      "id": "recadSzxTkjuTGUG7",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-08-12",
+      "tags": [],
+      "title": "From Lab Expertise to Chat Interface: The New Risk of Toxin-Level Attacks",
+      "type": "Blog post",
+      "url": "https://gnet-research.org/2026/08/12/from-lab-expertise-to-chat-interface-the-new-risk-of-toxin-level-attacks/",
+      "year": "2026"
     },
     {
       "abstract": "Artificial Intelligence (AI) is an epoch-defining technology that will profoundly shape the ways we live and work. In the so-called ‘Century of Biology,’ AI-enabled tools promise a massive increase in speed and capacity in certain parts of the bioengineering R&D cycle, including during data aggregation, lab automation, and the analysis and output phases. But despite",
@@ -3714,6 +4002,22 @@
       "year": "2025"
     },
     {
+      "abstract": "Artificial intelligence (AI) agents can help non-experts use advanced biological design tools, raising misuse concerns. The authors investigate whether safeguards can be built into these tools to block such assistance. They find that these safeguards are ineffective against today’s AI agents, largely because multiple frontier large language models evade the safeguards by misrepresenting or concealing their identity as AI systems.",
+      "creators": "Casey O. Barkan; Christopher Rodriguez; Swaptik Chowdhury; Li Ang Zhang; Roger Brent",
+      "date": "2026-07-20",
+      "doi": "",
+      "id": "recfhGtqzmQAvBVdg",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-07-20",
+      "tags": [],
+      "title": "Restricting AI Agent Use of Biological Tools: Exploring the Feasibility of Software Barriers",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/research_reports/RRA5000-1.html",
+      "year": "2026"
+    },
+    {
       "abstract": "Training data is an essential input into creating competent artificial intelligence (AI) models. AI models for biology are trained on large volumes of data, including data related to biological sequences, structures, images, and functions. The type of data used to train a model is intimately tied to the capabilities it ultimately possesses– including those of biosecurity concern. For this reason, an international group of more than 100 researchers at the recent 50th anniversary Asilomar Conference endorsed data controls to prevent the use of AI for harmful applications such as bioweapons development. To help design such controls, we introduce a five-tier Biosecurity Data Level (BDL) framework for categorizing pathogen data. Each level contains specific data types, based on their expected ability to contribute to capabilities of concern when used to train AI models. For each BDL tier, we propose technical restrictions appropriate to its level of risk. Finally, we outline a novel governance framework for newly created dual-use pathogen data. In a world with widely accessible computational and coding resources, data controls may be among the most high-leverage interventions available to reduce the proliferation of concerning biological AI capabilities.",
       "creators": "Doni Bloomfield; Moritz S. Hanke; Aaron Maiwald; James R. M. Black; Toby Webster; Tina Hernandez-Boussard; Allison Berke; Oliver M. Crook; Jassi Pannu",
       "date": "2025-11-24",
@@ -3771,6 +4075,22 @@
       "type": "Blog post",
       "url": "https://thebulletin.org/2024/11/what-will-be-the-impact-of-ai-on-the-bioweapons-treaty/",
       "year": "2024"
+    },
+    {
+      "abstract": "Genomic foundation models such as Evo 2 learn rich sequence representations, but their value for biosecurity screening is largely unexplored. We ask how much biosecurity-relevant signal is linearly accessible in these representations by training minimal linear and attention probes on frozen Evo 2 layer-26 activations, without fine-tuning the underlying model. Across held-out metagenomic test sets, the probes detect antimicrobial resistance (AMR) with strong discrimination: a linear probe reaches a region-level ROC-AUC of 0.888 (mean-pool), rising to 0.977 with a single-head attention probe. The probes resolve finer-grained AMR drug-class subcategories and separate them from unrelated functional genes, providing additional evidence that the learned signal is not explained solely by generic functional-gene status. Bacterial virulence is also decodable, though more weakly (region-level ROC-AUC 0.833). The AMR probe retains comparable ranking performance on simulated short reads without retraining, enabling evaluation before assembly in settings where assembly is computationally costly or unreliable. It achieves a read-level ROC-AUC of 0.898 (mean-pool), comparable to the mean-pooled full-region result. Within SynGenome, AMR-associated prompt labels are only weakly recoverable from Evo 1.5-generated sequences; these prompt-derived labels do not establish the function of the generated response sequences. A complementary sparse-autoencoder analysis recovers interpretable resistance-associated features but proves less consistent than the supervised probes. Together, these results position lightweight embedding-based probes as a fast, inexpensive first-pass detection layer for metagenomic biosurveillance and map both strengths and current limits of the approach. This work was conducted as part of the AIxBio Hackathon 2026 hosted by BlueDot Impact, Apart Research, and Cambridge Biosecurity Hub.",
+      "creators": "Jeremy Guntoro; Alexander Dack; Dylan Danno; Michaela Jančovičová; Križan Jurinović; Vanessa Smilansky",
+      "date": "2026-07-15",
+      "doi": "10.48550/arXiv.2607.14070",
+      "id": "recgX6qKR9PDYvy3J",
+      "institution": "",
+      "institutions": [],
+      "publication": "arXiv",
+      "publicationDate": "2026-07-15",
+      "tags": [],
+      "title": "Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2607.14070",
+      "year": "2026"
     },
     {
       "abstract": "AI tools that can come up with protein structures at the push of a button should be used safely and ethically, say researchers in the field.",
@@ -4039,6 +4359,22 @@
       "year": "2025"
     },
     {
+      "abstract": "Zeroing in between \"negligible\" and \"end of the world\"",
+      "creators": "Christopher Rodriguez",
+      "date": "2024-07-19",
+      "doi": "",
+      "id": "reckDONQsZzvbYBXb",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2024-07-19",
+      "tags": [],
+      "title": "What's the right way to estimate biorisk from LLMs?",
+      "type": "Blog post",
+      "url": "https://cwrod.substack.com/p/responding-to-increased-attack-frequency",
+      "year": "2024"
+    },
+    {
       "abstract": "DNA language models have revolutionized our ability to understand and design DNA sequences--the fundamental language of life--with unprecedented precision, enabling transformative applications in therapeutics, synthetic biology, and gene editing. However, this capability also poses substantial dual-use risks, including the potential for creating pathogens, viruses, and even bioweapons. To address these biosecurity challenges, we introduce two innovative watermarking techniques to reliably track the designed DNA: DNAMark and CentralMark. DNAMark employs synonymous codon substitutions to embed watermarks in DNA sequences while preserving the original function. CentralMark further advances this by creating inheritable watermarks that transfer from DNA to translated proteins, leveraging protein embeddings to ensure detection across the central dogma. Both methods utilize semantic embeddings to generate watermark logits, enhancing robustness against natural mutations, synthesis errors, and adversarial attacks. Evaluated on our therapeutic DNA benchmark, DNAMark and CentralMark achieve F1 detection scores above 0.85 under various conditions, while maintaining over 60% sequence similarity to ground truth and degeneracy scores below 15%. A case study on the CRISPR-Cas9 system underscores CentralMark's utility in real-world settings. This work establishes a vital framework for securing DNA language models, balancing innovation with accountability to mitigate biosecurity risks.",
       "creators": "Zaixi Zhang; Ruofan Jin; Le Cong; Mengdi Wang",
       "date": "2025-09-20",
@@ -4133,6 +4469,38 @@
       "year": "2022"
     },
     {
+      "abstract": "Hurdles include facilities, materials, and steps requiring unwritten lore and hands-on experience.",
+      "creators": "Abi Olvera",
+      "date": "2026-05-28",
+      "doi": "",
+      "id": "reclQr8Nx1vQJgvNf",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-05-28",
+      "tags": [],
+      "title": "AI Can Help Plan a Bioweapon. Building One is Still Hard.",
+      "type": "Webpage",
+      "url": "https://secondthoughts.ai/p/tacit-knowledge-the-missing-factor",
+      "year": "2026"
+    },
+    {
+      "abstract": "A practical playbook of safeguards AI companies can adopt to reduce biorisk from their models.",
+      "creators": "Lennart Justen",
+      "date": "2026-04-15",
+      "doi": "",
+      "id": "reclVsyd7h0pKhH63",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-04-15",
+      "tags": [],
+      "title": "A biosecurity playbook for AI companies",
+      "type": "Blog post",
+      "url": "https://lennartjusten.substack.com/p/a-biosecurity-playbook-for-ai-companies",
+      "year": "2026"
+    },
+    {
       "abstract": "AI is reshaping biology, unlocking breakthroughs while raising new risks. Learn how smarter safeguards can strengthen biosecurity without slowing innovation.",
       "creators": "Eric Horvitz",
       "date": "2026-06-04",
@@ -4151,6 +4519,22 @@
       "type": "Blog post",
       "url": "https://blogs.microsoft.com/on-the-issues/2026/06/04/strengthening-biosecurity-in-the-era-of-ai/",
       "year": "2026"
+    },
+    {
+      "abstract": "How advanced AI is lowering barriers to biological threats: accelerating knowledge synthesis, planning, pathogen design, sequencing, and bio-engineering automation. Evidence and capability assessments.",
+      "creators": "",
+      "date": "",
+      "doi": "",
+      "id": "recm8v9Xsjb2RoFUy",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "",
+      "tags": [],
+      "title": "AI Biological Risk Overview | AI Risk Explorer",
+      "type": "Webpage",
+      "url": "https://airiskexplorer.com/explainers/biological-risk",
+      "year": ""
     },
     {
       "abstract": "A flexible framework designed to assess these tools based on their capabilities, potential for misuse, accessibility, and technological maturity.",
@@ -4333,6 +4717,22 @@
       "year": ""
     },
     {
+      "abstract": "A one-pager summary on the worst-case scenario risks of bioengineered pandemics.",
+      "creators": "O. H. Scharfman",
+      "date": "2025-11-13",
+      "doi": "",
+      "id": "recnv2BeGPxKnziOs",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2025-11-13",
+      "tags": [],
+      "title": "When Pathogens Become Programmable",
+      "type": "Blog post",
+      "url": "https://oliviahelens.substack.com/p/when-pathogens-become-programmable",
+      "year": "2025"
+    },
+    {
       "abstract": "If AI models can detect when they are being evaluated, the effectiveness of evaluations might be compromised. For example, models could have systematically different behavior during evaluations, leading to less reliable benchmarks for deployment and governance decisions. We investigate whether frontier language models can accurately classify transcripts based on whether they originate from evaluations or real-world deployment, a capability we call evaluation awareness. To achieve this, we construct a diverse benchmark of 1,000 prompts and transcripts from 61 distinct datasets. These span public benchmarks (e.g., MMLU, SWEBench), real-world deployment interactions, and agent trajectories from scaffolding frameworks (e.g., web-browsing agents). Frontier models clearly demonstrate above-random evaluation awareness (Gemini-2.5-Pro reaches an AUC of $0.83$), but do not yet surpass our simple human baseline (AUC of $0.92$). Furthermore, both AI models and humans are better at identifying evaluations in agentic settings compared to chat settings. Additionally, we test whether models can identify the purpose of the evaluation. Under multiple-choice and open-ended questioning, AI models far outperform random chance in identifying what an evaluation is testing for. Our results indicate that frontier models already exhibit a substantial, though not yet superhuman, level of evaluation-awareness. We recommend tracking this capability in future models.",
       "creators": "Joe Needham; Giles Edkins; Govind Pimpale; Henning Bartsch; Marius Hobbhahn",
       "date": "2025-07-16",
@@ -4434,6 +4834,22 @@
       "year": "2025"
     },
     {
+      "abstract": "Frontier AI-bio safety evaluations aim to test the biological capabilities and, by extension, the potential biosafety implications of frontier AI. As the science of AI safety evaluations is still nascent, the evaluations themselves can vary widely in both purpose and methodology. As such, a key first step in building out an effective safety evaluation ecosystem […]",
+      "creators": "Frontier Model Forum",
+      "date": "2024-12-20",
+      "doi": "",
+      "id": "recpKC2i5K7RL85xd",
+      "institution": "",
+      "institutions": [],
+      "publication": "Frontier Model Forum",
+      "publicationDate": "2024-12-20",
+      "tags": [],
+      "title": "Issue Brief: Preliminary Taxonomy of AI-Bio Safety Evaluations",
+      "type": "Blog post",
+      "url": "https://www.frontiermodelforum.org/updates/issue-brief-preliminary-taxonomy-of-ai-bio-safety-evaluations/",
+      "year": "2024"
+    },
+    {
       "abstract": "AI-enabled synthetic biology has tremendous potential but also significantly increases biorisks and brings about a new set of dual use concerns. The picture is complicated given the vast innovations envisioned to emerge by combining emerging technologies, as AI-enabled synthetic biology potentially scales up bioengineering into industrial biomanufacturing. However, the literature review indicates that goals such as maintaining a reasonable scope for innovation, or more ambitiously to foster a huge bioeconomy do not necessarily contrast with biosafety, but need to go hand in hand. This paper presents a literature review of the issues and describes emerging frameworks for policy and practice that transverse the options of command-and-control, stewardship, bottom-up, and laissez-faire governance. How to achieve early warning systems that enable prevention and mitigation of future AI-enabled biohazards from the lab, from deliberate misuse, or from the public realm, will constantly need to evolve, and adaptive, interactive approaches should emerge. Although biorisk is subject to an established governance regime, and scientists generally adhere to biosafety protocols, even experimental, but legitimate use by scientists could lead to unexpected developments. Recent advances in chatbots enabled by generative AI have revived fears that advanced biological insight can more easily get into the hands of malignant individuals or organizations. Given these sets of issues, society needs to rethink how AI-enabled synthetic biology should be governed. The suggested way to visualize the challenge at hand is whack-a-mole governance, although the emerging solutions are perhaps not so different either.",
       "creators": "Trond Arne Undheim",
       "date": "2024-02-28",
@@ -4477,6 +4893,22 @@
       "year": "2025"
     },
     {
+      "abstract": "When frequency of events are low, empirical decision criteria fares poorly",
+      "creators": "Christopher Rodriguez",
+      "date": "2026-08-06",
+      "doi": "",
+      "id": "recptxG7NE7M6JhA2",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-08-06",
+      "tags": [],
+      "title": "Responding to Increased Attack Frequency May Not Work for Bioterror",
+      "type": "Blog post",
+      "url": "https://cwrod.substack.com/p/responding-to-increased-attack-frequency",
+      "year": "2026"
+    },
+    {
       "abstract": "Steph Batalis, Caroline Schuerger and Vikram Venkatram explore three notable areas in the life sciences where LLMs are catalyzing meaningful advances: drug discovery, genetics, and precision medicine.",
       "creators": "Steph Batalis; Caroline Schuerger; Vikram Venkatram",
       "date": "2023-06-15",
@@ -4514,6 +4946,38 @@
       "title": "When is it important that open-weight models aren't released?",
       "type": "Journal article",
       "url": "https://www.lesswrong.com/posts/TeF8Az2EiWenR9APF/when-is-it-important-that-open-weight-models-aren-t-released",
+      "year": "2025"
+    },
+    {
+      "abstract": "As frontier language models advance, policymakers and model developers need methods for assessing whether model access materially increases a non-expert actor's ability to plan high-consequence Chemical, Biological, Radiological, or Nuclear (CBRN) misuse relative to public tools alone. Existing CBRN evaluations differ in non-expert definitions, threat scope, baselines, scoring rubrics, and decision rules, making results difficult to compare across studies. We introduce a Threshold Exceedance Criteria (TEC) framework that decomposes an uplift study into independently executable components: determining non-expert participant eligibility, defining the CBRN threat scope for the study, and statistically estimating material uplift. We then operationalize the TEC framework in a large-scale empirical study using a design that determines two forms of uplift: generative (where a model assists plan creation from scratch) and revisionist (where a model assists refinement of an existing plan). The study produced attack plans across the CBRN domains, which we evaluated through subject-matter-expert review to estimate generative and revisionist uplift. Applying the framework, our empirical study revealed domain heterogeneity: under this controlled pre-release evaluation, model-assisted plans sometimes received expert-equivalent instructional ratings, but confirmed material uplift was limited to the radiological domain. These findings informed mitigation and deployment-governance decisions rather than characterizing deployed model behavior. We conclude with methodological lessons for future CBRN uplift evaluations, emphasizing prespecified criteria, explicit baselines, separation of generative and revisionist estimates, and careful distinction between preliminary screening signals and confirmed risk determinations.",
+      "creators": "Rahul Gupta; Abhinav Mohanty; Payal Motwani; Venkatesh Saligrama; Satyapriya Krishna; Connor Harris; Gary Anthony Ackerman; Brandon Behlendorf; Tom Hobson; Theodore Wilson; Spyros Matsoukas",
+      "date": "2026-07-13",
+      "doi": "10.48550/arXiv.2607.12200",
+      "id": "recqAieGbIRXUfl0p",
+      "institution": "",
+      "institutions": [],
+      "publication": "arXiv",
+      "publicationDate": "2026-07-13",
+      "tags": [],
+      "title": "A Threshold Exceedance Framework for CBRN Uplift Evaluation in Frontier Language Models",
+      "type": "Preprint",
+      "url": "http://arxiv.org/abs/2607.12200",
+      "year": "2026"
+    },
+    {
+      "abstract": "WORKSTREAM AI-Biosafety Workstream DOWNLOAD Frontier AI models and systems are particularly promising for advancing medicine and public health. At the same time, their knowledge of biology and ability to reason about biological concepts may also be misused in ways that pose significant risks to public safety and security. To manage those risks, many frontier AI […]",
+      "creators": "Frontier Model Forum",
+      "date": "2025-03-18",
+      "doi": "",
+      "id": "recqFLkr4xSm8Idle",
+      "institution": "",
+      "institutions": [],
+      "publication": "Frontier Model Forum",
+      "publicationDate": "2025-03-18",
+      "tags": [],
+      "title": "Issue Brief: Preliminary Reporting Tiers for AI-Bio Safety Evaluations",
+      "type": "Blog post",
+      "url": "https://www.frontiermodelforum.org/updates/issue-brief-preliminary-reporting-tiers-for-ai-bio-safety-evaluations/",
       "year": "2025"
     },
     {
@@ -4987,6 +5451,38 @@
       "year": "2024"
     },
     {
+      "abstract": "Advances in artificial intelligence (AI) and distributed ledger technology (DLT) are reshaping how biological research, data and materials are managed. At the same time, the mechanisms used to implement and demonstrate compliance with the biological weapons prohibition regime rely heavily on national oversight systems that face increasing administrative complexity and uneven capacity across states. Emerging technologies are often discussed as potential sources of risk in the life sciences, but they may also provide tools to strengthen key regime functions. AI and DLT could support more effective laboratory oversight, strengthen export controls on dual-use items, and facilitate national reporting and transparency mechanisms. Their impact will depend on governance choices—including how states manage data integrity, human oversight, interoperability and equitable access to digital capabilities. Used responsibly, these tools could improve record integrity, administrative efficiency and confidence in the peaceful use of biological research.",
+      "creators": "",
+      "date": "2026-03-01",
+      "doi": "",
+      "id": "recwSesC1TrkUSRsQ",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-03-01",
+      "tags": [],
+      "title": "Preventing Biological Weapons Proliferation: Operational Applications of Emerging Technologies",
+      "type": "Report",
+      "url": "https://www.sipri.org/publications/2026/other-publications/preventing-biological-weapons-proliferation-operational-applications-emerging-technologies",
+      "year": "2026"
+    },
+    {
+      "abstract": "As protein design tools and other biological AI models become more capable of designing novel biological components and systems, the mechanisms to prevent misuse have not kept pace.",
+      "creators": "",
+      "date": "2026-08-11",
+      "doi": "",
+      "id": "recwk0keAbg7vMb8H",
+      "institution": "",
+      "institutions": [],
+      "publication": "The Nuclear Threat Initiative",
+      "publicationDate": "2026-08-11",
+      "tags": [],
+      "title": "AI Can Design New Proteins. It's Time to Build Real Biosecurity Guardrails",
+      "type": "Blog post",
+      "url": "https://www.nti.org/risky-business/ai-can-design-new-proteins-its-time-to-build-real-biosecurity-guardrails/",
+      "year": "2026"
+    },
+    {
       "abstract": "The guide summarizes key biosecurity-relevant provisions of the AI Action Plan and provides brief commentary on them.",
       "creators": "Melissa Hopkins",
       "date": "2025-08-07",
@@ -5024,6 +5520,22 @@
       "type": "Journal article",
       "url": "https://www.frontiersin.org/journals/bacteriology/articles/10.3389/fbrio.2024.1326958/full",
       "year": "2024"
+    },
+    {
+      "abstract": "Earlier this spring, Claude’s developers found the cyber potential of Anthropic’s model, Mythos 5, hazardous enough to pump the brakes on model release,",
+      "creators": "Rebecca Hersman",
+      "date": "2026-07-15",
+      "doi": "",
+      "id": "recx9wBpTJnGVF9Li",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-07-15",
+      "tags": [],
+      "title": "Before the Next Mythos Moment: The Case for an AI Threat Fusion Center",
+      "type": "Blog post",
+      "url": "https://warontherocks.com/before-the-next-mythos-moment-the-case-for-an-ai-threat-fusion-center/",
+      "year": "2026"
     },
     {
       "abstract": "Accepted papers from the NeurIPS 2025 Workshop on Biosecurity Safeguards for Generative AI (BioSafe GenAI 2025)",
