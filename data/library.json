@@ -254,6 +254,24 @@
       "year": "2025"
     },
     {
+      "abstract": "Policymakers should complement biosecurity measures with stronger biosafety systems.",
+      "creators": "Bhuvana Sudarshan; Rebecca Hersman",
+      "date": "2026-08-25",
+      "doi": "",
+      "id": "rec1w4y7D1g4KAsl7",
+      "institution": "GovAI",
+      "institutions": [
+        "GovAI"
+      ],
+      "publication": "",
+      "publicationDate": "2026-08-25",
+      "tags": [],
+      "title": "A Biosafety Agenda for AI-Bio Governance",
+      "type": "Report",
+      "url": "https://govai.b-cdn.net/Technical_Report_A_Biosafety_Agenda_for_AI_Bio_Governance.pdf",
+      "year": "2026"
+    },
+    {
       "abstract": "Artificial intelligence (AI) tools pose exciting possibilities to advance scientific, biomedical, and public health research. At the same time, these tools have raised concerns about their potential to contribute to biological threats, like those from pathogens and toxins. This report describes pathways that result in biological harm, with or without AI, and a range of governance tools and mitigation measures to address them.",
       "creators": "Steph Batalis",
       "date": "2024-12-01",
