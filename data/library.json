@@ -4637,6 +4637,22 @@
       "year": "2025"
     },
     {
+      "abstract": "Frontier language models now match or exceed expert reference points on many biosecurity-relevant evaluations, and several benchmarks are approaching saturation. Yet these results have not been thoroughly calibrated against physical task performance or real-world risk. This report examines evidence across benchmark performance, elicited model capability, human uplift, laboratory execution, mitigations, synthesis screening, and governance. Most evaluations concern general-purpose AI models, while biological design tools are less studied. Benchmark scores are highly sensitive to format, and refusal rates do not reliably track the ability to produce outputs that pass computational hazard screens. Having access to frontier AI models improves performance on some written and _in silico_ tasks, but physical studies report effects that vary by task and endpoint. Post hoc unlearning can be partly reversed through limited fine-tuning, and more resistant training-time methods lack downstream validation. Existing synthesis screening detects known hazards but performs unevenly on short, distant, or deliberately modified sequences and cannot detect orders split across providers without shared information. Studies examined here have not yet paired benchmark and physical outcomes in the same participants with adequate power. Paired benchmark and task outcomes, continuous endpoints, user and task strata, safe physical validation, and common safety and utility measures would help close this benchmark-to-reality gap. Benchmark, refusal, and computational function results can motivate scenario-specific testing but currently their value for estimating real-world biosecurity risk remains uncalibrated.",
+      "creators": "Stephen Turner",
+      "date": "2026-08-27",
+      "doi": "10.2139/ssrn.7358438",
+      "id": "recmhRofjfBMHpvyg",
+      "institution": "",
+      "institutions": [],
+      "publication": "Social Science Research Network",
+      "publicationDate": "2026-08-27",
+      "tags": [],
+      "title": "AI Biosecurity Benchmarks and Real-World Risk",
+      "type": "Preprint",
+      "url": "https://papers.ssrn.com/abstract=7358438",
+      "year": "2026"
+    },
+    {
       "abstract": "Assessing a threat model in which malicious actors leverage large language model (LLM) agents to exploit biological tools (BTs), the authors evaluate whether agents can lower expertise barriers for hazardous biodesign. They find that LLM agents demonstrate emerging ability to use BTs for nucleic acid synthesis screening evasion, although success is inconsistent and model safeguards frequently limit testing of closed-weight systems.",
       "creators": "Jeffrey Lee; Alyssa Worland; Christopher Rodriguez; Kyle Brady; Grant Ellison; Henry Alexander Bradley; Dawid Maciorowski; Jordan Despanie; Barbara Del Castello; Jason Johnson; Steph Guerra",
       "date": "2026-08-11",
