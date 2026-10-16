@@ -5302,6 +5302,22 @@
       "year": "2025"
     },
     {
+      "abstract": "The authors share the results of a second workshop to explore options for implementing mitigations to combat the potential for AI-enabled biology to be misused to cause harm. The authors identify actionable paths forward and requirements for realizing each mitigation, highlight potential policy levers and operational steps, and consider the trade-offs and coordination challenges that would need to be addressed for each mitigation to succeed.",
+      "creators": "John P. Tarangelo; Aurelia Attal-Juncqua; Evan Davison Kotler; Casey Aveggio; Marie Burns; Barbara Del Castello; Tyler Burns; Steph Guerra; Saskia Popescu; David Glickstein",
+      "date": "2026-10-15",
+      "doi": "",
+      "id": "rect0ojbxBoKqBLRu",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-10-15",
+      "tags": [],
+      "title": "Building Resilience Against Artificial Intelligence–Enabled Biological Threats: Conference Proceedings from a Follow-Up RAND and Helena Workshop, May 2026",
+      "type": "Report",
+      "url": "https://www.rand.org/pubs/conf_proceedings/CFA4954-2.html",
+      "year": "2026"
+    },
+    {
       "abstract": "Synthetic nucleic acids are a key input to modern biotechnology, yet they represent dual-use materials that require robust screening to mitigate biosecurity risks. The prevailing screening paradigm, which identifies sequences of concern (SoCs) through sequence similarity to controlled pathogens and toxins, may not fully capture risks posed by AI tools that can decouple biomolecular function from reliance on known sequences. Rapidly advancing biodesign capabilities enable the generation of genes and proteins that might evade sequence-based detection. We highlight the critical need for function-based screening approaches that can detect sequences capable of hazardous biological functions, regardless of similarity to known SoCs. We examine the feasibility of function-based screening with an initial focus on proteins, arguing that, while protein sequence space is vast, biologically functional proteins are significantly constrained by biophysical and biochemical requirements that can be learned and modeled. We propose a concrete implementation framework organized along a continuum of complexity, starting with toxins as the most tractable targets before expanding to more complex pathogenic functions. We then discuss open challenges and describe a research and development strategy to address them.",
       "creators": "Gary R. Abel; Tessa Alexanian; Craig Bartling; Jacob Beal; Samuel Curtis; Kevin Flyangolts; Leonard Foner; Samuel P. Forry; Gene D. D. Godbold; Eric Horvitz; Bin Hu; Corey M. Michael Hudson; Caitlin Jagla; Rassin Lababidi; Sheng Lin-Gibson; Brittany Rife Magalis; Jaspreet Pannu; Sebastian Rivera; David Ross; Bruce J. Wittmann; James Diggans",
       "date": "2026-05-14",
