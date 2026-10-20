@@ -1826,6 +1826,24 @@
       "year": "2023"
     },
     {
+      "abstract": "Recommendations to strengthen how developers of advanced AI models assess, mitigate, and report biological risks under the EU AI Act.",
+      "creators": "Bhuvana Sudarshan; Zaheed Kara; Matthew van der Merwe; John Halstead; Scott Allen; Hannes Bastians; Coleman Breen; Michael Mahar; Carl Mayers; Tegan McCaslin; Cassidy Nelson",
+      "date": "2026-10-19",
+      "doi": "",
+      "id": "recIYQiMB0rsOdO5I",
+      "institution": "GovAI",
+      "institutions": [
+        "GovAI"
+      ],
+      "publication": "",
+      "publicationDate": "2026-10-19",
+      "tags": [],
+      "title": "Managing Biological Risks from General-Purpose AI Models under the EU AI Act | GovAI",
+      "type": "Report",
+      "url": "https://www.governance.ai/research-paper/managing-biological-risks-from-general-purpose-ai-models-under-the-eu-ai-act",
+      "year": "2026"
+    },
+    {
       "abstract": "",
       "creators": "Christine Parthemore",
       "date": "2024-12-03",
