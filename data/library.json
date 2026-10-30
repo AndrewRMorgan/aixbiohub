@@ -5240,6 +5240,22 @@
       "year": "2026"
     },
     {
+      "abstract": "Capabilities of large language models (LLMs) on several biological benchmarks have prompted not only excitement about their usefulness for research but also concern about biosecurity risks. We recruited 46 subject-matter experts in biology and biosecurity, and 22 generalist forecasters to estimate the risks of growing LLM capabilities. Most respondents expected some hypothetical LLM capabilities to increase their estimates of risk and dramatically underestimated the rate of LLM progress in those capabilities. When these capabilities arose, the median forecast did update as anticipated. The median expert initially predicted a 0.3% annual risk of a human-caused epidemic that causes 100,000 deaths. This estimate then rose to 1.5% conditional on several hypothetical LLM capabilities, including matching the performance of a top-performing team of virologists on a virology troubleshooting test, which the median expert did not expect to occur until 2030. Given this finding, we conducted a baselining study and found that LLMs already crossed this performance threshold in April 2025. A follow-up survey conducted after these results were available found that forecasters significantly updated their median unconditional risk estimates upward, with the new median expert forecast of annual risk rising to 1.5% (as anticipated by the earlier conditional forecasts). More encouragingly, most experts thought that the adoption of LLM safeguards and mandatory nucleic acid screening would negate the risk associated with some hypothetical LLM capabilities.",
+      "creators": "Bridget Williams; Luca Righetti; Josh Rosenberg; Rebecca Ceppas de Castro; Otto Kuusela; Rhiannon Britt; Emily Soice; Alvaro Morales; Jon Sanders; Seth Donoughe; James Black; Ezra Karger; Philip E. Tetlock",
+      "date": "2026-11-01",
+      "doi": "10.1111/risa.70397",
+      "id": "recrK3IOf4mhixnXd",
+      "institution": "",
+      "institutions": [],
+      "publication": "",
+      "publicationDate": "2026-11-01",
+      "tags": [],
+      "title": "Forecasting LLM-Enabled Biorisk and the Efficacy of Safeguards",
+      "type": "Journal article",
+      "url": "",
+      "year": "2026"
+    },
+    {
       "abstract": "",
       "creators": "Mengdi Wang; Zaixi Zhang; Amrit Singh Bedi; Alvaro Velasquez; Stephanie Guerra; Sheng Lin-Gibson; Le Cong; Yuanhao Qu; Souradip Chakraborty; Megan Blewett; Jian Ma; Eric Xing; George Church",
       "date": "2025-04-28",
